@@ -1,0 +1,194 @@
+<!--
+  Generated template for the RecettePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+    <ion-navbar color="primary">
+        <ion-title>recette</ion-title>
+        <ion-buttons end>
+            <button ion-button (click)="closeRecette()"><ion-icon name="close"></ion-icon></button>
+        </ion-buttons>
+    </ion-navbar>
+
+
+</ion-header>
+
+
+<ion-content >
+
+        <ion-slides pager="false">
+                <ion-slide   >
+
+
+
+                    <ion-grid  >  
+
+                        <ion-row>
+                                <ion-col >
+                                        <img class="lulu" (click)="toggleFuction($event)" style=" border-radius:50%; padding:2px; width:80px; " src="assets/imgs/icons8-orge-48.png" alt="" srcset="">
+                                        <span style="display:none; position:absolute; top:10px; right:20px; color:#33c924; " > <ion-icon name="checkmark-circle"></ion-icon> </span>
+                                        <p style="position:relative; top:-20px; color:#888; font-family:'OpenSans-Light'; font-size:14px; font-style:italic;  "  > céréale  </p>
+                                </ion-col>
+    
+                                <ion-col >
+                                        <img (click)="toggleFuction($event)" class="lulu" style=" border-radius:50%; padding:2px; width:80px; " src="assets/imgs/x3_content_icon-icons.com_76806.png" alt="" srcset="">
+                                        <span style="display:none; position:absolute; top:10px; right:20px; color:#33c924; " > <ion-icon name="checkmark-circle"></ion-icon> </span>
+                                        <p style="position:relative; top:-20px; color:#888; font-family:'OpenSans-Light'; font-size:14px; font-style:italic;  "  > fruits </p>
+                                </ion-col>
+    
+                            
+
+                                <ion-col >
+                                        <img style=" border-radius:50%; padding:2px; width:80px; " src="assets/imgs/icons8-poivrière-80.png" alt="" srcset="">
+                                        <p style="position:relative; top:-20px; color:#888; font-family:'OpenSans-Light'; font-size:14px; font-style:italic;  "  > Epices </p>
+                                </ion-col>
+                            
+                        </ion-row>
+
+                        <ion-row> 
+                                <ion-col >
+                                        <img style=" border-radius:50%; padding:2px; width:80px; " src="assets/imgs/radish_vegetables_16825.png" alt="" srcset="">
+                                        <p style="position:relative; top:-20px; color:#888; font-family:'OpenSans-Light'; font-size:14px; font-style:italic;  "  > Légumes </p>
+                                </ion-col>
+    
+                                <ion-col >
+                                        <img style=" border-radius:50%; padding:2px; width:80px; " src="assets/imgs/salad-1.png" alt="" srcset="">
+                                        <p style="position:relative; top:-20px; color:#888; font-family:'OpenSans-Light'; font-size:14px; font-style:italic;  "  > Feuilles </p>
+                                </ion-col>
+                                
+                                <ion-col >
+                                        <img style=" border-radius:50%; padding:2px; width:80px; " src="assets/imgs/icons8-patate-douce-80.png" alt="" srcset="">
+                                        <p style="position:relative; top:-20px; color:#888; font-family:'OpenSans-Light'; font-size:14px; font-style:italic;  "  > Tubercules </p>
+                                </ion-col> 
+                                
+                            </ion-row>  
+
+                            <ion-row> 
+                                    <ion-col >
+                                            <img style=" border-radius:50%; padding:2px; width:80px; " src="assets/imgs/shrimp.png" alt="" srcset="">
+                                            <p style="position:relative; top:-20px; color:#888; font-family:'OpenSans-Light'; font-size:14px; font-style:italic;  "  > Crustacé </p>
+                                    </ion-col>
+        
+                                    <ion-col >
+                                            <img style=" border-radius:50%; padding:2px; width:80px; " src="assets/imgs/steak.png" alt="" srcset="">
+                                            <p style="position:relative; top:-20px; color:#888; font-family:'OpenSans-Light'; font-size:14px; font-style:italic;  "  > Viande </p>
+                                    </ion-col> 
+        
+                                    <ion-col >
+                                            <img style=" border-radius:50%; padding:2px; width:80px; " src="assets/imgs/Fish_Dorada_26371.png" alt="" srcset="">
+                                            <p style="position:relative; top:-20px; color:#888; font-family:'OpenSans-Light'; font-size:14px; font-style:italic;  "  > Poisson </p>
+                                    </ion-col>
+                                    
+                                </ion-row> 
+
+                                <ion-row> 
+                                        <ion-col >
+                                                <img  style=" border-radius:50%; padding:2px; width:80px; " src="assets/imgs/icons8-sac-de-farine-40.png" alt="" srcset="">
+                                                <p style="position:relative; top:-20px; color:#888; font-family:'OpenSans-Light'; font-size:14px; font-style:italic;  "  > Farine </p>
+                                        </ion-col>
+            
+                                        <ion-col >
+                                                <img style=" border-radius:50%; padding:2px; width:80px; " src="assets/imgs/icons8-huile-d'olive-48.png" alt="" srcset="">
+                                                <p style="position:relative; top:-20px; color:#888; font-family:'OpenSans-Light'; font-size:14px; font-style:italic;  "  > Huile </p>
+                                        </ion-col> 
+            
+                                        <ion-col >
+                                                <img style=" border-radius:50%; padding:2px; width:80px; " src="assets/imgs/Fish_Dorada_26371.png" alt="" srcset="">
+                                                <p style="position:relative; top:-20px; color:#888; font-family:'OpenSans-Light'; font-size:14px; font-style:italic;  "  > Poisson </p>
+                                        </ion-col>
+                                        
+                                    </ion-row> 
+                      
+                        
+                    </ion-grid>
+                    
+                    <ion-fab (click)="goToSlide3()" style="position: absolute; bottom:40px; right:10px;" >
+                        <button ion-fab color="primary"> <ion-icon name="arrow-forward"></ion-icon> </button>
+                      </ion-fab>
+                 
+                </ion-slide>
+              
+             
+              
+              <ion-slide >
+              
+                
+
+                    <div id="formWrapper">
+
+                            <div id="form">
+                            <div class="logo">
+                           <p>
+                               <img style="width:70px;" src="assets/imgs/icons8-orge-48.png" alt="" srcset="">
+                           </p>
+                           <p style=" margin-top:-15px; " >
+                               <span style=" font-size:16px; color:#888; font-style:italic; font-family:'OpenSans-Light' " > Pomme du sénégale </span>
+                           </p>
+                            </div>
+            
+                            <div class="form-item">
+                                    <ion-item style=" margin-top:-15px; " >
+                                            <ion-label style=" color:#888; font-family:'OpenSans-Light' " >vente à crédit</ion-label>
+                                            <ion-toggle  ></ion-toggle>
+                                    </ion-item>
+                             </div>
+            
+                            
+            
+                                    <div class="form-item">
+                                        
+                                        <input placeholder="Quantité" style="font-size:14px;" type="text" name="quantite" id="email" class="form-style" autocomplete="off"/>
+                                    </div>
+                                    <div class="form-item">
+                                            
+                                            <input placeholder="Montant" style="font-size:14px;" type="text" name="text" id="email" class="form-style" autocomplete="off"/>
+                                        </div>
+                                    <div class="form-item">
+                                        
+                                        <input value="02/03/2017" style="font-size:14px;" type="text" name="texte" id="date"  class="form-style" />
+                                        <!-- <div class="pw-view"><i class="fa fa-eye"></i></div> -->
+                                            
+                                    </div>
+                                    <div class="form-item" style=" margin-top:40px; " >
+                                    <p class="pull-left"> </p>
+                                    <input type="submit" class="login pull-right" value="Enregistrer">
+                                    <div class="clear-fix"></div>
+                                    </div>
+                            </div>
+                            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+              
+              </ion-slide>
+              
+              </ion-slides>
+              
+              
+              
+              
+
+
+
+
+
+
+
+
+
+       
+
+</ion-content>
