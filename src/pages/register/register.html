@@ -1,0 +1,158 @@
+<!--
+  Generated template for the RegisterPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+
+
+<ion-content padding>
+    <ion-slides pager class="swiper-no-swiping" style="height:auto;">
+
+        <ion-slide style="padding-bottom:100px">
+            <div padding>
+                <div class="register_page_header">
+                    <span class="badge_progression_register pull-right-style">1/4</span>
+                    <a (click)="goToBack()">
+                        <ion-icon ios="ios-close" class="fontSizeIcon" md="md-arrow-back"></ion-icon>
+                    </a>
+                </div>
+                <div class="register_page_title">
+                    <h1>Configuration de base</h1>
+                    <p>Indiquez votre Langue ainsi que votre monnaie. </p>
+                </div>
+                <div class="register_page_form">
+                    <ion-list>
+
+                        <ion-item>
+                            <ion-label stacked>Langue</ion-label>
+                            <ion-input type="text"></ion-input>
+                        </ion-item>
+
+                        <ion-item style="margin-top:22px;">
+                            <ion-label stacked>Monnaie</ion-label>
+                            <ion-input type="text"></ion-input>
+                        </ion-item>
+
+
+                    </ion-list>
+                </div>
+
+
+                <div class="fixed_bar_login_register">
+                    <button class="btn-default-keiwa background-default" (click)="goToSlide(1)" style="width:250px;height:50px;">
+                        Continuer
+                    </button>
+                </div>
+            </div>
+        </ion-slide>
+        <ion-slide style="padding-bottom:100px">
+            <div padding>
+                <div class="register_page_header">
+                    <span class="badge_progression_register pull-right-style">2/4</span>
+                    <a (click)="goToSlide(0)">
+                        <ion-icon ios="ios-close" class="fontSizeIcon" md="md-arrow-back"></ion-icon>
+                    </a>
+                </div>
+                <div class="register_page_title">
+                    <h1>Itentifier vous</h1>
+                    <p>indiquez votre nom et prénoms pour que nous vous identifions. </p>
+                </div>
+                <div class="register_page_form">
+                    <ion-list>
+
+                        <ion-item>
+                            <ion-label stacked>Nom</ion-label>
+                            <ion-input type="text"></ion-input>
+                        </ion-item>
+
+                        <ion-item style="margin-top:22px;">
+                            <ion-label stacked>Prenoms</ion-label>
+                            <ion-input type="text"></ion-input>
+                        </ion-item>
+
+
+                    </ion-list>
+                </div>
+
+
+                <div class="fixed_bar_login_register">
+                    <button class="btn-default-keiwa background-default" (click)="goToSlide(2)" style="width:250px;height:50px;">
+                        Continuer
+                    </button>
+                </div>
+            </div>
+        </ion-slide>
+
+        <ion-slide style="padding-bottom:100px">
+            <div padding>
+                <div class="register_page_header">
+                    <span class="badge_progression_register pull-right-style">3/4</span>
+                    <a (click)="goToSlide(1)">
+                        <ion-icon ios="ios-close" class="fontSizeIcon" md="md-arrow-back"></ion-icon>
+                    </a>
+                </div>
+                <div class="register_page_title">
+                    <h1>Indiquez votre numéro de portable</h1>
+                    <p>Nous allons vous envoyer un code de verification par SMS.</p>
+                </div>
+                <div class="register_page_form" style="margin-top:50px">
+                    <span>Téléphone</span>
+                    <div>
+                        <div class="align-middle" style="width:80px;">
+                            <ion-item>
+                                <ion-input type="text" value="+225" disabled="true"></ion-input>
+                            </ion-item>
+                        </div>
+                        <div class="align-middle inputTel">
+                            <ion-item>
+                                <ion-input type="tel"></ion-input>
+                            </ion-item>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="fixed_bar_login_register">
+                    <button class="btn-default-keiwa background-default" (click)="goToSlide(3)" style="width:250px;height:50px;">
+                        Continuer
+                    </button>
+                </div>
+            </div>
+        </ion-slide>
+        <ion-slide style="padding-bottom:100px">
+            <div padding>
+                <div class="register_page_header">
+                    <span class="badge_progression_register pull-right-style">4/4</span>
+                    <a (click)="goToSlide(2)">
+                        <ion-icon ios="ios-close" class="fontSizeIcon" md="md-arrow-back"></ion-icon>
+                    </a>
+                </div>
+                <div class="register_page_title">
+                    <h1>Créer un mot de passe</h1>
+                    <p>Votre mot de passe doit comporter 8 caractères ou plus. N'utiliszer pas un mot de passe trop commun ni de répétitions ou de séquences.
+                    </p>
+                </div>
+                <div class="register_page_form">
+                    <ion-list>
+
+                        <ion-item>
+                            <ion-label stacked>Mot de passe</ion-label>
+                            <ion-input type="text"></ion-input>
+                        </ion-item>
+                    </ion-list>
+                </div>
+
+
+
+                <div class="fixed_bar_login_register">
+                    <button class="btn-default-keiwa background-default" style="width:250px;height:50px;">
+                        Terminer
+                    </button>
+                </div>
+            </div>
+        </ion-slide>
+    </ion-slides>
+</ion-content>

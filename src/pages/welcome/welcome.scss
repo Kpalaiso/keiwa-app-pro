@@ -1,0 +1,56 @@
+page-welcome {
+    .sliderOverflow {
+        height: 100%;
+        overflow-x: auto;
+    }
+    .welcomePage {
+        width: 100%;
+    }
+    .welcome_page_header .fontSizeIcon {
+        font-size: 2em;
+        color: #fff;
+    }
+    .welcome_page_header .fontSizeText {
+        font-size: 1.3em;
+        font-family: "CircularBook";
+        color: #fff;
+    }
+    .headerWelcomePage {
+        width: 100%;
+        background: #1abc9c;
+        height: 165px;
+    }
+    .headerWelcomePage .closePage span {
+        color: #fff;
+        font-family: 'open sans semibold';
+        font-size: 20px;
+    }
+    .headerWelcomePage .textHeader {
+        margin-top: 35px;
+        text-align: center
+    }
+    .headerWelcomePage .textHeader h1 {
+        color: #fff;
+        font-family: 'CircularBold';
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .bodyWelcomePage {
+        margin-top: 15px;
+    }
+    .bodyWelcomePage .step {
+        text-align: center
+    }
+    .bodyWelcomePage .step h1 {
+        color: #000;
+        font-family: 'CircularBold';
+        font-size: 25px;
+        line-height: 33px;
+    }
+    .bodyWelcomePage .step p {
+        color: #000;
+        font-family: 'open sans regular';
+        font-size: 15px;
+        line-height: 25px;
+    }
+}

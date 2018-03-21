@@ -1,0 +1,77 @@
+page-register {
+    .sliderOverflow {
+        height: 100%;
+        overflow-x: auto;
+    }
+    .register_page_header .fontSizeIcon {
+        font-size: 1.8em;
+        color: black
+    }
+    .fixed_bar_login_register {
+        text-align: center
+    }
+    .fixed_bar_login_register .fontSizeIcon {
+        font-size: 1.8em;
+        color: #fff;
+    }
+    .register_page_title {
+        margin-top: 25px;
+    }
+    .register_page_title h1 {
+        font-size: 30px;
+        font-family: "CircularBold";
+    }
+    .register_page_title p {
+        font-size: 20px;
+        font-family: "open sans regular";
+    }
+    .register_page_form {
+        margin-top: 35px;
+        margin-bottom: 50px;
+    }
+    .registerInfoPerso p {
+        font-family: "CircularBold";
+        font-size: 14px;
+        text-align: left;
+    }
+    .badge_progression_register {
+        display: inline-block;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        border: 1px solid #1abc9c;
+        padding-left: 12px;
+        padding-top: 12px;
+        margin-top: -10px;
+        background: #1abc9c;
+        color: #fff;
+        font-family: "CircularBold";
+    }
+    /*form*/
+    .item-md {
+        padding-left: 0px;
+    }
+    .label-md[stacked] {
+        font-size: 1.7rem;
+        /*text-transform:uppercase;*/
+        font-family: "CircularBold";
+    }
+    .item-md.item-input.item-input-has-focus .item-inner,
+    .item-md.item-input.input-has-focus .item-inner {
+        border-bottom-color: #008489;
+        -webkit-box-shadow: inset 0 -1px 0 0 #008489;
+        box-shadow: inset 0 0px 0 0 #008489;
+    }
+    .list-md .item-input.item-input-has-focus:last-child,
+    .list-md .item-input.input-has-focus:last-child {
+        border-bottom-color: #008489;
+        -webkit-box-shadow: inset 0 -1px 0 0 #008489;
+        box-shadow: inset 0 0px 0 0 #008489;
+    }
+    .item-input-has-focus .label-md[stacked],
+    .input-has-focus .label-md[stacked],
+    .item-input-has-focus .label-md[floating],
+    .input-has-focus .label-md[floating] {
+        color: #008489;
+    }
+}

@@ -37309,6 +37309,109 @@ page-home .banner_home {
   position: relative;
 }
 
+page-login .sliderOverflow {
+  height: 100%;
+  overflow-x: auto;
+}
+
+page-login .welcomePage {
+  width: 100%;
+  background: #fcfcfc;
+}
+
+page-login .welcome_page_header .fontSizeIcon {
+  font-size: 2em;
+  color: #fff;
+}
+
+page-login .welcome_page_header .fontSizeText {
+  font-size: 1.3em;
+  font-family: "CircularBook";
+  color: #fff;
+}
+
+page-login .headerWelcomePage {
+  width: 100%;
+  background: #1abc9c;
+  height: 120px;
+}
+
+page-login .headerWelcomePage .closePage span {
+  color: #fff;
+  font-family: 'open sans semibold';
+  font-size: 20px;
+}
+
+page-login .headerWelcomePage .textHeader {
+  margin-top: 15px;
+  text-align: center;
+}
+
+page-login .headerWelcomePage .textHeader h1 {
+  color: #fff;
+  font-family: 'CircularBold';
+  font-size: 28px;
+  line-height: 35px;
+}
+
+page-login .bodyWelcomePage {
+  margin-top: 15px;
+}
+
+page-login .bodyWelcomePage .step {
+  text-align: center;
+}
+
+page-login .bodyWelcomePage .step p {
+  color: #000;
+  font-family: 'open sans semibold';
+  font-size: 14px;
+}
+
+page-login .bodyWelcomePage .step p strong {
+  font-family: 'open sans bold';
+}
+
+page-login input {
+  width: 100%;
+  height: 52px;
+  border-radius: 5px;
+  border: 1px solid #c8c8c8;
+  font-family: 'open sans regular';
+  font-size: 15px;
+  padding-left: 10px;
+  background: #fafcfc;
+}
+
+page-login .form-group {
+  margin-top: 15px;
+}
+
+page-login .border-divider {
+  border-top: 2px solid #c8c8c8;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 25px;
+}
+
+page-login .footerFixed {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  background: #f8f8f8;
+  border-top: 1px solid #c8c8c8;
+  text-align: center;
+}
+
+page-login .footerFixed p {
+  font-family: 'open sans semibold';
+}
+
+page-login .footerFixed p strong {
+  font-family: 'open sans bold';
+}
+
 page-recette a {
   color: #58bff6;
   text-decoration: none;
@@ -37470,4 +37573,163 @@ page-recette .rec_ele {
 
 page-recette .rec_ele + span {
   display: inline !important;
+}
+
+page-register {
+  /*form*/
+}
+
+page-register .sliderOverflow {
+  height: 100%;
+  overflow-x: auto;
+}
+
+page-register .register_page_header .fontSizeIcon {
+  font-size: 1.8em;
+  color: black;
+}
+
+page-register .fixed_bar_login_register {
+  text-align: center;
+}
+
+page-register .fixed_bar_login_register .fontSizeIcon {
+  font-size: 1.8em;
+  color: #fff;
+}
+
+page-register .register_page_title {
+  margin-top: 25px;
+}
+
+page-register .register_page_title h1 {
+  font-size: 30px;
+  font-family: "CircularBold";
+}
+
+page-register .register_page_title p {
+  font-size: 20px;
+  font-family: "open sans regular";
+}
+
+page-register .register_page_form {
+  margin-top: 35px;
+  margin-bottom: 50px;
+}
+
+page-register .registerInfoPerso p {
+  font-family: "CircularBold";
+  font-size: 14px;
+  text-align: left;
+}
+
+page-register .badge_progression_register {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 1px solid #1abc9c;
+  padding-left: 12px;
+  padding-top: 12px;
+  margin-top: -10px;
+  background: #1abc9c;
+  color: #fff;
+  font-family: "CircularBold";
+}
+
+page-register .item-md {
+  padding-left: 0px;
+}
+
+page-register .label-md[stacked] {
+  font-size: 1.7rem;
+  /*text-transform:uppercase;*/
+  font-family: "CircularBold";
+}
+
+page-register .item-md.item-input.item-input-has-focus .item-inner,
+page-register .item-md.item-input.input-has-focus .item-inner {
+  border-bottom-color: #008489;
+  -webkit-box-shadow: inset 0 -1px 0 0 #008489;
+  box-shadow: inset 0 0px 0 0 #008489;
+}
+
+page-register .list-md .item-input.item-input-has-focus:last-child,
+page-register .list-md .item-input.input-has-focus:last-child {
+  border-bottom-color: #008489;
+  -webkit-box-shadow: inset 0 -1px 0 0 #008489;
+  box-shadow: inset 0 0px 0 0 #008489;
+}
+
+page-register .item-input-has-focus .label-md[stacked],
+page-register .input-has-focus .label-md[stacked],
+page-register .item-input-has-focus .label-md[floating],
+page-register .input-has-focus .label-md[floating] {
+  color: #008489;
+}
+
+page-welcome .sliderOverflow {
+  height: 100%;
+  overflow-x: auto;
+}
+
+page-welcome .welcomePage {
+  width: 100%;
+}
+
+page-welcome .welcome_page_header .fontSizeIcon {
+  font-size: 2em;
+  color: #fff;
+}
+
+page-welcome .welcome_page_header .fontSizeText {
+  font-size: 1.3em;
+  font-family: "CircularBook";
+  color: #fff;
+}
+
+page-welcome .headerWelcomePage {
+  width: 100%;
+  background: #1abc9c;
+  height: 165px;
+}
+
+page-welcome .headerWelcomePage .closePage span {
+  color: #fff;
+  font-family: 'open sans semibold';
+  font-size: 20px;
+}
+
+page-welcome .headerWelcomePage .textHeader {
+  margin-top: 35px;
+  text-align: center;
+}
+
+page-welcome .headerWelcomePage .textHeader h1 {
+  color: #fff;
+  font-family: 'CircularBold';
+  font-size: 30px;
+  line-height: 35px;
+}
+
+page-welcome .bodyWelcomePage {
+  margin-top: 15px;
+}
+
+page-welcome .bodyWelcomePage .step {
+  text-align: center;
+}
+
+page-welcome .bodyWelcomePage .step h1 {
+  color: #000;
+  font-family: 'CircularBold';
+  font-size: 25px;
+  line-height: 33px;
+}
+
+page-welcome .bodyWelcomePage .step p {
+  color: #000;
+  font-family: 'open sans regular';
+  font-size: 15px;
+  line-height: 25px;
 }

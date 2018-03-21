@@ -1,0 +1,87 @@
+page-login {
+    .sliderOverflow {
+        height: 100%;
+        overflow-x: auto;
+    }
+    .welcomePage {
+        width: 100%;
+        background: rgb(252, 252, 252)
+    }
+    .welcome_page_header .fontSizeIcon {
+        font-size: 2em;
+        color: #fff;
+    }
+    .welcome_page_header .fontSizeText {
+        font-size: 1.3em;
+        font-family: "CircularBook";
+        color: #fff;
+    }
+    .headerWelcomePage {
+        width: 100%;
+        background: #1abc9c;
+        height: 120px;
+    }
+    .headerWelcomePage .closePage span {
+        color: #fff;
+        font-family: 'open sans semibold';
+        font-size: 20px;
+    }
+    .headerWelcomePage .textHeader {
+        margin-top: 15px;
+        text-align: center
+    }
+    .headerWelcomePage .textHeader h1 {
+        color: #fff;
+        font-family: 'CircularBold';
+        font-size: 28px;
+        line-height: 35px;
+    }
+    .bodyWelcomePage {
+        margin-top: 15px;
+    }
+    .bodyWelcomePage .step {
+        text-align: center;
+    }
+    .bodyWelcomePage .step p {
+        color: #000;
+        font-family: 'open sans semibold';
+        font-size: 14px;
+    }
+    .bodyWelcomePage .step p strong {
+        font-family: 'open sans bold';
+    }
+    input {
+        width: 100%;
+        height: 52px;
+        border-radius: 5px;
+        border: 1px solid rgb(200, 200, 200);
+        font-family: 'open sans regular';
+        font-size: 15px;
+        padding-left: 10px;
+        background: rgb(250, 252, 252)
+    }
+    .form-group {
+        margin-top: 15px;
+    }
+    .border-divider {
+        border-top: 2px solid rgb(200, 200, 200);
+        width: 50%;
+        margin: 0 auto;
+        margin-top: 25px;
+    }
+    .footerFixed {
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        background: rgb(248, 248, 248);
+        border-top: 1px solid rgb(200, 200, 200);
+        text-align: center
+    }
+    .footerFixed p {
+        font-family: 'open sans semibold'
+    }
+    .footerFixed p strong {
+        font-family: 'open sans bold'
+    }
+}

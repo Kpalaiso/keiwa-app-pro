@@ -16,14 +16,21 @@ import { DepensePage } from '../pages/depense/depense';
 import { CreditPage } from '../pages/credit/credit';
 import { TabsPage } from '../pages/tabs/tabs'; 
 
+/**Page add by Terrence kondou */
+import { WelcomePage } from '../pages/welcome/welcome';
+import { LoginPage } from '../pages/login/login';
+import { RegisterPage } from '../pages/register/register';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { SaverecetteProvider } from '../providers/saverecette/saverecette';
-
+import { NativePageTransitions } from '@ionic-native/native-page-transitions';
 @NgModule({
   declarations: [
     MyApp,
+    WelcomePage,
+    LoginPage,
+    RegisterPage,
     AboutPage,
     ContactPage,
     HomePage,
@@ -44,6 +51,9 @@ import { SaverecetteProvider } from '../providers/saverecette/saverecette';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
+    WelcomePage,
+    LoginPage,
+    RegisterPage,
     AboutPage,
     ContactPage,
     HomePage,
@@ -58,6 +68,7 @@ import { SaverecetteProvider } from '../providers/saverecette/saverecette';
     ReactiveFormsModule,
     TextToSpeech,
     SplashScreen,
+    NativePageTransitions,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     SaverecetteProvider
   ]

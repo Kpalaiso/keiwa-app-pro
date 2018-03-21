@@ -1,0 +1,146 @@
+@font-face {
+    font-family: 'Open Sans light';
+    src: url('../fonts/Open_Sans_font/OpenSans-Light.ttf');
+}
+
+@font-face {
+    font-family: 'Open Sans regular';
+    src: url('../fonts/Open_Sans_font/OpenSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Open Sans extrabold';
+    src: url('../fonts/Open_Sans_font/OpenSans-ExtraBold.ttf');
+}
+
+@font-face {
+    font-family: 'Open Sans semibold';
+    src: url('../fonts/Open_Sans_font/OpenSans-Semibold.ttf');
+}
+
+@font-face {
+    font-family: 'Open Sans bold';
+    src: url('../fonts/Open_Sans_font/OpenSans-bold.ttf');
+}
+
+@font-face {
+    font-family: 'CircularBlack';
+    src: url('../fonts/circular/CircularStd-Black.otf');
+}
+
+@font-face {
+    font-family: 'CircularBlackItalic';
+    src: url('../fonts/circular/CircularStd-BlackItalic.otf');
+}
+
+@font-face {
+    font-family: 'CircularBold';
+    src: url('../fonts/circular/CircularStd-Bold.otf');
+}
+
+@font-face {
+    font-family: 'CircularBoldItalic';
+    src: url('../fonts/circular/CircularStd-BoldItalic.otf');
+}
+
+@font-face {
+    font-family: 'CircularBook';
+    src: url('../fonts/circular/CircularStd-Book.otf');
+}
+
+@font-face {
+    font-family: 'CircularBookItalic';
+    src: url('../fonts/circular/CircularStd-BookItalic.otf');
+}
+
+@font-face {
+    font-family: 'CircularMedium';
+    src: url('../fonts/circular/CircularStd-Medium.otf');
+}
+
+@font-face {
+    font-family: 'CircularMediumItalic';
+    src: url('../fonts/circular/CircularStd-MediumItalic.otf');
+}
+
+body {
+    /*font-family: "CircularBook", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+    font-size: 14px;
+    line-height: 1.43;
+    color: #484848;
+    background-color: #fff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.pull-right-style {
+    float: right;
+}
+
+.align-middle {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.align-top {
+    vertical-align: top;
+    display: inline-block;
+}
+
+.btn-circle-style {
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+}
+
+.background-default {
+    background: #1abc9c;
+    color: #fff;
+}
+
+.btn-default-keiwa {
+    width: 100%;
+    height: 55px;
+    border-radius: 30px;
+    font-size: 17px;
+    font-family: "CircularBold";
+    background: transparent;
+    border: 1px solid #1abc9c;
+    color: #1abc9c
+}
+
+.btn-facebook {
+    border-color: #3B5998;
+    background-color: #3B5998;
+    color: #fff;
+}
+
+
+/** slides */
+
+.slide-zoom {
+    height: 100%;
+    text-align: left;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets {
+    display: none;
+}
+
+.checkbox-md-dark .checkbox-checked {
+    border-color: #1abc9c;
+    background-color: #1abc9c;
+}
+
+.checkbox-md .checkbox-icon {
+    border-radius: 5px;
+    width: 25px;
+    height: 25px;
+}
+
+.checkbox-md .checkbox-checked .checkbox-inner {
+    left: 5px;
+    top: 0;
+    width: 8px;
+    height: 13px;
+}
