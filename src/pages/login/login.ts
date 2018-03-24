@@ -12,6 +12,7 @@ import { NativePageTransitions, NativeTransitionOptions } from '@ionic-native/na
 import { RegisterPage } from '../register/register';
 
 @IonicPage()
+
 @Component({
   selector: 'page-login',
   templateUrl: 'login.html',

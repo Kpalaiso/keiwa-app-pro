@@ -1,6 +1,9 @@
 import { Component ,ViewChild} from '@angular/core';
 import { IonicPage, NavController, NavParams,Slides } from 'ionic-angular';
 import { NativePageTransitions, NativeTransitionOptions } from '@ionic-native/native-page-transitions';
+
+import { ConfigurationPage } from "../configuration/configuration";
+
 /**
  * Generated class for the RegisterPage page.
  *
@@ -9,6 +12,7 @@ import { NativePageTransitions, NativeTransitionOptions } from '@ionic-native/na
  */
 
 @IonicPage()
+
 @Component({
   selector: 'page-register',
   templateUrl: 'register.html',
@@ -32,5 +36,13 @@ export class RegisterPage {
     this.navCtrl.pop(animationsOptions);
       
   }
+
+ 
+  goPageConfiguration(){
+    this.navCtrl.push(ConfigurationPage);
+  }
+
+
+
 
 }

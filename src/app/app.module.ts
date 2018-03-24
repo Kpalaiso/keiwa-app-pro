@@ -4,6 +4,8 @@ import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MyApp } from './app.component';
 import { TextToSpeech } from '@ionic-native/text-to-speech';
+import { NativePageTransitions } from '@ionic-native/native-page-transitions';
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { HttpModule } from '@angular/http';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -12,19 +14,21 @@ import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { OpportunitePage } from '../pages/opportunite/opportunite'; 
 import { RecettePage } from '../pages/recette/recette';
-import { DepensePage } from '../pages/depense/depense'; 
+import { DepensePage } from '../pages/depense/depense';
+import { ConfigurationPage } from '../pages/configuration/configuration'; 
 import { CreditPage } from '../pages/credit/credit';
 import { TabsPage } from '../pages/tabs/tabs'; 
-
 /**Page add by Terrence kondou */
 import { WelcomePage } from '../pages/welcome/welcome';
 import { LoginPage } from '../pages/login/login';
-import { RegisterPage } from '../pages/register/register';
+import { RegisterPage } from '../pages/register/register'
+
+
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { SaverecetteProvider } from '../providers/saverecette/saverecette';
-import { NativePageTransitions } from '@ionic-native/native-page-transitions';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -38,12 +42,16 @@ import { NativePageTransitions } from '@ionic-native/native-page-transitions';
     RecettePage,
     DepensePage,
     CreditPage,
+    WelcomePage,
+    ConfigurationPage,
+    LoginPage,
+    RegisterPage,
     TabsPage
   ],
   imports: [
     BrowserModule,
     HttpModule,
-    
+    BrowserAnimationsModule,
     HttpClientModule,
     
     IonicModule.forRoot(MyApp)
@@ -61,6 +69,10 @@ import { NativePageTransitions } from '@ionic-native/native-page-transitions';
     RecettePage,
     DepensePage,
     CreditPage,
+    WelcomePage,
+    ConfigurationPage,
+    LoginPage,
+    RegisterPage,
     TabsPage
   ],
   providers: [

@@ -12,6 +12,7 @@ import { LoginPage } from '../login/login';
 import { RegisterPage } from '../register/register';
 
 @IonicPage()
+
 @Component({
   selector: 'page-welcome',
   templateUrl: 'welcome.html',

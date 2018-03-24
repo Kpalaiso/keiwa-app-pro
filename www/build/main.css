@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .ion-ios-add:before {
   content: "\f102";
 }
@@ -36633,6 +36634,158 @@ page-about .img_items {
   height: 45px !important;
 }
 
+page-configuration .sliderOverflow {
+  height: 100%;
+  overflow-x: auto;
+}
+
+page-configuration .welcomePage {
+  width: 100%;
+}
+
+page-configuration .welcome_page_header .fontSizeIcon {
+  font-size: 2em;
+  color: #fff;
+}
+
+page-configuration .welcome_page_header .fontSizeText {
+  font-size: 1.3em;
+  font-family: "CircularBook";
+  color: #fff;
+}
+
+page-configuration .headerWelcomePage {
+  width: 100%;
+  background: #1abc9c;
+  height: 150px;
+}
+
+page-configuration .headerWelcomePage .closePage span {
+  color: #fff;
+  font-family: 'open sans semibold';
+  font-size: 20px;
+}
+
+page-configuration .headerWelcomePage .textHeader {
+  margin-top: 20px;
+  text-align: center;
+}
+
+page-configuration .headerWelcomePage .textHeader h1 {
+  color: #fff;
+  font-family: 'CircularBold';
+  font-size: 30px;
+  line-height: 35px;
+}
+
+page-configuration ul {
+  border-radius: 2px;
+  list-style: none;
+  overflow: hidden;
+  background: #fff;
+  margin: 15px auto 0;
+  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+page-configuration li {
+  padding: 20px 10px;
+  margin: auto;
+  position: relative;
+  margin-left: -35px;
+}
+
+page-configuration li.active h4 {
+  color: white;
+}
+
+page-configuration li:before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+page-configuration li .circle {
+  width: 50px;
+  height: 50px;
+  background: #eee;
+  border-radius: 9999px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 12px;
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+}
+
+page-configuration li .circle img {
+  width: 100%;
+}
+
+page-configuration li h4 {
+  display: inline-block;
+  font-family: 'OpenSans-semiBold';
+  color: #666;
+  font-weight: 500;
+  font-size: 14px;
+  margin: 0;
+  vertical-align: middle;
+  position: relative;
+  top: 5px;
+  left: -5px;
+  z-index: 10;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+page-configuration li input {
+  vertical-align: middle;
+  display: none;
+}
+
+page-configuration li input + label {
+  display: inline-block;
+  background: #fff;
+  border: solid 2px #1abc9c;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  right: 10px;
+  top: 25px;
+  text-align: center;
+  padding-top: 3px;
+  color: transparent;
+  cursor: pointer;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+page-configuration li input:checked + label {
+  background: #1abc9c;
+  color: #fff;
+  content: "✔";
+  font-size: 22px;
+}
+
+page-configuration li input:checked + label:after {
+  content: "✔";
+}
+
+page-configuration .desc_filiere {
+  font-size: 12px;
+  position: relative;
+  top: 0px;
+  font-family: 'OpenSans-Light';
+  color: #aaa;
+}
+
 page-contact {
   /**
  * @section: utilities;
@@ -37229,8 +37382,11 @@ page-home .image_container {
 
 page-home .image_container img {
   border-radius: 50%;
-  width: 50px;
-  background-color: #ccc;
+  width: 52px;
+  background-color: #fff;
+  padding: 5px;
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
 }
 
 page-home .content_container {
@@ -37249,7 +37405,7 @@ page-home .content_container {
 page-home .content_container_inner {
   height: auto;
   float: left;
-  margin-left: -20px;
+  margin-left: -10px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 110%;
@@ -37262,8 +37418,8 @@ page-home .user_name {
   display: block;
   letter-spacing: 1.1px;
   position: relative;
-  top: -3px;
-  font-family: 'OpenSans-Regular';
+  top: 0px;
+  font-family: 'OpenSans-SemiBold';
 }
 
 page-home .chat_content {
@@ -37291,7 +37447,7 @@ page-home .chat_content span {
 }
 
 page-home .user_name .more_info {
-  color: #ccc;
+  color: #aaa;
   font-size: 20px;
   float: right;
 }
