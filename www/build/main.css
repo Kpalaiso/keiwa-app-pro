@@ -36809,6 +36809,356 @@ page-configuration .desc_filiere {
   color: #aaa;
 }
 
+page-configuration-charges .sliderOverflow {
+  height: 100%;
+  overflow-x: auto;
+}
+
+page-configuration-charges .welcomePage {
+  width: 100%;
+}
+
+page-configuration-charges .fontSizeIcon {
+  font-size: 2em;
+  color: #fff;
+}
+
+page-configuration-charges .welcome_page_header .fontSizeText {
+  font-size: 1.3em;
+  font-family: "CircularBook";
+  color: #fff;
+}
+
+page-configuration-charges .headerWelcomePage {
+  width: 100%;
+  background: #1abc9c;
+  height: 150px;
+}
+
+page-configuration-charges .headerWelcomePage .closePage span {
+  color: #fff;
+  font-family: 'open sans semibold';
+  font-size: 20px;
+}
+
+page-configuration-charges .headerWelcomePage .textHeader {
+  margin-top: 20px;
+  text-align: center;
+}
+
+page-configuration-charges .headerWelcomePage .textHeader h1 {
+  color: #fff;
+  font-family: 'CircularBold';
+  font-size: 30px;
+  line-height: 35px;
+}
+
+page-configuration-charges .footerButton {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 70px;
+  background: white;
+  border-top: 1px solid gainsboro;
+}
+
+page-configuration-charges .headerBodyConfig h3 {
+  font-family: 'OpenSans-regular';
+  font-size: 16px;
+  background: #fff;
+  text-align: center;
+  padding: 15px 5px;
+  color: #aaa;
+}
+
+page-configuration-charges .CorpsBodyConfig {
+  margin-bottom: 80px;
+}
+
+page-configuration-charges ul {
+  border-radius: 2px;
+  list-style: none;
+  overflow: hidden;
+  background: #fff;
+  margin: 15px auto 0;
+  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+page-configuration-charges li {
+  padding: 20px 10px;
+  margin: auto;
+  position: relative;
+  margin-left: -35px;
+}
+
+page-configuration-charges li.active h4 {
+  color: white;
+}
+
+page-configuration-charges li:before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+page-configuration-charges li .circle {
+  width: 50px;
+  height: 50px;
+  background: #eee;
+  border-radius: 9999px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 12px;
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+}
+
+page-configuration-charges li .circle img {
+  width: 100%;
+}
+
+page-configuration-charges li h4 {
+  display: inline-block;
+  font-family: 'OpenSans-semiBold';
+  color: #666;
+  font-weight: 500;
+  font-size: 14px;
+  margin: 0;
+  vertical-align: middle;
+  position: relative;
+  top: 5px;
+  left: -5px;
+  z-index: 10;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+page-configuration-charges li input {
+  vertical-align: middle;
+  display: none;
+}
+
+page-configuration-charges li input + label {
+  display: inline-block;
+  background: #fff;
+  border: solid 2px #1abc9c;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  right: 10px;
+  top: 25px;
+  text-align: center;
+  padding-top: 3px;
+  color: transparent;
+  cursor: pointer;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+page-configuration-charges li input:checked + label {
+  background: #1abc9c;
+  color: #fff;
+  content: "✔";
+  font-size: 22px;
+}
+
+page-configuration-charges li input:checked + label:after {
+  content: "✔";
+}
+
+page-configuration-charges .desc_filiere {
+  font-size: 12px;
+  position: relative;
+  top: 0px;
+  font-family: 'OpenSans-Light';
+  color: #aaa;
+}
+
+page-configuration-other .sliderOverflow {
+  height: 100%;
+  overflow-x: auto;
+}
+
+page-configuration-other .welcomePage {
+  width: 100%;
+}
+
+page-configuration-other .welcome_page_header .fontSizeIcon {
+  font-size: 2em;
+  color: #fff;
+}
+
+page-configuration-other .welcome_page_header .fontSizeText {
+  font-size: 1.3em;
+  font-family: "CircularBook";
+  color: #fff;
+}
+
+page-configuration-other .headerWelcomePage {
+  width: 100%;
+  background: #1abc9c;
+  height: 150px;
+}
+
+page-configuration-other .headerWelcomePage .closePage span {
+  color: #fff;
+  font-family: 'open sans semibold';
+  font-size: 20px;
+}
+
+page-configuration-other .headerWelcomePage .textHeader {
+  margin-top: 20px;
+  text-align: center;
+}
+
+page-configuration-other .headerWelcomePage .textHeader h1 {
+  color: #fff;
+  font-family: 'CircularBold';
+  font-size: 30px;
+  line-height: 35px;
+}
+
+page-configuration-other .footerButton {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 70px;
+  background: white;
+  border-top: 1px solid gainsboro;
+}
+
+page-configuration-other .headerBodyConfig h3 {
+  font-family: 'OpenSans-regular';
+  font-size: 16px;
+  background: #fff;
+  text-align: center;
+  padding: 15px 5px;
+  color: #aaa;
+}
+
+page-configuration-other .CorpsBodyConfig {
+  margin-bottom: 80px;
+}
+
+page-configuration-other ul {
+  border-radius: 2px;
+  list-style: none;
+  overflow: hidden;
+  background: #fff;
+  margin: 15px auto 0;
+  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+page-configuration-other li {
+  padding: 20px 10px;
+  margin: auto;
+  position: relative;
+  margin-left: -35px;
+}
+
+page-configuration-other li.active h4 {
+  color: white;
+}
+
+page-configuration-other li:before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+page-configuration-other li .circle {
+  width: 50px;
+  height: 50px;
+  background: #eee;
+  border-radius: 9999px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 12px;
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+}
+
+page-configuration-other li .circle img {
+  width: 100%;
+}
+
+page-configuration-other li h4 {
+  display: inline-block;
+  font-family: 'OpenSans-semiBold';
+  color: #666;
+  font-weight: 500;
+  font-size: 14px;
+  margin: 0;
+  vertical-align: middle;
+  position: relative;
+  top: 5px;
+  left: -5px;
+  z-index: 10;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+page-configuration-other li input {
+  vertical-align: middle;
+  display: none;
+}
+
+page-configuration-other li input + label {
+  display: inline-block;
+  background: #fff;
+  border: solid 2px #1abc9c;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  right: 10px;
+  top: 25px;
+  text-align: center;
+  padding-top: 3px;
+  color: transparent;
+  cursor: pointer;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+page-configuration-other li input:checked + label {
+  background: #1abc9c;
+  color: #fff;
+  content: "✔";
+  font-size: 22px;
+}
+
+page-configuration-other li input:checked + label:after {
+  content: "✔";
+}
+
+page-configuration-other .desc_filiere {
+  font-size: 12px;
+  position: relative;
+  top: 0px;
+  font-family: 'OpenSans-Light';
+  color: #aaa;
+}
+
 page-contact {
   /**
  * @section: utilities;

@@ -1,13 +1,14 @@
-webpackJsonp([8],{
+webpackJsonp([10],{
 
 /***/ 104:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ConfigurationPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ConfigurationChargesPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_animations__ = __webpack_require__(80);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_native_page_transitions__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__configuration_other_configuration_other__ = __webpack_require__(105);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -20,70 +21,46 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 /**
- * Generated class for the ConfigurationPage page.
+ * Generated class for the ConfigurationChargesPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
-var ConfigurationPage = (function () {
-    function ConfigurationPage(navCtrl, navParams) {
+var ConfigurationChargesPage = (function () {
+    function ConfigurationChargesPage(navCtrl, navParams, nativePageTransitions) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
-        this.stateProd = "visible-prod";
-        this.stateCharge = "invisible-charge";
-        this.stateModif = "invisible-autre-modifs";
+        this.nativePageTransitions = nativePageTransitions;
     }
-    ConfigurationPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad ConfigurationPage');
+    ConfigurationChargesPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad ConfigurationChargesPage');
     };
-    ConfigurationPage.prototype.toggleVisibility = function () {
-        this.stateProd = (this.stateProd == "visible-prod") ? "invisible-prod" : "visible-prod";
-        this.stateCharge = (this.stateCharge == "visible-charge") ? "invisible-charge" : "visible-charge";
+    ConfigurationChargesPage.prototype.goToBack = function () {
+        var animationsOptions = {
+            animation: 'ios-transition',
+            duration: 300
+        };
+        this.navCtrl.pop(animationsOptions);
     };
-    ConfigurationPage.prototype.toggleVisibles = function () {
-        this.stateCharge = (this.stateCharge == "visible-charge") ? "invisible-charge" : "visible-charge";
-        this.stateModif = (this.stateModif == "visible-autre-modifs") ? "invisible-autre-modifs" : "visible-autre-modifs";
+    ConfigurationChargesPage.prototype.goToConfigurationOtherPage = function () {
+        var animationsOptions = {
+            animation: 'ios-transition',
+            duration: 300
+        };
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__configuration_other_configuration_other__["a" /* ConfigurationOtherPage */], {}, animationsOptions);
     };
-    ConfigurationPage = __decorate([
+    ConfigurationChargesPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-configuration',template:/*ion-inline-start:"D:\Terrence\app\ionic\keiwa\version interface design\24-03-2018\keiwa-app-pro\src\pages\configuration\configuration.html"*/'<!--\n\n  Generated template for the ConfigurationPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n\n\n<ion-content style=" background:rgb(241, 241, 241); ">\n\n\n\n    <div class="headerWelcomePage" padding>\n\n        <div class="welcome_page_header" style=" text-align:center; ">\n\n            <span style="position: relative; top: 10px; color: #fff;  "> <ion-icon style="font-size:50px;" name="ios-construct"></ion-icon> </span>\n\n        </div>\n\n        <div class="textHeader">\n\n            <h1>Configuration</h1>\n\n        </div>\n\n    </div>\n\n    <div [@produitservice]="stateProd" style="  margin-top:0px; position:relative; " padding>\n\n        <div class="headerBodyConfig">\n\n            <h3> Selectionner vos produits </h3>\n\n            <button class="animated infinite pulse" style="position: absolute; top:-30px; left:15px; " ion-fab color="blanc"><ion-icon color="primary" name="md-mic"></ion-icon></button>\n\n\n\n        </div>\n\n        <div class="CorpsBodyConfig">\n\n            <ul class="animated slideInDown">\n\n                <li class="">\n\n                    <div class="circle"><img src="assets/imgs/radish_vegetables_16825.png"></div>\n\n                    <h4>Jamie Harden\n\n                        <p class=" desc_filiere "> Lorem ipsum dolor, sit amet . </p>\n\n                    </h4>\n\n                    <input id="check-1" type="checkbox">\n\n                    <label for="check-1"><i class="fa fa-check"></i></label>\n\n                </li>\n\n\n\n            </ul>\n\n\n\n            <ul class="animated slideInDown">\n\n                <li class="">\n\n                    <div class="circle"><img src="assets/imgs/jacket-2.png"></div>\n\n                    <h4>Jamie Harden\n\n                        <p class=" desc_filiere "> Lorem ipsum dolor, sit amet . </p>\n\n                    </h4>\n\n                    <input id="check-2" type="checkbox">\n\n                    <label for="check-2"><i class="fa fa-check"></i></label>\n\n                </li>\n\n\n\n            </ul>\n\n            <ul>\n\n                <li class="animated slideInDown">\n\n                    <div class="circle"><img src="assets/imgs/icons8-taxi-48.png"></div>\n\n                    <h4>Jamie Harden\n\n                        <p class=" desc_filiere "> Lorem ipsum dolor, sit amet . </p>\n\n                    </h4>\n\n\n\n                    <input id="check-3" type="checkbox">\n\n                    <label for="check-3"><i class="fa fa-check"></i></label>\n\n                </li>\n\n\n\n            </ul>\n\n\n\n            <ul>\n\n                <li class="animated slideInDown">\n\n                    <div class="circle"><img src="assets/imgs/icons8-nourriture-50.png"></div>\n\n                    <h4>Jamie Harden\n\n                        <p class=" desc_filiere "> Lorem ipsum dolor, sit amet . </p>\n\n                    </h4>\n\n                    <input id="check-4" type="checkbox">\n\n                    <label for="check-4"><i class="fa fa-check"></i></label>\n\n                </li>\n\n\n\n            </ul>\n\n\n\n            <ul>\n\n                <li class="animated slideInDown">\n\n                    <div class="circle"><img src="assets/imgs/icons8-entretien-48.png"></div>\n\n                    <h4>Jamie Harden\n\n                        <p class=" desc_filiere "> Lorem ipsum dolor, sit amet . </p>\n\n                    </h4>\n\n                    <input id="check-5" type="checkbox">\n\n                    <label for="check-5"><i class="fa fa-check"></i></label>\n\n                </li>\n\n\n\n            </ul>\n\n\n\n        </div>\n\n\n\n    </div>\n\n\n\n\n\n\n\n\n\n\n\n\n\n    <div class="footerButton">\n\n        <div style="text-align:center;padding-top:12px;">\n\n            <button class="btn-default-keiwa background-default " style="width:220px;height:45px;background: #1abc9c;color:white;">Continuer</button>\n\n        </div>\n\n\n\n    </div>\n\n\n\n</ion-content>'/*ion-inline-end:"D:\Terrence\app\ionic\keiwa\version interface design\24-03-2018\keiwa-app-pro\src\pages\configuration\configuration.html"*/,
-            animations: [
-                Object(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["j" /* trigger */])("produitservice", [
-                    Object(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["g" /* state */])("visible-prod", Object(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["h" /* style */])({
-                        transform: 'translateY(0%)'
-                    })),
-                    Object(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["g" /* state */])("invisible-prod", Object(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["h" /* style */])({
-                        transform: 'translateY(-200%)'
-                    })),
-                    Object(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["i" /* transition */])('* => *', Object(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["e" /* animate */])('1s ease-in'))
-                ]),
-                Object(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["j" /* trigger */])("charges", [
-                    Object(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["g" /* state */])("visible-charge", Object(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["h" /* style */])({
-                        transform: 'translateY(-100%)'
-                    })),
-                    Object(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["g" /* state */])("invisible-charge", Object(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["h" /* style */])({
-                        transform: 'translateY(-500%)'
-                    })),
-                    Object(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["i" /* transition */])('* => *', Object(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["e" /* animate */])('1s ease-out'))
-                ]),
-                Object(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["j" /* trigger */])("autre-modifs", [
-                    Object(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["g" /* state */])("visible-autre-modifs", Object(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["h" /* style */])({
-                        transform: 'translateY(-200%)'
-                    })),
-                    Object(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["g" /* state */])("invisible-autre-modifs", Object(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["h" /* style */])({
-                        transform: 'translateY(-600%)'
-                    })),
-                    Object(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["i" /* transition */])('* => *', Object(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["e" /* animate */])('1s ease-in'))
-                ])
-            ]
+            selector: 'page-configuration-charges',template:/*ion-inline-start:"D:\Terrence\app\ionic\keiwa\version interface design\24-03-2018\keiwa-app-pro\src\pages\configuration-charges\configuration-charges.html"*/'<!--\n  Generated template for the ConfigurationChargesPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n\n<ion-content style=" background:rgb(241, 241, 241); ">\n\n    <div class="headerWelcomePage" padding>\n        <a (click)="goToBack()">\n            <ion-icon ios="ios-close" class="fontSizeIcon" md="md-arrow-back"></ion-icon>\n        </a>\n        <div class="welcome_page_header" style="text-align:center; margin-top:-20px;">\n            <span style="position: relative; top: 0px; color: #fff;  "> <ion-icon style="font-size:50px;" name="ios-construct"></ion-icon> </span>\n        </div>\n        <div class="textHeader">\n            <h1>Configuration</h1>\n        </div>\n    </div>\n    <div style="  margin-top:0px; position:relative; " padding>\n        <div class="headerBodyConfig">\n            <h3> Selectionner vos Charges </h3>\n            <button class="animated infinite pulse" style="position: absolute; top:-30px; left:15px; " ion-fab color="blanc"><ion-icon color="primary" name="md-mic"></ion-icon></button>\n\n        </div>\n        <div class="CorpsBodyConfig">\n            <ul class="animated slideInDown">\n                <li class="">\n                    <div class="circle"><img src="assets/imgs/radish_vegetables_16825.png"></div>\n                    <h4>Jamie Harden\n                        <p class=" desc_filiere "> Lorem ipsum dolor, sit amet . </p>\n                    </h4>\n                    <input id="check-1" type="checkbox">\n                    <label for="check-1"><i class="fa fa-check"></i></label>\n                </li>\n\n            </ul>\n\n            <ul class="animated slideInDown">\n                <li class="">\n                    <div class="circle"><img src="assets/imgs/jacket-2.png"></div>\n                    <h4>Jamie Harden\n                        <p class=" desc_filiere "> Lorem ipsum dolor, sit amet . </p>\n                    </h4>\n                    <input id="check-2" type="checkbox">\n                    <label for="check-2"><i class="fa fa-check"></i></label>\n                </li>\n\n            </ul>\n            <ul>\n                <li class="animated slideInDown">\n                    <div class="circle"><img src="assets/imgs/icons8-taxi-48.png"></div>\n                    <h4>Jamie Harden\n                        <p class=" desc_filiere "> Lorem ipsum dolor, sit amet . </p>\n                    </h4>\n\n                    <input id="check-3" type="checkbox">\n                    <label for="check-3"><i class="fa fa-check"></i></label>\n                </li>\n\n            </ul>\n\n            <ul>\n                <li class="animated slideInDown">\n                    <div class="circle"><img src="assets/imgs/icons8-nourriture-50.png"></div>\n                    <h4>Jamie Harden\n                        <p class=" desc_filiere "> Lorem ipsum dolor, sit amet . </p>\n                    </h4>\n                    <input id="check-4" type="checkbox">\n                    <label for="check-4"><i class="fa fa-check"></i></label>\n                </li>\n\n            </ul>\n\n            <ul>\n                <li class="animated slideInDown">\n                    <div class="circle"><img src="assets/imgs/icons8-entretien-48.png"></div>\n                    <h4>Jamie Harden\n                        <p class=" desc_filiere "> Lorem ipsum dolor, sit amet . </p>\n                    </h4>\n                    <input id="check-5" type="checkbox">\n                    <label for="check-5"><i class="fa fa-check"></i></label>\n                </li>\n\n            </ul>\n\n        </div>\n\n    </div>\n\n\n\n\n\n\n    <div class="footerButton">\n        <div style="text-align:center;padding-top:12px;">\n            <button class="btn-default-keiwa background-default " style="width:220px;height:45px;background: #1abc9c;color:white;" (click)="goToConfigurationOtherPage()">Continuer</button>\n        </div>\n\n    </div>\n\n</ion-content>'/*ion-inline-end:"D:\Terrence\app\ionic\keiwa\version interface design\24-03-2018\keiwa-app-pro\src\pages\configuration-charges\configuration-charges.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]])
-    ], ConfigurationPage);
-    return ConfigurationPage;
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_native_page_transitions__["a" /* NativePageTransitions */]])
+    ], ConfigurationChargesPage);
+    return ConfigurationChargesPage;
 }());
 
-//# sourceMappingURL=configuration.js.map
+//# sourceMappingURL=configuration-charges.js.map
 
 /***/ }),
 
@@ -91,9 +68,11 @@ var ConfigurationPage = (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CreditPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ConfigurationOtherPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_native_page_transitions__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__tabs_tabs__ = __webpack_require__(169);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -105,34 +84,43 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
+
+
 /**
- * Generated class for the CreditPage page.
+ * Generated class for the ConfigurationOtherPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
-var CreditPage = (function () {
-    function CreditPage(navCtrl, navParams, view) {
+var ConfigurationOtherPage = (function () {
+    function ConfigurationOtherPage(navCtrl, navParams, nativePageTransitions) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
-        this.view = view;
+        this.nativePageTransitions = nativePageTransitions;
     }
-    CreditPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad CreditPage');
+    ConfigurationOtherPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad ConfigurationOtherPage');
     };
-    CreditPage.prototype.closeCredit = function () {
-        this.view.dismiss();
+    ConfigurationOtherPage.prototype.goToBack = function () {
+        var animationsOptions = {
+            animation: 'ios-transition',
+            duration: 300
+        };
+        this.navCtrl.pop(animationsOptions);
     };
-    CreditPage = __decorate([
+    ConfigurationOtherPage.prototype.goToTabsPage = function () {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__tabs_tabs__["a" /* TabsPage */]);
+    };
+    ConfigurationOtherPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-credit',template:/*ion-inline-start:"D:\Terrence\app\ionic\keiwa\version interface design\24-03-2018\keiwa-app-pro\src\pages\credit\credit.html"*/'<!--\n\n  Generated template for the CreditPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar color="jauneor" >\n\n    <ion-title>credit</ion-title>\n\n    <ion-buttons end>\n\n      <button ion-button (click)="closeCredit()"><ion-icon name="close"></ion-icon></button>\n\n  </ion-buttons>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n    <div class="form-style-5">\n\n        <form>\n\n            <fieldset>\n\n\n\n                <label for="field1">Date *</label>\n\n                <input type="date" class="form-control" required="required" name="daterecette" placeholder="Date *">\n\n\n\n                <input type="text" class="form-control" required="required" name="libelerecette" placeholder="libellés *">\n\n\n\n                <select id="job" class="form-control" required="required" name="category">\n\n\n\n          <optgroup label="Catégorie">\n\n\n\n              <option value="journalier">catégory</option>\n\n            \n\n            <option value="journalier">client</option>\n\n            \n\n            <option value="hebdomadaire">fournisseur</option>\n\n           \n\n            \n\n          </optgroup>\n\n          </select>\n\n\n\n                <label for="field1">date de remboursement *</label>\n\n                <input type="date" class="form-control" required="required" name="daterecette" placeholder="Date *">\n\n\n\n\n\n                <input type="text" class="form-control" required="required" name="montantrecette" placeholder="Montant *">\n\n            </fieldset>\n\n            <fieldset>\n\n\n\n\n\n            </fieldset>\n\n            <input type="submit" value="Valider" />\n\n        </form>\n\n\n\n\n\n    </div>\n\n\n\n\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"D:\Terrence\app\ionic\keiwa\version interface design\24-03-2018\keiwa-app-pro\src\pages\credit\credit.html"*/,
+            selector: 'page-configuration-other',template:/*ion-inline-start:"D:\Terrence\app\ionic\keiwa\version interface design\24-03-2018\keiwa-app-pro\src\pages\configuration-other\configuration-other.html"*/'<!--\n  Generated template for the ConfigurationOtherPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n\n<ion-content style=" background:rgb(241, 241, 241); ">\n\n    <div class="headerWelcomePage" padding>\n        <a (click)="goToBack()">\n            <ion-icon ios="ios-close" class="fontSizeIcon" md="md-arrow-back"></ion-icon>\n        </a>\n        <div class="welcome_page_header" style=" text-align:center; margin-top:-20px;">\n            <span style="position: relative; top: 0px; color: #fff;  "> <ion-icon style="font-size:50px;" name="ios-construct"></ion-icon> </span>\n        </div>\n        <div class="textHeader">\n            <h1>Configuration</h1>\n        </div>\n    </div>\n    <div style="  margin-top:0px; position:relative; " padding>\n        <div class="headerBodyConfig">\n            <h3> Autres configurations </h3>\n            <button class="animated infinite pulse" style="position: absolute; top:-30px; left:15px; " ion-fab color="blanc"><ion-icon color="primary" name="md-mic"></ion-icon></button>\n\n        </div>\n        <div class="CorpsBodyConfig">\n            <ul class="animated slideInDown">\n                <li class="">\n                    <div class="circle"><img src="assets/imgs/radish_vegetables_16825.png"></div>\n                    <h4>Jamie Harden\n                        <p class=" desc_filiere "> Lorem ipsum dolor, sit amet . </p>\n                    </h4>\n                    <input id="check-1" type="checkbox">\n                    <label for="check-1"><i class="fa fa-check"></i></label>\n                </li>\n\n            </ul>\n\n            <ul class="animated slideInDown">\n                <li class="">\n                    <div class="circle"><img src="assets/imgs/jacket-2.png"></div>\n                    <h4>Jamie Harden\n                        <p class=" desc_filiere "> Lorem ipsum dolor, sit amet . </p>\n                    </h4>\n                    <input id="check-2" type="checkbox">\n                    <label for="check-2"><i class="fa fa-check"></i></label>\n                </li>\n\n            </ul>\n            <ul>\n                <li class="animated slideInDown">\n                    <div class="circle"><img src="assets/imgs/icons8-taxi-48.png"></div>\n                    <h4>Jamie Harden\n                        <p class=" desc_filiere "> Lorem ipsum dolor, sit amet . </p>\n                    </h4>\n\n                    <input id="check-3" type="checkbox">\n                    <label for="check-3"><i class="fa fa-check"></i></label>\n                </li>\n\n            </ul>\n\n            <ul>\n                <li class="animated slideInDown">\n                    <div class="circle"><img src="assets/imgs/icons8-nourriture-50.png"></div>\n                    <h4>Jamie Harden\n                        <p class=" desc_filiere "> Lorem ipsum dolor, sit amet . </p>\n                    </h4>\n                    <input id="check-4" type="checkbox">\n                    <label for="check-4"><i class="fa fa-check"></i></label>\n                </li>\n\n            </ul>\n\n            <ul>\n                <li class="animated slideInDown">\n                    <div class="circle"><img src="assets/imgs/icons8-entretien-48.png"></div>\n                    <h4>Jamie Harden\n                        <p class=" desc_filiere "> Lorem ipsum dolor, sit amet . </p>\n                    </h4>\n                    <input id="check-5" type="checkbox">\n                    <label for="check-5"><i class="fa fa-check"></i></label>\n                </li>\n\n            </ul>\n\n        </div>\n\n    </div>\n\n\n\n\n\n\n    <div class="footerButton">\n        <div style="text-align:center;padding-top:12px;">\n            <button class="btn-default-keiwa background-default " style="width:220px;height:45px;background: #1abc9c;color:white;" (click)="goToTabsPage()">Terminer</button>\n        </div>\n\n    </div>\n\n</ion-content>'/*ion-inline-end:"D:\Terrence\app\ionic\keiwa\version interface design\24-03-2018\keiwa-app-pro\src\pages\configuration-other\configuration-other.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ViewController */]])
-    ], CreditPage);
-    return CreditPage;
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_native_page_transitions__["a" /* NativePageTransitions */]])
+    ], ConfigurationOtherPage);
+    return ConfigurationOtherPage;
 }());
 
-//# sourceMappingURL=credit.js.map
+//# sourceMappingURL=configuration-other.js.map
 
 /***/ }),
 
@@ -140,179 +128,10 @@ var CreditPage = (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DepensePage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(13);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-/**
- * Generated class for the DepensePage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var DepensePage = (function () {
-    function DepensePage(navCtrl, view, navParams) {
-        this.navCtrl = navCtrl;
-        this.view = view;
-        this.navParams = navParams;
-        this.depenseForm = new __WEBPACK_IMPORTED_MODULE_2__angular_forms__["b" /* FormGroup */]({
-            datedepense: new __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormControl */](),
-            category: new __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormControl */](),
-            libeledepense: new __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormControl */](),
-            montantdepense: new __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormControl */]()
-        });
-    }
-    DepensePage.prototype.registerDepense = function () {
-        alert(this.depenseForm.value);
-    };
-    DepensePage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad DepensePage');
-    };
-    DepensePage.prototype.closeDepense = function () {
-        this.view.dismiss();
-    };
-    DepensePage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-depense',template:/*ion-inline-start:"D:\Terrence\app\ionic\keiwa\version interface design\24-03-2018\keiwa-app-pro\src\pages\depense\depense.html"*/'<!--\n\n  Generated template for the RecettePage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n    <ion-navbar color="danger">\n\n        <ion-title>Depense</ion-title>\n\n        <ion-buttons end>\n\n            <button ion-button (click)="closeDepense()"><ion-icon name="close"></ion-icon></button>\n\n        </ion-buttons>\n\n    </ion-navbar>\n\n\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n\n\n    <div class="form-style-5">\n\n        <form (ngSubmit)="registerDepense()" [formGroup]="depenseForm" depenseForm>\n\n            <fieldset>\n\n                <legend><span class="number"> <img src="assets/imgs/recette.png" style="width:23px; " alt=""> </span> Infos dépense</legend>\n\n                <label for="field1">Date *</label>\n\n                <input formControlName="datedepense" type="date" class="form-control" required="required" name="daterecette" placeholder="Date *">\n\n\n\n                <input type="text" formControlName="libeledepense" class="form-control" required="required" name="libelerecette" placeholder="libellés *">\n\n\n\n                <select id="job" class="form-control" formControlName="category" required="required" name="category">\n\n\n\n                  <optgroup label="Catégorie">\n\n                    \n\n                    <option value="journalier">journalier</option>\n\n                    \n\n                    <option value="hebdomadaire">hebdomadaire</option>\n\n                    <option value="mensuel">mensuel</option>\n\n                    <option value="annuel">annuel</option>\n\n                    \n\n                  </optgroup>\n\n                  </select>\n\n\n\n                <input type="text" formControlName="montantdepense" class="form-control" required="required" name="montantrecette" placeholder="Montant *">\n\n            </fieldset>\n\n            <fieldset>\n\n\n\n\n\n            </fieldset>\n\n            <input type="submit" value="Valider" />\n\n        </form>\n\n    </div>\n\n\n\n</ion-content>'/*ion-inline-end:"D:\Terrence\app\ionic\keiwa\version interface design\24-03-2018\keiwa-app-pro\src\pages\depense\depense.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ViewController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]])
-    ], DepensePage);
-    return DepensePage;
-}());
-
-//# sourceMappingURL=depense.js.map
-
-/***/ }),
-
-/***/ 107:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_native_page_transitions__ = __webpack_require__(46);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__register_register__ = __webpack_require__(52);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-/**
- * Generated class for the LoginPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-
-var LoginPage = (function () {
-    function LoginPage(navCtrl, navParams, nativePageTransitions) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-        this.nativePageTransitions = nativePageTransitions;
-    }
-    LoginPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad LoginPage');
-    };
-    LoginPage.prototype.goToWelcomePage = function () {
-        var animationsOptions = {
-            animation: 'ios-transition',
-            duration: 300
-        };
-        this.navCtrl.pop(animationsOptions);
-    };
-    LoginPage.prototype.goToRegisterPage = function () {
-        var animationsOptions = {
-            animation: 'ios-transition',
-            duration: 300
-        };
-        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__register_register__["a" /* RegisterPage */], {}, animationsOptions);
-    };
-    LoginPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-login',template:/*ion-inline-start:"D:\Terrence\app\ionic\keiwa\version interface design\24-03-2018\keiwa-app-pro\src\pages\login\login.html"*/'<!--\n\n  Generated template for the LoginPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n\n\n<ion-content>\n\n    <div class="welcomePage sliderOverflow">\n\n        <div class="headerWelcomePage" padding>\n\n            <div class="welcome_page_header">\n\n                <a (click)="goToWelcomePage()">\n\n                    <ion-icon ios="ios-close" class="fontSizeIcon" md="md-arrow-back"></ion-icon>\n\n                </a>\n\n            </div>\n\n            <div class="textHeader">\n\n                <h1>Connexion</h1>\n\n            </div>\n\n        </div>\n\n        <div class="bodyWelcomePage">\n\n            <div class="step" padding>\n\n                <div class="form-group">\n\n                    <input type="text" placeholder="Numéro de téléphone ou e-mail">\n\n                </div>\n\n                <div class="form-group">\n\n                    <input type="password" placeholder="Mot de passe">\n\n                </div>\n\n                <div class="form-group">\n\n                    <button class="btn-default-keiwa background-default" style="width:100%;height:45px;border-radius:0;">Je me connecte</button>\n\n                </div>\n\n                <div class="form-group" style="margin-bottom:35px;">\n\n                    <p>Mot de passe oublié? <br><strong>Obtenez de l\'aide pour vous connecter.</strong></p>\n\n                </div>\n\n                <div class="border-divider"></div>\n\n                <div class="form-group" style="margin-top:35px;">\n\n                    <button class="btn-default-keiwa btn-facebook" style="height:45px;border-radius:0">\n\n                <span class="fa fa-facebook"></span>\n\n                Se connecter avec facebook\n\n          </button> <br><br>\n\n                </div>\n\n            </div>\n\n            <hr>\n\n        </div>\n\n        <div class="footerFixed">\n\n            <p>Vous n\'avez pas de compte ? <strong> <a (click)="goToRegisterPage()"> inscrivez vous.</a></strong></p>\n\n        </div>\n\n\n\n\n\n\n\n\n\n\n\n    </div>\n\n</ion-content>'/*ion-inline-end:"D:\Terrence\app\ionic\keiwa\version interface design\24-03-2018\keiwa-app-pro\src\pages\login\login.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_native_page_transitions__["a" /* NativePageTransitions */]])
-    ], LoginPage);
-    return LoginPage;
-}());
-
-//# sourceMappingURL=login.js.map
-
-/***/ }),
-
-/***/ 108:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return OpportunitePage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-/**
- * Generated class for the OpportunitePage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var OpportunitePage = (function () {
-    function OpportunitePage(navCtrl, navParams) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-    }
-    OpportunitePage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad OpportunitePage');
-    };
-    OpportunitePage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-opportunite',template:/*ion-inline-start:"D:\Terrence\app\ionic\keiwa\version interface design\24-03-2018\keiwa-app-pro\src\pages\opportunite\opportunite.html"*/'<!--\n\n  Generated template for the OpportunitePage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n    <ion-toolbar color="primary">\n\n\n\n        <ion-buttons left>\n\n            <button ion-button icon-only menuToggle>\n\n            <ion-icon name="menu"  ></ion-icon>\n\n          </button>\n\n\n\n        </ion-buttons>\n\n        <ion-title>\n\n\n\n            Opportunité\n\n        </ion-title>\n\n\n\n    </ion-toolbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n</ion-content>'/*ion-inline-end:"D:\Terrence\app\ionic\keiwa\version interface design\24-03-2018\keiwa-app-pro\src\pages\opportunite\opportunite.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]])
-    ], OpportunitePage);
-    return OpportunitePage;
-}());
-
-//# sourceMappingURL=opportunite.js.map
-
-/***/ }),
-
-/***/ 109:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RecettePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_saverecette_saverecette__ = __webpack_require__(82);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_saverecette_saverecette__ = __webpack_require__(81);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_forms__ = __webpack_require__(13);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -392,15 +211,332 @@ var RecettePage = (function () {
 
 /***/ }),
 
+/***/ 107:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DepensePage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(13);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+/**
+ * Generated class for the DepensePage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var DepensePage = (function () {
+    function DepensePage(navCtrl, view, navParams) {
+        this.navCtrl = navCtrl;
+        this.view = view;
+        this.navParams = navParams;
+        this.depenseForm = new __WEBPACK_IMPORTED_MODULE_2__angular_forms__["b" /* FormGroup */]({
+            datedepense: new __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormControl */](),
+            category: new __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormControl */](),
+            libeledepense: new __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormControl */](),
+            montantdepense: new __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormControl */]()
+        });
+    }
+    DepensePage.prototype.registerDepense = function () {
+        alert(this.depenseForm.value);
+    };
+    DepensePage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad DepensePage');
+    };
+    DepensePage.prototype.closeDepense = function () {
+        this.view.dismiss();
+    };
+    DepensePage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-depense',template:/*ion-inline-start:"D:\Terrence\app\ionic\keiwa\version interface design\24-03-2018\keiwa-app-pro\src\pages\depense\depense.html"*/'<!--\n\n  Generated template for the RecettePage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n    <ion-navbar color="danger">\n\n        <ion-title>Depense</ion-title>\n\n        <ion-buttons end>\n\n            <button ion-button (click)="closeDepense()"><ion-icon name="close"></ion-icon></button>\n\n        </ion-buttons>\n\n    </ion-navbar>\n\n\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n\n\n    <div class="form-style-5">\n\n        <form (ngSubmit)="registerDepense()" [formGroup]="depenseForm" depenseForm>\n\n            <fieldset>\n\n                <legend><span class="number"> <img src="assets/imgs/recette.png" style="width:23px; " alt=""> </span> Infos dépense</legend>\n\n                <label for="field1">Date *</label>\n\n                <input formControlName="datedepense" type="date" class="form-control" required="required" name="daterecette" placeholder="Date *">\n\n\n\n                <input type="text" formControlName="libeledepense" class="form-control" required="required" name="libelerecette" placeholder="libellés *">\n\n\n\n                <select id="job" class="form-control" formControlName="category" required="required" name="category">\n\n\n\n                  <optgroup label="Catégorie">\n\n                    \n\n                    <option value="journalier">journalier</option>\n\n                    \n\n                    <option value="hebdomadaire">hebdomadaire</option>\n\n                    <option value="mensuel">mensuel</option>\n\n                    <option value="annuel">annuel</option>\n\n                    \n\n                  </optgroup>\n\n                  </select>\n\n\n\n                <input type="text" formControlName="montantdepense" class="form-control" required="required" name="montantrecette" placeholder="Montant *">\n\n            </fieldset>\n\n            <fieldset>\n\n\n\n\n\n            </fieldset>\n\n            <input type="submit" value="Valider" />\n\n        </form>\n\n    </div>\n\n\n\n</ion-content>'/*ion-inline-end:"D:\Terrence\app\ionic\keiwa\version interface design\24-03-2018\keiwa-app-pro\src\pages\depense\depense.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ViewController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]])
+    ], DepensePage);
+    return DepensePage;
+}());
+
+//# sourceMappingURL=depense.js.map
+
+/***/ }),
+
+/***/ 108:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CreditPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+/**
+ * Generated class for the CreditPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var CreditPage = (function () {
+    function CreditPage(navCtrl, navParams, view) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.view = view;
+    }
+    CreditPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad CreditPage');
+    };
+    CreditPage.prototype.closeCredit = function () {
+        this.view.dismiss();
+    };
+    CreditPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-credit',template:/*ion-inline-start:"D:\Terrence\app\ionic\keiwa\version interface design\24-03-2018\keiwa-app-pro\src\pages\credit\credit.html"*/'<!--\n\n  Generated template for the CreditPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar color="jauneor" >\n\n    <ion-title>credit</ion-title>\n\n    <ion-buttons end>\n\n      <button ion-button (click)="closeCredit()"><ion-icon name="close"></ion-icon></button>\n\n  </ion-buttons>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n    <div class="form-style-5">\n\n        <form>\n\n            <fieldset>\n\n\n\n                <label for="field1">Date *</label>\n\n                <input type="date" class="form-control" required="required" name="daterecette" placeholder="Date *">\n\n\n\n                <input type="text" class="form-control" required="required" name="libelerecette" placeholder="libellés *">\n\n\n\n                <select id="job" class="form-control" required="required" name="category">\n\n\n\n          <optgroup label="Catégorie">\n\n\n\n              <option value="journalier">catégory</option>\n\n            \n\n            <option value="journalier">client</option>\n\n            \n\n            <option value="hebdomadaire">fournisseur</option>\n\n           \n\n            \n\n          </optgroup>\n\n          </select>\n\n\n\n                <label for="field1">date de remboursement *</label>\n\n                <input type="date" class="form-control" required="required" name="daterecette" placeholder="Date *">\n\n\n\n\n\n                <input type="text" class="form-control" required="required" name="montantrecette" placeholder="Montant *">\n\n            </fieldset>\n\n            <fieldset>\n\n\n\n\n\n            </fieldset>\n\n            <input type="submit" value="Valider" />\n\n        </form>\n\n\n\n\n\n    </div>\n\n\n\n\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"D:\Terrence\app\ionic\keiwa\version interface design\24-03-2018\keiwa-app-pro\src\pages\credit\credit.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ViewController */]])
+    ], CreditPage);
+    return CreditPage;
+}());
+
+//# sourceMappingURL=credit.js.map
+
+/***/ }),
+
+/***/ 109:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return OpportunitePage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+/**
+ * Generated class for the OpportunitePage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var OpportunitePage = (function () {
+    function OpportunitePage(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+    }
+    OpportunitePage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad OpportunitePage');
+    };
+    OpportunitePage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-opportunite',template:/*ion-inline-start:"D:\Terrence\app\ionic\keiwa\version interface design\24-03-2018\keiwa-app-pro\src\pages\opportunite\opportunite.html"*/'<!--\n\n  Generated template for the OpportunitePage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n    <ion-toolbar color="primary">\n\n\n\n        <ion-buttons left>\n\n            <button ion-button icon-only menuToggle>\n\n            <ion-icon name="menu"  ></ion-icon>\n\n          </button>\n\n\n\n        </ion-buttons>\n\n        <ion-title>\n\n\n\n            Opportunité\n\n        </ion-title>\n\n\n\n    </ion-toolbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n</ion-content>'/*ion-inline-end:"D:\Terrence\app\ionic\keiwa\version interface design\24-03-2018\keiwa-app-pro\src\pages\opportunite\opportunite.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]])
+    ], OpportunitePage);
+    return OpportunitePage;
+}());
+
+//# sourceMappingURL=opportunite.js.map
+
+/***/ }),
+
 /***/ 110:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ConfigurationPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_animations__ = __webpack_require__(82);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_native_page_transitions__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__configuration_charges_configuration_charges__ = __webpack_require__(104);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+/**
+ * Generated class for the ConfigurationPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var ConfigurationPage = (function () {
+    function ConfigurationPage(navCtrl, navParams, nativePageTransitions) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.nativePageTransitions = nativePageTransitions;
+        this.stateProd = "visible-prod";
+        this.stateCharge = "invisible-charge";
+        this.stateModif = "invisible-autre-modifs";
+    }
+    ConfigurationPage.prototype.goToConfigurationChargesPage = function () {
+        var animationsOptions = {
+            animation: 'ios-transition',
+            duration: 300
+        };
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_4__configuration_charges_configuration_charges__["a" /* ConfigurationChargesPage */], {}, animationsOptions);
+    };
+    ConfigurationPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad ConfigurationPage');
+    };
+    ConfigurationPage.prototype.toggleVisibility = function () {
+        this.stateProd = (this.stateProd == "visible-prod") ? "invisible-prod" : "visible-prod";
+        this.stateCharge = (this.stateCharge == "visible-charge") ? "invisible-charge" : "visible-charge";
+    };
+    ConfigurationPage.prototype.toggleVisibles = function () {
+        this.stateCharge = (this.stateCharge == "visible-charge") ? "invisible-charge" : "visible-charge";
+        this.stateModif = (this.stateModif == "visible-autre-modifs") ? "invisible-autre-modifs" : "visible-autre-modifs";
+    };
+    ConfigurationPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-configuration',template:/*ion-inline-start:"D:\Terrence\app\ionic\keiwa\version interface design\24-03-2018\keiwa-app-pro\src\pages\configuration\configuration.html"*/'<!--\n\n  Generated template for the ConfigurationPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n\n\n<ion-content style=" background:rgb(241, 241, 241); ">\n\n\n\n    <div class="headerWelcomePage" padding>\n\n        <div class="welcome_page_header" style=" text-align:center; ">\n\n            <span style="position: relative; top: 10px; color: #fff;  "> <ion-icon style="font-size:50px;" name="ios-construct"></ion-icon> </span>\n\n        </div>\n\n        <div class="textHeader">\n\n            <h1>Configuration</h1>\n\n        </div>\n\n    </div>\n\n    <div [@produitservice]="stateProd" style="  margin-top:0px; position:relative; " padding>\n\n        <div class="headerBodyConfig">\n\n            <h3> Selectionner vos produits </h3>\n\n            <button class="animated infinite pulse" style="position: absolute; top:-30px; left:15px; " ion-fab color="blanc"><ion-icon color="primary" name="md-mic"></ion-icon></button>\n\n\n\n        </div>\n\n        <div class="CorpsBodyConfig">\n\n            <ul class="animated slideInDown">\n\n                <li class="">\n\n                    <div class="circle"><img src="assets/imgs/radish_vegetables_16825.png"></div>\n\n                    <h4>Jamie Harden\n\n                        <p class=" desc_filiere "> Lorem ipsum dolor, sit amet . </p>\n\n                    </h4>\n\n                    <input id="check-1" type="checkbox">\n\n                    <label for="check-1"><i class="fa fa-check"></i></label>\n\n                </li>\n\n\n\n            </ul>\n\n\n\n            <ul class="animated slideInDown">\n\n                <li class="">\n\n                    <div class="circle"><img src="assets/imgs/jacket-2.png"></div>\n\n                    <h4>Jamie Harden\n\n                        <p class=" desc_filiere "> Lorem ipsum dolor, sit amet . </p>\n\n                    </h4>\n\n                    <input id="check-2" type="checkbox">\n\n                    <label for="check-2"><i class="fa fa-check"></i></label>\n\n                </li>\n\n\n\n            </ul>\n\n            <ul>\n\n                <li class="animated slideInDown">\n\n                    <div class="circle"><img src="assets/imgs/icons8-taxi-48.png"></div>\n\n                    <h4>Jamie Harden\n\n                        <p class=" desc_filiere "> Lorem ipsum dolor, sit amet . </p>\n\n                    </h4>\n\n\n\n                    <input id="check-3" type="checkbox">\n\n                    <label for="check-3"><i class="fa fa-check"></i></label>\n\n                </li>\n\n\n\n            </ul>\n\n\n\n            <ul>\n\n                <li class="animated slideInDown">\n\n                    <div class="circle"><img src="assets/imgs/icons8-nourriture-50.png"></div>\n\n                    <h4>Jamie Harden\n\n                        <p class=" desc_filiere "> Lorem ipsum dolor, sit amet . </p>\n\n                    </h4>\n\n                    <input id="check-4" type="checkbox">\n\n                    <label for="check-4"><i class="fa fa-check"></i></label>\n\n                </li>\n\n\n\n            </ul>\n\n\n\n            <ul>\n\n                <li class="animated slideInDown">\n\n                    <div class="circle"><img src="assets/imgs/icons8-entretien-48.png"></div>\n\n                    <h4>Jamie Harden\n\n                        <p class=" desc_filiere "> Lorem ipsum dolor, sit amet . </p>\n\n                    </h4>\n\n                    <input id="check-5" type="checkbox">\n\n                    <label for="check-5"><i class="fa fa-check"></i></label>\n\n                </li>\n\n\n\n            </ul>\n\n\n\n        </div>\n\n\n\n    </div>\n\n\n\n\n\n\n\n\n\n\n\n\n\n    <div class="footerButton">\n\n        <div style="text-align:center;padding-top:12px;">\n\n            <button class="btn-default-keiwa background-default " style="width:220px;height:45px;background: #1abc9c;color:white;" (click)="goToConfigurationChargesPage()">Continuer</button>\n\n        </div>\n\n\n\n    </div>\n\n\n\n</ion-content>'/*ion-inline-end:"D:\Terrence\app\ionic\keiwa\version interface design\24-03-2018\keiwa-app-pro\src\pages\configuration\configuration.html"*/,
+            animations: [
+                Object(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["j" /* trigger */])("produitservice", [
+                    Object(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["g" /* state */])("visible-prod", Object(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["h" /* style */])({
+                        transform: 'translateY(0%)'
+                    })),
+                    Object(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["g" /* state */])("invisible-prod", Object(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["h" /* style */])({
+                        transform: 'translateY(-200%)'
+                    })),
+                    Object(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["i" /* transition */])('* => *', Object(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["e" /* animate */])('1s ease-in'))
+                ]),
+                Object(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["j" /* trigger */])("charges", [
+                    Object(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["g" /* state */])("visible-charge", Object(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["h" /* style */])({
+                        transform: 'translateY(-100%)'
+                    })),
+                    Object(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["g" /* state */])("invisible-charge", Object(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["h" /* style */])({
+                        transform: 'translateY(-500%)'
+                    })),
+                    Object(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["i" /* transition */])('* => *', Object(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["e" /* animate */])('1s ease-out'))
+                ]),
+                Object(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["j" /* trigger */])("autre-modifs", [
+                    Object(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["g" /* state */])("visible-autre-modifs", Object(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["h" /* style */])({
+                        transform: 'translateY(-200%)'
+                    })),
+                    Object(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["g" /* state */])("invisible-autre-modifs", Object(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["h" /* style */])({
+                        transform: 'translateY(-600%)'
+                    })),
+                    Object(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["i" /* transition */])('* => *', Object(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["e" /* animate */])('1s ease-in'))
+                ])
+            ]
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_native_page_transitions__["a" /* NativePageTransitions */]])
+    ], ConfigurationPage);
+    return ConfigurationPage;
+}());
+
+//# sourceMappingURL=configuration.js.map
+
+/***/ }),
+
+/***/ 111:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_native_page_transitions__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__register_register__ = __webpack_require__(52);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+/**
+ * Generated class for the LoginPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+
+var LoginPage = (function () {
+    function LoginPage(navCtrl, navParams, nativePageTransitions) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.nativePageTransitions = nativePageTransitions;
+    }
+    LoginPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad LoginPage');
+    };
+    LoginPage.prototype.goToWelcomePage = function () {
+        var animationsOptions = {
+            animation: 'ios-transition',
+            duration: 300
+        };
+        this.navCtrl.pop(animationsOptions);
+    };
+    LoginPage.prototype.goToRegisterPage = function () {
+        var animationsOptions = {
+            animation: 'ios-transition',
+            duration: 300
+        };
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__register_register__["a" /* RegisterPage */], {}, animationsOptions);
+    };
+    LoginPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-login',template:/*ion-inline-start:"D:\Terrence\app\ionic\keiwa\version interface design\24-03-2018\keiwa-app-pro\src\pages\login\login.html"*/'<!--\n\n  Generated template for the LoginPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n\n\n<ion-content>\n\n    <div class="welcomePage sliderOverflow">\n\n        <div class="headerWelcomePage" padding>\n\n            <div class="welcome_page_header">\n\n                <a (click)="goToWelcomePage()">\n\n                    <ion-icon ios="ios-close" class="fontSizeIcon" md="md-arrow-back"></ion-icon>\n\n                </a>\n\n            </div>\n\n            <div class="textHeader">\n\n                <h1>Connexion</h1>\n\n            </div>\n\n        </div>\n\n        <div class="bodyWelcomePage">\n\n            <div class="step" padding>\n\n                <div class="form-group">\n\n                    <input type="text" placeholder="Numéro de téléphone ou e-mail">\n\n                </div>\n\n                <div class="form-group">\n\n                    <input type="password" placeholder="Mot de passe">\n\n                </div>\n\n                <div class="form-group">\n\n                    <button class="btn-default-keiwa background-default" style="width:100%;height:45px;border-radius:0;">Je me connecte</button>\n\n                </div>\n\n                <div class="form-group" style="margin-bottom:35px;">\n\n                    <p>Mot de passe oublié? <br><strong>Obtenez de l\'aide pour vous connecter.</strong></p>\n\n                </div>\n\n                <div class="border-divider"></div>\n\n                <div class="form-group" style="margin-top:35px;">\n\n                    <button class="btn-default-keiwa btn-facebook" style="height:45px;border-radius:0">\n\n                <span class="fa fa-facebook"></span>\n\n                Se connecter avec facebook\n\n          </button> <br><br>\n\n                </div>\n\n            </div>\n\n            <hr>\n\n        </div>\n\n        <div class="footerFixed">\n\n            <p>Vous n\'avez pas de compte ? <strong> <a (click)="goToRegisterPage()"> inscrivez vous.</a></strong></p>\n\n        </div>\n\n\n\n\n\n\n\n\n\n\n\n    </div>\n\n</ion-content>'/*ion-inline-end:"D:\Terrence\app\ionic\keiwa\version interface design\24-03-2018\keiwa-app-pro\src\pages\login\login.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_native_page_transitions__["a" /* NativePageTransitions */]])
+    ], LoginPage);
+    return LoginPage;
+}());
+
+//# sourceMappingURL=login.js.map
+
+/***/ }),
+
+/***/ 112:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return WelcomePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_native_page_transitions__ = __webpack_require__(46);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__login_login__ = __webpack_require__(107);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_native_page_transitions__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__login_login__ = __webpack_require__(111);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__register_register__ = __webpack_require__(52);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -459,7 +595,7 @@ var WelcomePage = (function () {
 
 /***/ }),
 
-/***/ 123:
+/***/ 125:
 /***/ (function(module, exports) {
 
 function webpackEmptyAsyncContext(req) {
@@ -472,44 +608,52 @@ function webpackEmptyAsyncContext(req) {
 webpackEmptyAsyncContext.keys = function() { return []; };
 webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
 module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 123;
+webpackEmptyAsyncContext.id = 125;
 
 /***/ }),
 
-/***/ 165:
+/***/ 167:
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
+	"../pages/configuration-charges/configuration-charges.module": [
+		298,
+		9
+	],
+	"../pages/configuration-other/configuration-other.module": [
+		299,
+		8
+	],
 	"../pages/configuration/configuration.module": [
-		296,
+		300,
 		7
 	],
 	"../pages/credit/credit.module": [
-		297,
+		301,
 		6
 	],
 	"../pages/depense/depense.module": [
-		298,
+		302,
 		5
 	],
 	"../pages/login/login.module": [
-		299,
+		303,
 		4
 	],
 	"../pages/opportunite/opportunite.module": [
-		300,
+		304,
 		3
 	],
 	"../pages/recette/recette.module": [
-		301,
+		305,
 		2
 	],
 	"../pages/register/register.module": [
-		302,
+		306,
 		1
 	],
 	"../pages/welcome/welcome.module": [
-		303,
+		307,
 		0
 	]
 };
@@ -524,18 +668,61 @@ function webpackAsyncContext(req) {
 webpackAsyncContext.keys = function webpackAsyncContextKeys() {
 	return Object.keys(map);
 };
-webpackAsyncContext.id = 165;
+webpackAsyncContext.id = 167;
 module.exports = webpackAsyncContext;
 
 /***/ }),
 
-/***/ 210:
+/***/ 169:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TabsPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__about_about__ = __webpack_require__(170);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__contact_contact__ = __webpack_require__(171);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__home_home__ = __webpack_require__(172);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__opportunite_opportunite__ = __webpack_require__(109);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+var TabsPage = (function () {
+    function TabsPage() {
+        this.tab1Root = __WEBPACK_IMPORTED_MODULE_3__home_home__["a" /* HomePage */];
+        this.tab2Root = __WEBPACK_IMPORTED_MODULE_1__about_about__["a" /* AboutPage */];
+        this.tab3Root = __WEBPACK_IMPORTED_MODULE_2__contact_contact__["a" /* ContactPage */];
+        this.tab4Root = __WEBPACK_IMPORTED_MODULE_4__opportunite_opportunite__["a" /* OpportunitePage */];
+    }
+    TabsPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"D:\Terrence\app\ionic\keiwa\version interface design\24-03-2018\keiwa-app-pro\src\pages\tabs\tabs.html"*/'<ion-tabs>\n\n    <ion-tab [root]="tab1Root" tabTitle="Journal" tabIcon="ios-paper"></ion-tab>\n\n    <ion-tab [root]="tab2Root" tabTitle="Rapport" tabIcon="speedometer"></ion-tab>\n\n    <ion-tab [root]="tab3Root" tabTitle="Paiement" tabIcon="ios-cash"></ion-tab>\n\n    <ion-tab [root]="tab4Root" tabTitle="opportunité" tabIcon="cart"></ion-tab>\n\n</ion-tabs>'/*ion-inline-end:"D:\Terrence\app\ionic\keiwa\version interface design\24-03-2018\keiwa-app-pro\src\pages\tabs\tabs.html"*/
+        }),
+        __metadata("design:paramtypes", [])
+    ], TabsPage);
+    return TabsPage;
+}());
+
+//# sourceMappingURL=tabs.js.map
+
+/***/ }),
+
+/***/ 170:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AboutPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -568,13 +755,13 @@ var AboutPage = (function () {
 
 /***/ }),
 
-/***/ 211:
+/***/ 171:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ContactPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -604,18 +791,18 @@ var ContactPage = (function () {
 
 /***/ }),
 
-/***/ 212:
+/***/ 172:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__recette_recette__ = __webpack_require__(109);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__depense_depense__ = __webpack_require__(106);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__credit_credit__ = __webpack_require__(105);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_saverecette_saverecette__ = __webpack_require__(82);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_text_to_speech__ = __webpack_require__(209);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__recette_recette__ = __webpack_require__(106);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__depense_depense__ = __webpack_require__(107);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__credit_credit__ = __webpack_require__(108);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_saverecette_saverecette__ = __webpack_require__(81);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_text_to_speech__ = __webpack_require__(174);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -716,14 +903,14 @@ var HomePage = (function () {
 
 /***/ }),
 
-/***/ 213:
+/***/ 216:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(214);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(235);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_web_animations_js_web_animations_min__ = __webpack_require__(295);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(217);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(238);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_web_animations_js_web_animations_min__ = __webpack_require__(297);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_web_animations_js_web_animations_min___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_web_animations_js_web_animations_min__);
 
 
@@ -733,36 +920,38 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 
 /***/ }),
 
-/***/ 235:
+/***/ 238:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(23);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_forms__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_component__ = __webpack_require__(290);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_text_to_speech__ = __webpack_require__(209);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_native_page_transitions__ = __webpack_require__(46);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__angular_platform_browser_animations__ = __webpack_require__(291);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__angular_http__ = __webpack_require__(293);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__angular_common_http__ = __webpack_require__(167);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_about_about__ = __webpack_require__(210);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_contact_contact__ = __webpack_require__(211);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_home_home__ = __webpack_require__(212);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_opportunite_opportunite__ = __webpack_require__(108);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_recette_recette__ = __webpack_require__(109);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_depense_depense__ = __webpack_require__(106);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_configuration_configuration__ = __webpack_require__(104);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_credit_credit__ = __webpack_require__(105);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_tabs_tabs__ = __webpack_require__(294);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__pages_welcome_welcome__ = __webpack_require__(110);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__pages_login_login__ = __webpack_require__(107);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_component__ = __webpack_require__(293);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_text_to_speech__ = __webpack_require__(174);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_native_page_transitions__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__angular_platform_browser_animations__ = __webpack_require__(294);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__angular_http__ = __webpack_require__(296);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__angular_common_http__ = __webpack_require__(173);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_about_about__ = __webpack_require__(170);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_contact_contact__ = __webpack_require__(171);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_home_home__ = __webpack_require__(172);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_opportunite_opportunite__ = __webpack_require__(109);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_recette_recette__ = __webpack_require__(106);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_depense_depense__ = __webpack_require__(107);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_configuration_configuration__ = __webpack_require__(110);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_credit_credit__ = __webpack_require__(108);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_tabs_tabs__ = __webpack_require__(169);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__pages_welcome_welcome__ = __webpack_require__(112);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__pages_login_login__ = __webpack_require__(111);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__pages_register_register__ = __webpack_require__(52);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__ionic_native_status_bar__ = __webpack_require__(207);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__ionic_native_splash_screen__ = __webpack_require__(208);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__providers_saverecette_saverecette__ = __webpack_require__(82);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__pages_configuration_charges_configuration_charges__ = __webpack_require__(104);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__pages_configuration_other_configuration_other__ = __webpack_require__(105);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__ionic_native_status_bar__ = __webpack_require__(214);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__ionic_native_splash_screen__ = __webpack_require__(215);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__providers_saverecette_saverecette__ = __webpack_require__(81);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -795,6 +984,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
+
 var AppModule = (function () {
     function AppModule() {
     }
@@ -805,6 +996,8 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_19__pages_welcome_welcome__["a" /* WelcomePage */],
                 __WEBPACK_IMPORTED_MODULE_20__pages_login_login__["a" /* LoginPage */],
                 __WEBPACK_IMPORTED_MODULE_21__pages_register_register__["a" /* RegisterPage */],
+                __WEBPACK_IMPORTED_MODULE_22__pages_configuration_charges_configuration_charges__["a" /* ConfigurationChargesPage */],
+                __WEBPACK_IMPORTED_MODULE_23__pages_configuration_other_configuration_other__["a" /* ConfigurationOtherPage */],
                 __WEBPACK_IMPORTED_MODULE_10__pages_about_about__["a" /* AboutPage */],
                 __WEBPACK_IMPORTED_MODULE_11__pages_contact_contact__["a" /* ContactPage */],
                 __WEBPACK_IMPORTED_MODULE_12__pages_home_home__["a" /* HomePage */],
@@ -825,6 +1018,8 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_9__angular_common_http__["b" /* HttpClientModule */],
                 __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["d" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* MyApp */], {}, {
                     links: [
+                        { loadChildren: '../pages/configuration-charges/configuration-charges.module#ConfigurationChargesPageModule', name: 'ConfigurationChargesPage', segment: 'configuration-charges', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/configuration-other/configuration-other.module#ConfigurationOtherPageModule', name: 'ConfigurationOtherPage', segment: 'configuration-other', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/configuration/configuration.module#ConfigurationPageModule', name: 'ConfigurationPage', segment: 'configuration', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/credit/credit.module#CreditPageModule', name: 'CreditPage', segment: 'credit', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/depense/depense.module#DepensePageModule', name: 'DepensePage', segment: 'depense', priority: 'low', defaultHistory: [] },
@@ -842,6 +1037,8 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_19__pages_welcome_welcome__["a" /* WelcomePage */],
                 __WEBPACK_IMPORTED_MODULE_20__pages_login_login__["a" /* LoginPage */],
                 __WEBPACK_IMPORTED_MODULE_21__pages_register_register__["a" /* RegisterPage */],
+                __WEBPACK_IMPORTED_MODULE_22__pages_configuration_charges_configuration_charges__["a" /* ConfigurationChargesPage */],
+                __WEBPACK_IMPORTED_MODULE_23__pages_configuration_other_configuration_other__["a" /* ConfigurationOtherPage */],
                 __WEBPACK_IMPORTED_MODULE_10__pages_about_about__["a" /* AboutPage */],
                 __WEBPACK_IMPORTED_MODULE_11__pages_contact_contact__["a" /* ContactPage */],
                 __WEBPACK_IMPORTED_MODULE_12__pages_home_home__["a" /* HomePage */],
@@ -856,13 +1053,13 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_18__pages_tabs_tabs__["a" /* TabsPage */]
             ],
             providers: [
-                __WEBPACK_IMPORTED_MODULE_22__ionic_native_status_bar__["a" /* StatusBar */],
+                __WEBPACK_IMPORTED_MODULE_24__ionic_native_status_bar__["a" /* StatusBar */],
                 __WEBPACK_IMPORTED_MODULE_3__angular_forms__["f" /* ReactiveFormsModule */],
                 __WEBPACK_IMPORTED_MODULE_5__ionic_native_text_to_speech__["a" /* TextToSpeech */],
-                __WEBPACK_IMPORTED_MODULE_23__ionic_native_splash_screen__["a" /* SplashScreen */],
+                __WEBPACK_IMPORTED_MODULE_25__ionic_native_splash_screen__["a" /* SplashScreen */],
                 __WEBPACK_IMPORTED_MODULE_6__ionic_native_native_page_transitions__["a" /* NativePageTransitions */],
                 { provide: __WEBPACK_IMPORTED_MODULE_0__angular_core__["u" /* ErrorHandler */], useClass: __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["c" /* IonicErrorHandler */] },
-                __WEBPACK_IMPORTED_MODULE_24__providers_saverecette_saverecette__["a" /* SaverecetteProvider */]
+                __WEBPACK_IMPORTED_MODULE_26__providers_saverecette_saverecette__["a" /* SaverecetteProvider */]
             ]
         })
     ], AppModule);
@@ -873,16 +1070,16 @@ var AppModule = (function () {
 
 /***/ }),
 
-/***/ 290:
+/***/ 293:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(207);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(208);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_welcome_welcome__ = __webpack_require__(110);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(214);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(215);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_welcome_welcome__ = __webpack_require__(112);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -920,58 +1117,15 @@ var MyApp = (function () {
 
 /***/ }),
 
-/***/ 294:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TabsPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__about_about__ = __webpack_require__(210);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__contact_contact__ = __webpack_require__(211);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__home_home__ = __webpack_require__(212);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__opportunite_opportunite__ = __webpack_require__(108);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-
-var TabsPage = (function () {
-    function TabsPage() {
-        this.tab1Root = __WEBPACK_IMPORTED_MODULE_3__home_home__["a" /* HomePage */];
-        this.tab2Root = __WEBPACK_IMPORTED_MODULE_1__about_about__["a" /* AboutPage */];
-        this.tab3Root = __WEBPACK_IMPORTED_MODULE_2__contact_contact__["a" /* ContactPage */];
-        this.tab4Root = __WEBPACK_IMPORTED_MODULE_4__opportunite_opportunite__["a" /* OpportunitePage */];
-    }
-    TabsPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"D:\Terrence\app\ionic\keiwa\version interface design\24-03-2018\keiwa-app-pro\src\pages\tabs\tabs.html"*/'<ion-tabs>\n\n    <ion-tab [root]="tab1Root" tabTitle="Journal" tabIcon="ios-paper"></ion-tab>\n\n    <ion-tab [root]="tab2Root" tabTitle="Rapport" tabIcon="speedometer"></ion-tab>\n\n    <ion-tab [root]="tab3Root" tabTitle="Paiement" tabIcon="ios-cash"></ion-tab>\n\n    <ion-tab [root]="tab4Root" tabTitle="opportunité" tabIcon="cart"></ion-tab>\n\n</ion-tabs>'/*ion-inline-end:"D:\Terrence\app\ionic\keiwa\version interface design\24-03-2018\keiwa-app-pro\src\pages\tabs\tabs.html"*/
-        }),
-        __metadata("design:paramtypes", [])
-    ], TabsPage);
-    return TabsPage;
-}());
-
-//# sourceMappingURL=tabs.js.map
-
-/***/ }),
-
 /***/ 52:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RegisterPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_native_page_transitions__ = __webpack_require__(46);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__configuration_configuration__ = __webpack_require__(104);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_native_page_transitions__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__configuration_configuration__ = __webpack_require__(110);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1030,12 +1184,12 @@ var RegisterPage = (function () {
 
 /***/ }),
 
-/***/ 82:
+/***/ 81:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SaverecetteProvider; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(167);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(173);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1071,5 +1225,5 @@ var SaverecetteProvider = (function () {
 
 /***/ })
 
-},[213]);
+},[216]);
 //# sourceMappingURL=main.js.map

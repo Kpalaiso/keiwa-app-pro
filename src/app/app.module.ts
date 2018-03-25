@@ -22,6 +22,8 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { WelcomePage } from '../pages/welcome/welcome';
 import { LoginPage } from '../pages/login/login';
 import { RegisterPage } from '../pages/register/register'
+import { ConfigurationChargesPage } from '../pages/configuration-charges/configuration-charges';
+import { ConfigurationOtherPage } from '../pages/configuration-other/configuration-other';
 
 
 
@@ -35,6 +37,8 @@ import { SaverecetteProvider } from '../providers/saverecette/saverecette';
     WelcomePage,
     LoginPage,
     RegisterPage,
+    ConfigurationChargesPage,
+    ConfigurationOtherPage,
     AboutPage,
     ContactPage,
     HomePage,
@@ -62,6 +66,8 @@ import { SaverecetteProvider } from '../providers/saverecette/saverecette';
     WelcomePage,
     LoginPage,
     RegisterPage,
+    ConfigurationChargesPage,
+    ConfigurationOtherPage,
     AboutPage,
     ContactPage,
     HomePage,

@@ -1,7 +1,9 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { trigger, state, style, transition, animate } from '@angular/animations';
+import { NativePageTransitions, NativeTransitionOptions } from '@ionic-native/native-page-transitions';
 
+import { ConfigurationChargesPage } from "../configuration-charges/configuration-charges";
 /**
  * Generated class for the ConfigurationPage page.
  *
@@ -56,7 +58,15 @@ export class ConfigurationPage {
   stateModif="invisible-autre-modifs";
 
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,private nativePageTransitions: NativePageTransitions) {
+  }
+  goToConfigurationChargesPage(){
+     const animationsOptions = {
+      animation: 'ios-transition',
+      duration: 300
+    }
+    
+    this.navCtrl.push(ConfigurationChargesPage, {}, animationsOptions);
   }
 
   ionViewDidLoad() {
