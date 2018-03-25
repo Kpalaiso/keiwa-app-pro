@@ -26,8 +26,11 @@ export class RegisterPage {
     console.log('ionViewDidLoad RegisterPage');
   }
   goToSlide(numberslide){
-    this.slides.slideTo(numberslide, 100);
+    this.slides.slideTo(numberslide, 300);
   }
+
+  
+
   goToBack(){
     const animationsOptions = {
         animation: 'ios-transition',

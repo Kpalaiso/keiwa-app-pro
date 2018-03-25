@@ -7,95 +7,108 @@
 
 <ion-content style=" background:rgb(241, 241, 241); ">
 
-    <div class="headerWelcomePage" padding>
-        <div class="welcome_page_header" style=" text-align:center; ">
-            <span style="position: relative; top: 10px; color: #fff;  "> <ion-icon style="font-size:50px;" name="ios-construct"></ion-icon> </span>
+
+        <div class="headerWelcomePage" padding>
+
+                <div class="register_page_header">
+                        <span  style="    font-size: 16px;  position: relative; top: 2px; color: #fff;"  class="badge_progression_register pull-right-style">1/3</span>
+                        <a style="visibility: hidden;" >
+                            <ion-icon style="color:#fff; font-size:25px; " ios="ios-close" class="fontSizeIcon" md="md-arrow-back"></ion-icon>
+                        </a>
+                    </div>
+    
+            <div class="welcome_page_header" style=" text-align:center; ">
+                <span style="position: relative; top: 10px; color: #fff;  "> <ion-icon style="font-size:40px;" name="ios-construct"></ion-icon> </span>
+            </div>
+            <div class="textHeader">
+                <h1>Configuration</h1>
+            </div>
         </div>
-        <div class="textHeader">
-            <h1>Configuration</h1>
+        <div  style="  margin-top:0px; position:relative; " padding>
+                
+            <div class="headerBodyConfig">
+                <h3 class="animated slideInDown" > Selectionner vos produits </h3>
+                <button class="animated infinite pulse" style="position: absolute; top:-30px; left:15px; " ion-fab color="blanc"><ion-icon color="primary" name="md-mic"></ion-icon></button>
+    
+            </div>
+            <div class="CorpsBodyConfig">
+                <ul class="animated slideInDown">
+                    <li class="">
+                        <div class="circle"><img src="assets/imgs/radish_vegetables_16825.png"></div>
+                        <h4>Jamie Harden
+                            <p class=" desc_filiere "> Lorem ipsum dolor, sit amet . </p>
+                        </h4>
+                        <input id="check-1" type="checkbox">
+                        <label for="check-1"><i class="fa fa-check"></i></label>
+                    </li>
+    
+                </ul>
+    
+                <ul class="animated slideInDown">
+                    <li class="">
+                        <div class="circle"><img src="assets/imgs/jacket-2.png"></div>
+                        <h4>Jamie Harden
+                            <p class=" desc_filiere "> Lorem ipsum dolor, sit amet . </p>
+                        </h4>
+                        <input id="check-2" type="checkbox">
+                        <label for="check-2"><i class="fa fa-check"></i></label>
+                    </li>
+    
+                </ul>
+                <ul>
+                    <li class="animated slideInDown">
+                        <div class="circle"><img src="assets/imgs/icons8-taxi-48.png"></div>
+                        <h4>Jamie Harden
+                            <p class=" desc_filiere "> Lorem ipsum dolor, sit amet . </p>
+                        </h4>
+    
+                        <input id="check-3" type="checkbox">
+                        <label for="check-3"><i class="fa fa-check"></i></label>
+                    </li>
+    
+                </ul>
+    
+                <ul>
+                    <li class="animated slideInDown">
+                        <div class="circle"><img src="assets/imgs/icons8-nourriture-50.png"></div>
+                        <h4>Jamie Harden
+                            <p class=" desc_filiere "> Lorem ipsum dolor, sit amet . </p>
+                        </h4>
+                        <input id="check-4" type="checkbox">
+                        <label for="check-4"><i class="fa fa-check"></i></label>
+                    </li>
+    
+                </ul>
+    
+                <ul>
+                    <li class="animated slideInDown">
+                        <div class="circle"><img src="assets/imgs/icons8-entretien-48.png"></div>
+                        <h4>Jamie Harden
+                            <p class=" desc_filiere "> Lorem ipsum dolor, sit amet . </p>
+                        </h4>
+                        <input id="check-5" type="checkbox">
+                        <label for="check-5"><i class="fa fa-check"></i></label>
+                    </li>
+    
+                </ul>
+    
+            </div>
+    
         </div>
-    </div>
-    <div [@produitservice]="stateProd" style="  margin-top:0px; position:relative; " padding>
-        <div class="headerBodyConfig">
-            <h3> Selectionner vos produits </h3>
-            <button class="animated infinite pulse" style="position: absolute; top:-30px; left:15px; " ion-fab color="blanc"><ion-icon color="primary" name="md-mic"></ion-icon></button>
-
-        </div>
-        <div class="CorpsBodyConfig">
-            <ul class="animated slideInDown">
-                <li class="">
-                    <div class="circle"><img src="assets/imgs/radish_vegetables_16825.png"></div>
-                    <h4>Jamie Harden
-                        <p class=" desc_filiere "> Lorem ipsum dolor, sit amet . </p>
-                    </h4>
-                    <input id="check-1" type="checkbox">
-                    <label for="check-1"><i class="fa fa-check"></i></label>
-                </li>
-
-            </ul>
-
-            <ul class="animated slideInDown">
-                <li class="">
-                    <div class="circle"><img src="assets/imgs/jacket-2.png"></div>
-                    <h4>Jamie Harden
-                        <p class=" desc_filiere "> Lorem ipsum dolor, sit amet . </p>
-                    </h4>
-                    <input id="check-2" type="checkbox">
-                    <label for="check-2"><i class="fa fa-check"></i></label>
-                </li>
-
-            </ul>
-            <ul>
-                <li class="animated slideInDown">
-                    <div class="circle"><img src="assets/imgs/icons8-taxi-48.png"></div>
-                    <h4>Jamie Harden
-                        <p class=" desc_filiere "> Lorem ipsum dolor, sit amet . </p>
-                    </h4>
-
-                    <input id="check-3" type="checkbox">
-                    <label for="check-3"><i class="fa fa-check"></i></label>
-                </li>
-
-            </ul>
-
-            <ul>
-                <li class="animated slideInDown">
-                    <div class="circle"><img src="assets/imgs/icons8-nourriture-50.png"></div>
-                    <h4>Jamie Harden
-                        <p class=" desc_filiere "> Lorem ipsum dolor, sit amet . </p>
-                    </h4>
-                    <input id="check-4" type="checkbox">
-                    <label for="check-4"><i class="fa fa-check"></i></label>
-                </li>
-
-            </ul>
-
-            <ul>
-                <li class="animated slideInDown">
-                    <div class="circle"><img src="assets/imgs/icons8-entretien-48.png"></div>
-                    <h4>Jamie Harden
-                        <p class=" desc_filiere "> Lorem ipsum dolor, sit amet . </p>
-                    </h4>
-                    <input id="check-5" type="checkbox">
-                    <label for="check-5"><i class="fa fa-check"></i></label>
-                </li>
-
-            </ul>
-
+    
+    
+    
+    
+    
+    
+        <div class="footerButton" padding>
+            <div style="text-align:center; ">
+                <button class="btn-default-keiwa background-default " ion-button  style=" height:45px;background: #1abc9c;color:white; margin-top:-5px; " (click)="goToConfigurationChargesPage()" block >Continuer</button>
+            </div>
+    
         </div>
 
-    </div>
 
-
-
-
-
-
-    <div class="footerButton">
-        <div style="text-align:center;padding-top:12px;">
-            <button class="btn-default-keiwa background-default " style="width:220px;height:45px;background: #1abc9c;color:white;" (click)="goToConfigurationChargesPage()">Continuer</button>
-        </div>
-
-    </div>
+    
 
 </ion-content>

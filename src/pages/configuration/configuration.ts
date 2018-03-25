@@ -1,6 +1,5 @@
-import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { trigger, state, style, transition, animate } from '@angular/animations';
+import { Component, ViewChild } from '@angular/core';
+import { IonicPage, NavController, NavParams, Slides } from 'ionic-angular';
 import { NativePageTransitions, NativeTransitionOptions } from '@ionic-native/native-page-transitions';
 
 import { ConfigurationChargesPage } from "../configuration-charges/configuration-charges";
@@ -14,48 +13,11 @@ import { ConfigurationChargesPage } from "../configuration-charges/configuration
 @IonicPage()
 @Component({
   selector: 'page-configuration',
-  templateUrl: 'configuration.html',
-  animations:[
-
-    trigger("produitservice", [
-      state("visible-prod", style({
-        transform: 'translateY(0%)'
-      })),
-      state("invisible-prod", style({
-        transform: 'translateY(-200%)'
-      })),
-      transition('* => *', animate('1s ease-in'))
-    ]), 
-
-    trigger("charges", [
-      state("visible-charge", style({
-        transform: 'translateY(-100%)'
-        
-        
-      })),
-      state("invisible-charge", style({
-        transform: 'translateY(-500%)'
-      })),
-      transition('* => *', animate('1s ease-out'))
-    ]),
-    trigger("autre-modifs", [
-      state("visible-autre-modifs", style({
-        transform: 'translateY(-200%)'
-        
-      })),
-      state("invisible-autre-modifs", style({
-        transform: 'translateY(-600%)'
-      })),
-      transition('* => *', animate('1s ease-in'))
-    ])
-
-  ]
+  templateUrl: 'configuration.html'
 })
 export class ConfigurationPage {
 
-  stateProd="visible-prod";
-  stateCharge="invisible-charge";
-  stateModif="invisible-autre-modifs";
+  @ViewChild(Slides) slides: Slides;
 
 
   constructor(public navCtrl: NavController, public navParams: NavParams,private nativePageTransitions: NativePageTransitions) {
@@ -73,14 +35,14 @@ export class ConfigurationPage {
     console.log('ionViewDidLoad ConfigurationPage');
   }
 
-  toggleVisibility(){
-    this.stateProd=(this.stateProd=="visible-prod")?"invisible-prod":"visible-prod";
-    this.stateCharge=(this.stateCharge=="visible-charge")?"invisible-charge":"visible-charge";
+  goToBackSlide(numberslide){
+    this.slides.slideTo(numberslide, 300);
   }
 
-  toggleVisibles(){
-    this.stateCharge=(this.stateCharge=="visible-charge")?"invisible-charge":"visible-charge";
-    this.stateModif=(this.stateModif=="visible-autre-modifs")?"invisible-autre-modifs":"visible-autre-modifs";
+  goToSlide(numberslide){
+    this.slides.slideTo(numberslide, 300);
   }
+
+ 
 
 }
