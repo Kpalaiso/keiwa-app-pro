@@ -19,6 +19,8 @@ import { RegisterPage } from '../register/register';
 })
 export class WelcomePage {
 
+  language: string="";
+
   constructor(public navCtrl: NavController, public navParams: NavParams,
   private nativePageTransitions: NativePageTransitions) {
   }

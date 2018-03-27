@@ -9,13 +9,14 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { HttpModule } from '@angular/http';
 import { HttpClientModule } from '@angular/common/http';
 
-import { AboutPage } from '../pages/about/about';
+import { AboutPage } from '../pages/about/about'; 
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { OpportunitePage } from '../pages/opportunite/opportunite'; 
 import { RecettePage } from '../pages/recette/recette';
 import { DepensePage } from '../pages/depense/depense';
 import { ConfigurationPage } from '../pages/configuration/configuration'; 
+import { ConfigurationCategoryPage } from '../pages/configuration-category/configuration-category'; 
 import { CreditPage } from '../pages/credit/credit';
 import { TabsPage } from '../pages/tabs/tabs'; 
 /**Page add by Terrence kondou */
@@ -39,6 +40,7 @@ import { SaverecetteProvider } from '../providers/saverecette/saverecette';
     RegisterPage,
     ConfigurationChargesPage,
     ConfigurationOtherPage,
+    ConfigurationCategoryPage,
     AboutPage,
     ContactPage,
     HomePage,
@@ -68,6 +70,7 @@ import { SaverecetteProvider } from '../providers/saverecette/saverecette';
     RegisterPage,
     ConfigurationChargesPage,
     ConfigurationOtherPage,
+    ConfigurationCategoryPage,
     AboutPage,
     ContactPage,
     HomePage,

@@ -31,6 +31,15 @@ export class ConfigurationPage {
     this.navCtrl.push(ConfigurationChargesPage, {}, animationsOptions);
   }
 
+  goToBack(){
+    const animationsOptions = {
+        animation: 'ios-transition',
+        duration: 300
+    }
+
+    this.navCtrl.pop(animationsOptions);
+  }
+  
   ionViewDidLoad() {
     console.log('ionViewDidLoad ConfigurationPage');
   }

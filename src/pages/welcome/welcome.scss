@@ -1,4 +1,7 @@
 page-welcome {
+    .select_ele  .item-inner{
+        border-bottom: solid 1px transparent !important;
+    }
     .sliderOverflow {
         height: 100%;
         overflow-x: auto;

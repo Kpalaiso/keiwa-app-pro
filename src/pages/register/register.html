@@ -13,7 +13,7 @@
         <ion-slide style="padding-bottom:100px">
             <div padding>
                 <div class="register_page_header">
-                    <span class="badge_progression_register pull-right-style">1/4</span>
+                    <span class="badge_progression_register pull-right-style">1/5</span>
                     <a (click)="goToBack()">
                         <ion-icon ios="ios-close" class="fontSizeIcon" md="md-arrow-back"></ion-icon>
                     </a>
@@ -25,16 +25,18 @@
                 <div class="register_page_form">
                     <ion-list>
 
-                        <ion-item>
-                            <ion-label stacked>Langue</ion-label>
-                            <ion-input type="text"></ion-input>
-                        </ion-item>
+                            
 
-                        <ion-item style="margin-top:22px;">
-                            <ion-label stacked>Monnaie</ion-label>
-                            <ion-input type="text"></ion-input>
-                        </ion-item>
-
+                           
+                            <ion-item class="select_ele" style=" border-bottom:solid 1px #dedede; margin-top:30px; " >
+                                    <ion-label style="  color:#555; "  >Monnaie</ion-label>
+                                    <ion-select [(ngModel)]="Monnaie" interface="popover">
+                                      <ion-option value="Français">FCFA</ion-option>
+                                      <ion-option value="Englais">Euro</ion-option>
+                                      <ion-option value="Wolofs">dollar</ion-option>
+                                     
+                                    </ion-select>
+                            </ion-item>
 
                     </ion-list>
                 </div>
@@ -46,29 +48,31 @@
                     </button>
                 </div>
             </div>
+            
+
         </ion-slide>
         <ion-slide style="padding-bottom:100px">
             <div padding>
                 <div class="register_page_header">
-                    <span class="badge_progression_register pull-right-style">2/4</span>
+                    <span class="badge_progression_register pull-right-style">2/5</span>
                     <a (click)="goToSlide(0)">
                         <ion-icon ios="ios-close" class="fontSizeIcon" md="md-arrow-back"></ion-icon>
                     </a>
                 </div>
                 <div class="register_page_title">
-                    <h1>Itentifier vous</h1>
+                    <h1>Identifier vous</h1>
                     <p>indiquez votre nom et prénoms pour que nous vous identifions. </p>
                 </div>
                 <div class="register_page_form">
                     <ion-list>
 
-                        <ion-item>
-                            <ion-label stacked>Nom</ion-label>
+                        <ion-item   >
+                            <ion-label style="  color:#555; " stacked>Nom</ion-label>
                             <ion-input type="text"></ion-input>
                         </ion-item>
 
-                        <ion-item style="margin-top:22px;">
-                            <ion-label stacked>Prenoms</ion-label>
+                        <ion-item >
+                            <ion-label  style="  color:#555; "  stacked>Prenoms</ion-label>
                             <ion-input type="text"></ion-input>
                         </ion-item>
 
@@ -88,7 +92,7 @@
         <ion-slide style="padding-bottom:100px">
             <div padding>
                 <div class="register_page_header">
-                    <span class="badge_progression_register pull-right-style">3/4</span>
+                    <span class="badge_progression_register pull-right-style">3/5</span>
                     <a (click)="goToSlide(1)">
                         <ion-icon ios="ios-close" class="fontSizeIcon" md="md-arrow-back"></ion-icon>
                     </a>
@@ -100,7 +104,7 @@
                 <div class="register_page_form" style="margin-top:50px">
                     <span>Téléphone</span>
                     <div>
-                        <div class="align-middle" style="width:80px;">
+                        <div class="align-middle" style="width:65px;">
                             <ion-item>
                                 <ion-input type="text" value="+225" disabled="true"></ion-input>
                             </ion-item>
@@ -122,11 +126,53 @@
                 </div>
             </div>
         </ion-slide>
+
+
+
+        <ion-slide style="padding-bottom:100px">
+                <div padding>
+                    <div class="register_page_header">
+                        <span class="badge_progression_register pull-right-style">4/5</span>
+                        <a (click)="goToSlide(2)">
+                            <ion-icon ios="ios-close" class="fontSizeIcon" md="md-arrow-back"></ion-icon>
+                        </a>
+                    </div>
+                    <div class="register_page_title">
+                        <h1>Indiquez votre secteur d'activité</h1>
+                        <p>Choisissez un secteur le d'activité auxquels vous appartennez dans liste ci déssous.</p>
+                    </div>
+                    <div class="register_page_form" style="margin-top:50px">
+                            <ion-item  class="select_ele" style=" border-bottom:solid 1px #dedede; " >
+                                    <ion-label style="  color:#555; " >Activités</ion-label>
+                                    <ion-select [(ngModel)]="activity">
+                                      <ion-option value="agriculteur">agriculteur</ion-option>
+                                      <ion-option value="commerçant">commerçant</ion-option>
+                                      <ion-option value="Artisant">Artisant</ion-option>
+                                      <ion-option value="éléveur">éléveur</ion-option>
+
+                                    </ion-select>
+                                </ion-item>
+                    </div>
+    
+    
+    
+                    <div class="fixed_bar_login_register">
+                        <button class="btn-default-keiwa background-default" (click)="goToSlide(4)" style="width:250px;height:50px;">
+                            Continuer
+                        </button>
+                    </div>
+                </div>
+            </ion-slide>  
+
+
+
+
+
         <ion-slide style="padding-bottom:100px">
             <div padding>
                 <div class="register_page_header">
-                    <span class="badge_progression_register pull-right-style">4/4</span>
-                    <a (click)="goToSlide(2)">
+                    <span class="badge_progression_register pull-right-style">5/5</span>
+                    <a (click)="goToSlide(3)">
                         <ion-icon ios="ios-close" class="fontSizeIcon" md="md-arrow-back"></ion-icon>
                     </a>
                 </div>

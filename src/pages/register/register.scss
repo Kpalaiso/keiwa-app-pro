@@ -2,10 +2,18 @@ page-register {
     .sliderOverflow {
         height: 100%;
         overflow-x: auto;
+    }  
+    
+    .select_ele  .item-inner{
+        border-bottom: solid 1px transparent !important;
+    }
+
+    .register_page_header{
+        margin-top: -5px;
     }
     .register_page_header .fontSizeIcon {
-        font-size: 1.8em;
-        color: black
+        font-size: 1.5em;
+        color: #1abc9c;
     }
     .fixed_bar_login_register {
         text-align: center
@@ -18,12 +26,15 @@ page-register {
         margin-top: 25px;
     }
     .register_page_title h1 {
-        font-size: 30px;
+        font-size: 25px;
+        color:#1abc9c;
         font-family: "CircularBold";
+        margin-top:5rem !important;
     }
     .register_page_title p {
-        font-size: 20px;
+        font-size: 15px;
         font-family: "open sans regular";
+        color:#666;
     }
     .register_page_form {
         margin-top: 35px;
@@ -36,16 +47,17 @@ page-register {
     }
     .badge_progression_register {
         display: inline-block;
-        height: 50px;
-        width: 50px;
+        height: 40px;
+        width: 40px;
         border-radius: 50%;
         border: 1px solid #1abc9c;
-        padding-left: 12px;
-        padding-top: 12px;
+        padding-left: 7px;
+        padding-top: 7px;
         margin-top: -10px;
         background: #1abc9c;
         color: #fff;
         font-family: "CircularBold";
+        font-size:16px;
     }
     /*form*/
     .item-md {
@@ -54,7 +66,8 @@ page-register {
     .label-md[stacked] {
         font-size: 1.7rem;
         /*text-transform:uppercase;*/
-        font-family: "CircularBold";
+       
+        color:#555;
     }
     .item-md.item-input.item-input-has-focus .item-inner,
     .item-md.item-input.input-has-focus .item-inner {

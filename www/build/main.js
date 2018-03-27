@@ -1,14 +1,146 @@
-webpackJsonp([10],{
+webpackJsonp([11],{
+
+/***/ 103:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ConfigurationCategoryPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__configuration_configuration__ = __webpack_require__(104);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+/**
+ * Generated class for the ConfigurationCategoryPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var ConfigurationCategoryPage = (function () {
+    function ConfigurationCategoryPage(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+    }
+    ConfigurationCategoryPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad ConfigurationCategoryPage');
+    };
+    ConfigurationCategoryPage.prototype.goToConfigurationPage = function () {
+        var animationsOptions = {
+            animation: 'ios-transition',
+            duration: 300
+        };
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__configuration_configuration__["a" /* ConfigurationPage */], {}, animationsOptions);
+    };
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* Slides */]),
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* Slides */])
+    ], ConfigurationCategoryPage.prototype, "slides", void 0);
+    ConfigurationCategoryPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-configuration-category',template:/*ion-inline-start:"E:\cle Usb\keiwa-pro\keiwa-app-pro\src\pages\configuration-category\configuration-category.html"*/'<!--\n  Generated template for the ConfigurationPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n\n<ion-content style=" background:rgb(241, 241, 241); ">\n\n\n    <div class="container">\n        <div class="app">\n            \n            <div class="nav">\n                <div class="nav-top">\n                    <span style="display: inline-block;" >  <ion-icon name="ios-construct"></ion-icon> </span>\n                    <span style=" font-family:\'OpenSans-Regular\'; display: inline-block;  font-size:18px; " >  configuration </span>\n                    <span style="display: inline-block;" >  <ion-icon name="md-mic"></ion-icon> </span>\n                   \n                </div>\n                <ul>\n                    <li class="active">Selectionnez votre secteur d\'activité</li>\n                   \n                </ul>\n            </div>\n            <div class="list-items">\n                <div class="list-item">\n                    <div class="list-thumb">\n                        <img src="assets/imgs/1.jpg"  width="110"  alt="">\n                    </div>\n                    <span class="movie-time-left">  keiwa Pro </span>\n                    <span class="book-now">\n                        \n                            <span style="display:block; margin-top:-2px; transform:translateX(-5px); " >\n                                    <ion-toggle  checked="false"></ion-toggle>\n                                </span>\n                    </span>\n                    <div class="movie-detail">\n                        <div class="short-detail">\n                            <table>\n                                <tr>\n                                    <td  class="title">Culture céréalière</td>\n                                </tr>\n                                <tr>\n                                    <td class="author"> petite description de l\'activité </td>\n                                </tr>\n                               \n                                <tr>\n                                    <td class="genre">\n                                        riz | mil |fonio ...\n                                        \n                                    </td>\n                                </tr>\n                            </table>\n                            <span class="more-option"></span>\n                        </div>\n                    </div>\n                </div>\n                <div class="list-item">\n                    <div class="list-thumb">\n                        <img src="assets/imgs/1.jpg"  width="110"  alt="">\n                    </div>\n                    <span class="movie-time-left">  keiwa Pro </span>\n                    <span class="book-now">\n                        <span style="display:block; margin-top:-2px; transform:translateX(-5px); " >\n                            <ion-toggle  checked="false"></ion-toggle>\n                        </span>\n                        \n                    </span>\n                    <div class="movie-detail">\n                        <div class="short-detail">\n                            <table>\n                                <tr>\n                                    <td  class="title">Culture céréalière</td>\n                                </tr>\n                                <tr>\n                                    <td class="author"> petite description de l\'activité</td>\n                                </tr>\n                                \n                                <tr>\n                                    <td class="genre">\n                                        riz | mil |fonio ...\n                                        \n                                    </td>\n                                </tr>\n                            </table>\n                            <span class="more-option"></span>\n                        </div>\n                    </div>\n                </div>\n\n                <div class="list-item">\n                    <div class="list-thumb">\n                        <img src="assets/imgs/1.jpg"  width="110"  alt="">\n                    </div>\n                    <span class="movie-time-left">  keiwa Pro </span>\n                    <span class="book-now">\n                        \n                            <span style="display:block; margin-top:-2px; transform:translateX(-5px); " >\n                                    <ion-toggle  checked="false"></ion-toggle>\n                                </span>\n\n                    </span>\n                    <div class="movie-detail">\n                        <div class="short-detail">\n                            <table>\n                                <tr>\n                                    <td  class="title">Culture céréalière</td>\n                                </tr>\n                                <tr>\n                                    <td class="author"> petite description de l\'activité</td>\n                                </tr>\n                                \n                                <tr>\n                                    <td class="genre">\n\n                                        riz | mil |fonio ...\n                                        \n                                    </td>\n                                </tr>\n                            </table>\n                            <span class="more-option"></span>\n                        </div>\n                    </div>\n                </div>\n\n                <div class="list-item">\n                    <div class="list-thumb">\n                        <img src="assets/imgs/1.jpg"  width="110"  alt="">\n                    </div>\n                    <span class="movie-time-left">  keiwa Pro </span>\n                    <span class="book-now">\n                        \n                            <span style="display:block; margin-top:-2px; transform:translateX(-5px); " >\n                                    <ion-toggle  checked="false"></ion-toggle>\n                                </span>\n\n                    </span>\n                    <div class="movie-detail">\n                        <div class="short-detail">\n                            <table>\n                                <tr>\n                                    <td  class="title">Culture cerealiere</td>\n                                </tr>\n                                <tr>\n                                    <td class="author"> petite description de l\'activité</td>\n                                </tr>\n                                \n                                <tr>\n                                    <td class="genre">\n\n                                        riz | mil |fonio ...\n                                        \n                                    </td>\n                                </tr>\n                            </table>\n                            <span class="more-option"></span>\n                        </div>\n                    </div>\n                </div>\n\n                <div class="list-item">\n                    <div class="list-thumb">\n                        <img src="assets/imgs/1.jpg"  width="110"  alt="">\n                    </div>\n                    <span class="movie-time-left">  keiwa Pro </span>\n                    <span class="book-now">\n                        \n                            <span style="display:block; margin-top:-2px; transform:translateX(-5px); " >\n                                    <ion-toggle  checked="false"></ion-toggle>\n                                </span>\n\n                    </span>\n                    <div class="movie-detail">\n                        <div class="short-detail">\n                            <table>\n                                <tr>\n                                    <td  class="title">Culture céréalière</td>\n                                </tr>\n                                <tr>\n                                    <td class="author"> petite description de l\'activité</td>\n                                </tr>\n                                \n                                <tr>\n                                    <td class="genre">\n\n                                        riz | mil |fonio ...\n                                        \n                                    </td>\n                                </tr>\n                            </table>\n                            <span class="more-option"></span>\n                        </div>\n                    </div>\n                </div>\n\n                \n                \n                \n            </div>\n            \n        </div>\n        \n    </div>\n\n\n</ion-content>\n\n<ion-footer color="blanc" >\n    <ion-toolbar color="blanc" style="padding-left:16px; padding-right:16px;" >\n            <button (click)="goToConfigurationPage()" style="  height:45px; " ion-button color="primary" block round>  <span style="color:#fff; font-family:\'OpenSans-Light\';  " > continuer </span>  </button>\n\n    </ion-toolbar>\n</ion-footer>'/*ion-inline-end:"E:\cle Usb\keiwa-pro\keiwa-app-pro\src\pages\configuration-category\configuration-category.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]])
+    ], ConfigurationCategoryPage);
+    return ConfigurationCategoryPage;
+}());
+
+//# sourceMappingURL=configuration-category.js.map
+
+/***/ }),
 
 /***/ 104:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ConfigurationPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_native_page_transitions__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__configuration_charges_configuration_charges__ = __webpack_require__(105);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+/**
+ * Generated class for the ConfigurationPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var ConfigurationPage = (function () {
+    function ConfigurationPage(navCtrl, navParams, nativePageTransitions) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.nativePageTransitions = nativePageTransitions;
+    }
+    ConfigurationPage.prototype.goToConfigurationChargesPage = function () {
+        var animationsOptions = {
+            animation: 'ios-transition',
+            duration: 300
+        };
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__configuration_charges_configuration_charges__["a" /* ConfigurationChargesPage */], {}, animationsOptions);
+    };
+    ConfigurationPage.prototype.goToBack = function () {
+        var animationsOptions = {
+            animation: 'ios-transition',
+            duration: 300
+        };
+        this.navCtrl.pop(animationsOptions);
+    };
+    ConfigurationPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad ConfigurationPage');
+    };
+    ConfigurationPage.prototype.goToBackSlide = function (numberslide) {
+        this.slides.slideTo(numberslide, 300);
+    };
+    ConfigurationPage.prototype.goToSlide = function (numberslide) {
+        this.slides.slideTo(numberslide, 300);
+    };
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* Slides */]),
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* Slides */])
+    ], ConfigurationPage.prototype, "slides", void 0);
+    ConfigurationPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-configuration',template:/*ion-inline-start:"E:\cle Usb\keiwa-pro\keiwa-app-pro\src\pages\configuration\configuration.html"*/'<!--\n\n  Generated template for the ConfigurationPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n\n\n<ion-content style=" background:rgb(241, 241, 241); ">\n\n\n\n\n\n    <div class="container">\n\n        <div class="app">\n\n            \n\n            <div class="nav">\n\n                <div class="nav-top">\n\n                    <span style="display: inline-block;"  >  <ion-icon (click)="goToBack()" name="md-arrow-back"></ion-icon> </span>\n\n                    <span style=" font-family:\'OpenSans-Regular\'; display: inline-block;  font-size:18px; " >  configuration </span>\n\n                    <span style="display: inline-block;" >  <ion-icon name="md-mic"></ion-icon> </span>\n\n                   \n\n                </div>\n\n                <ul>\n\n                    <li class="active">Selectionnez vos produits et services</li>\n\n                   \n\n                </ul>\n\n            </div>\n\n            <div class="list-items">\n\n                <div class="list-item">\n\n                    <div class="list-thumb">\n\n                        <img src="assets/imgs/1.jpg"  width="110"  alt="">\n\n                    </div>\n\n                    <span class="movie-time-left">  keiwa Pro </span>\n\n                    <span class="book-now">\n\n                        \n\n                            <span style="display:block; margin-top:-2px; transform:translateX(-5px); " >\n\n                                    <ion-toggle  checked="false"></ion-toggle>\n\n                                </span>\n\n                    </span>\n\n                    <div class="movie-detail">\n\n                        <div class="short-detail">\n\n                            <table>\n\n                                <tr>\n\n                                    <td  class="title">Culture céréalière</td>\n\n                                </tr>\n\n                                <tr>\n\n                                    <td class="author"> petite description de l\'activité </td>\n\n                                </tr>\n\n                               \n\n                                <tr>\n\n                                    <td class="genre">\n\n                                        riz | mil |fonio ...\n\n                                        \n\n                                    </td>\n\n                                </tr>\n\n                            </table>\n\n                            <span class="more-option"></span>\n\n                        </div>\n\n                    </div>\n\n                </div>\n\n                <div class="list-item">\n\n                    <div class="list-thumb">\n\n                        <img src="assets/imgs/1.jpg"  width="110"  alt="">\n\n                    </div>\n\n                    <span class="movie-time-left">  keiwa Pro </span>\n\n                    <span class="book-now">\n\n                        <span style="display:block; margin-top:-2px; transform:translateX(-5px); " >\n\n                            <ion-toggle  checked="false"></ion-toggle>\n\n                        </span>\n\n                        \n\n                    </span>\n\n                    <div class="movie-detail">\n\n                        <div class="short-detail">\n\n                            <table>\n\n                                <tr>\n\n                                    <td  class="title">Culture céréalière</td>\n\n                                </tr>\n\n                                <tr>\n\n                                    <td class="author"> petite description de l\'activité</td>\n\n                                </tr>\n\n                                \n\n                                <tr>\n\n                                    <td class="genre">\n\n                                        riz | mil |fonio ...\n\n                                        \n\n                                    </td>\n\n                                </tr>\n\n                            </table>\n\n                            <span class="more-option"></span>\n\n                        </div>\n\n                    </div>\n\n                </div>\n\n\n\n                <div class="list-item">\n\n                    <div class="list-thumb">\n\n                        <img src="assets/imgs/1.jpg"  width="110"  alt="">\n\n                    </div>\n\n                    <span class="movie-time-left">  keiwa Pro </span>\n\n                    <span class="book-now">\n\n                        \n\n                            <span style="display:block; margin-top:-2px; transform:translateX(-5px); " >\n\n                                    <ion-toggle  checked="false"></ion-toggle>\n\n                                </span>\n\n\n\n                    </span>\n\n                    <div class="movie-detail">\n\n                        <div class="short-detail">\n\n                            <table>\n\n                                <tr>\n\n                                    <td  class="title">Culture céréalière</td>\n\n                                </tr>\n\n                                <tr>\n\n                                    <td class="author"> petite description de l\'activité</td>\n\n                                </tr>\n\n                                \n\n                                <tr>\n\n                                    <td class="genre">\n\n\n\n                                        riz | mil |fonio ...\n\n                                        \n\n                                    </td>\n\n                                </tr>\n\n                            </table>\n\n                            <span class="more-option"></span>\n\n                        </div>\n\n                    </div>\n\n                </div>\n\n\n\n                <div class="list-item">\n\n                    <div class="list-thumb">\n\n                        <img src="assets/imgs/1.jpg"  width="110"  alt="">\n\n                    </div>\n\n                    <span class="movie-time-left">  keiwa Pro </span>\n\n                    <span class="book-now">\n\n                        \n\n                            <span style="display:block; margin-top:-2px; transform:translateX(-5px); " >\n\n                                    <ion-toggle  checked="false"></ion-toggle>\n\n                                </span>\n\n\n\n                    </span>\n\n                    <div class="movie-detail">\n\n                        <div class="short-detail">\n\n                            <table>\n\n                                <tr>\n\n                                    <td  class="title">Culture cerealiere</td>\n\n                                </tr>\n\n                                <tr>\n\n                                    <td class="author"> petite description de l\'activité</td>\n\n                                </tr>\n\n                                \n\n                                <tr>\n\n                                    <td class="genre">\n\n\n\n                                        riz | mil |fonio ...\n\n                                        \n\n                                    </td>\n\n                                </tr>\n\n                            </table>\n\n                            <span class="more-option"></span>\n\n                        </div>\n\n                    </div>\n\n                </div>\n\n\n\n                <div class="list-item">\n\n                    <div class="list-thumb">\n\n                        <img src="assets/imgs/1.jpg"  width="110"  alt="">\n\n                    </div>\n\n                    <span class="movie-time-left">  keiwa Pro </span>\n\n                    <span class="book-now">\n\n                        \n\n                            <span style="display:block; margin-top:-2px; transform:translateX(-5px); " >\n\n                                    <ion-toggle  checked="false"></ion-toggle>\n\n                                </span>\n\n\n\n                    </span>\n\n                    <div class="movie-detail">\n\n                        <div class="short-detail">\n\n                            <table>\n\n                                <tr>\n\n                                    <td  class="title">Culture céréalière</td>\n\n                                </tr>\n\n                                <tr>\n\n                                    <td class="author"> petite description de l\'activité</td>\n\n                                </tr>\n\n                                \n\n                                <tr>\n\n                                    <td class="genre">\n\n\n\n                                        riz | mil |fonio ...\n\n                                        \n\n                                    </td>\n\n                                </tr>\n\n                            </table>\n\n                            <span class="more-option"></span>\n\n                        </div>\n\n                    </div>\n\n                </div>\n\n\n\n                \n\n                \n\n                \n\n            </div>\n\n            \n\n        </div>\n\n        \n\n    </div>\n\n    \n\n\n\n</ion-content>\n\n\n\n<ion-footer color="blanc" >\n\n        <ion-toolbar color="blanc" style="padding-left:16px; padding-right:16px;" >\n\n                <button (click)="goToConfigurationChargesPage()" style="  height:45px; " ion-button color="primary" block round>  <span style="color:#fff; font-family:\'OpenSans-Light\';  " > continuer </span>  </button>\n\n\n\n        </ion-toolbar>\n\n</ion-footer>\n\n\n\n'/*ion-inline-end:"E:\cle Usb\keiwa-pro\keiwa-app-pro\src\pages\configuration\configuration.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_native_page_transitions__["a" /* NativePageTransitions */]])
+    ], ConfigurationPage);
+    return ConfigurationPage;
+}());
+
+//# sourceMappingURL=configuration.js.map
+
+/***/ }),
+
+/***/ 105:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ConfigurationChargesPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_native_page_transitions__ = __webpack_require__(30);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__configuration_other_configuration_other__ = __webpack_require__(105);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__configuration_other_configuration_other__ = __webpack_require__(106);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -53,7 +185,7 @@ var ConfigurationChargesPage = (function () {
     };
     ConfigurationChargesPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-configuration-charges',template:/*ion-inline-start:"E:\cle Usb\keiwa-pro\keiwa-app-pro\src\pages\configuration-charges\configuration-charges.html"*/'<!--\n\n  Generated template for the ConfigurationChargesPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n\n\n<ion-content style=" background:rgb(241, 241, 241); ">\n\n\n\n        <div class="headerWelcomePage" padding>\n\n\n\n                <div class="register_page_header">\n\n                        <span  style="    font-size: 16px;  position: relative; top: 2px; color: #fff;"  class="badge_progression_register pull-right-style">2/3</span>\n\n                        <a (click)="goToBack()" >\n\n                            <ion-icon style="color:#fff; font-size:25px; " ios="ios-close" class="fontSizeIcon" md="md-arrow-back"></ion-icon>\n\n                        </a>\n\n                    </div>\n\n    \n\n            <div class="welcome_page_header" style=" text-align:center; ">\n\n                <span style="position: relative; top: 10px; color: #fff;  "> <ion-icon style="font-size:40px;" name="ios-construct"></ion-icon> </span>\n\n            </div>\n\n            <div class="textHeader">\n\n                <h1>Configuration</h1>\n\n            </div>\n\n        </div>\n\n        <div  style="  margin-top:0px; position:relative; " padding>\n\n                \n\n            <div class="headerBodyConfig ">\n\n                <h3 class="animated slideInDown" > Selectionner vos charges </h3>\n\n                <button class="animated infinite pulse" style="position: absolute; top:-30px; left:15px; " ion-fab color="blanc"><ion-icon color="primary" name="md-mic"></ion-icon></button>\n\n    \n\n            </div>\n\n            <div class="CorpsBodyConfig">\n\n                <ul class="animated slideInDown">\n\n                    <li class="">\n\n                        <div class="circle"><img src="assets/imgs/radish_vegetables_16825.png"></div>\n\n                        <h4>Jamie Harden\n\n                            <p class=" desc_filiere "> Lorem ipsum dolor, sit amet . </p>\n\n                        </h4>\n\n                        <input id="check-1" type="checkbox">\n\n                        <label for="check-1"><i class="fa fa-check"></i></label>\n\n                    </li>\n\n    \n\n                </ul>\n\n    \n\n                <ul class="animated slideInDown">\n\n                    <li class="">\n\n                        <div class="circle"><img src="assets/imgs/jacket-2.png"></div>\n\n                        <h4>Jamie Harden\n\n                            <p class=" desc_filiere "> Lorem ipsum dolor, sit amet . </p>\n\n                        </h4>\n\n                        <input id="check-2" type="checkbox">\n\n                        <label for="check-2"><i class="fa fa-check"></i></label>\n\n                    </li>\n\n    \n\n                </ul>\n\n                <ul>\n\n                    <li class="animated slideInDown">\n\n                        <div class="circle"><img src="assets/imgs/icons8-taxi-48.png"></div>\n\n                        <h4>Jamie Harden\n\n                            <p class=" desc_filiere "> Lorem ipsum dolor, sit amet . </p>\n\n                        </h4>\n\n    \n\n                        <input id="check-3" type="checkbox">\n\n                        <label for="check-3"><i class="fa fa-check"></i></label>\n\n                    </li>\n\n    \n\n                </ul>\n\n    \n\n                <ul>\n\n                    <li class="animated slideInDown">\n\n                        <div class="circle"><img src="assets/imgs/icons8-nourriture-50.png"></div>\n\n                        <h4>Jamie Harden\n\n                            <p class=" desc_filiere "> Lorem ipsum dolor, sit amet . </p>\n\n                        </h4>\n\n                        <input id="check-4" type="checkbox">\n\n                        <label for="check-4"><i class="fa fa-check"></i></label>\n\n                    </li>\n\n    \n\n                </ul>\n\n    \n\n                <ul>\n\n                    <li class="animated slideInDown">\n\n                        <div class="circle"><img src="assets/imgs/icons8-entretien-48.png"></div>\n\n                        <h4>Jamie Harden\n\n                            <p class=" desc_filiere "> Lorem ipsum dolor, sit amet . </p>\n\n                        </h4>\n\n                        <input id="check-5" type="checkbox">\n\n                        <label for="check-5"><i class="fa fa-check"></i></label>\n\n                    </li>\n\n    \n\n                </ul>\n\n    \n\n            </div>\n\n    \n\n        </div>\n\n    \n\n    \n\n    \n\n    \n\n    \n\n    \n\n        <div class="footerButton" padding>\n\n            <div style="text-align:center; ">\n\n                <button class="btn-default-keiwa background-default " ion-button  style=" height:45px;background: #1abc9c;color:white; margin-top:-5px; " (click)="goToConfigurationOtherPage()" block >Continuer</button>\n\n            </div>\n\n    \n\n        </div>\n\n\n\n</ion-content>'/*ion-inline-end:"E:\cle Usb\keiwa-pro\keiwa-app-pro\src\pages\configuration-charges\configuration-charges.html"*/,
+            selector: 'page-configuration-charges',template:/*ion-inline-start:"E:\cle Usb\keiwa-pro\keiwa-app-pro\src\pages\configuration-charges\configuration-charges.html"*/'<!--\n\n  Generated template for the ConfigurationChargesPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n\n\n<ion-content style=" background:rgb(241, 241, 241); ">\n\n\n\n    <div class="container">\n\n        <div class="app">\n\n            \n\n            <div class="nav">\n\n                <div class="nav-top">\n\n                    <span style="display: inline-block;"  >  <ion-icon (click)="goToBack()" name="md-arrow-back"></ion-icon> </span>\n\n                    <span style=" font-family:\'OpenSans-Regular\'; display: inline-block;  font-size:18px; " >  configuration </span>\n\n                    <span style="display: inline-block;" >  <ion-icon name="md-mic"></ion-icon> </span>\n\n                   \n\n                </div>\n\n                <ul>\n\n                    <li class="active">Selectionnez vos charges</li>\n\n                   \n\n                </ul>\n\n            </div>\n\n            <div class="list-items">\n\n                <div class="list-item">\n\n                    <div class="list-thumb">\n\n                        <img src="assets/imgs/1.jpg"  width="110"  alt="">\n\n                    </div>\n\n                    <span class="movie-time-left">  keiwa Pro </span>\n\n                    <span class="book-now">\n\n                        \n\n                            <span style="display:block; margin-top:-2px; transform:translateX(-5px); " >\n\n                                    <ion-toggle  checked="false"></ion-toggle>\n\n                                </span>\n\n                    </span>\n\n                    <div class="movie-detail">\n\n                        <div class="short-detail">\n\n                            <table>\n\n                                <tr>\n\n                                    <td  class="title">Culture céréalière</td>\n\n                                </tr>\n\n                                <tr>\n\n                                    <td class="author"> petite description de l\'activité </td>\n\n                                </tr>\n\n                               \n\n                                <tr>\n\n                                    <td class="genre">\n\n                                        riz | mil |fonio ...\n\n                                        \n\n                                    </td>\n\n                                </tr>\n\n                            </table>\n\n                            <span class="more-option"></span>\n\n                        </div>\n\n                    </div>\n\n                </div>\n\n                <div class="list-item">\n\n                    <div class="list-thumb">\n\n                        <img src="assets/imgs/1.jpg"  width="110"  alt="">\n\n                    </div>\n\n                    <span class="movie-time-left">  keiwa Pro </span>\n\n                    <span class="book-now">\n\n                        <span style="display:block; margin-top:-2px; transform:translateX(-5px); " >\n\n                            <ion-toggle  checked="false"></ion-toggle>\n\n                        </span>\n\n                        \n\n                    </span>\n\n                    <div class="movie-detail">\n\n                        <div class="short-detail">\n\n                            <table>\n\n                                <tr>\n\n                                    <td  class="title">Culture céréalière</td>\n\n                                </tr>\n\n                                <tr>\n\n                                    <td class="author"> petite description de l\'activité</td>\n\n                                </tr>\n\n                                \n\n                                <tr>\n\n                                    <td class="genre">\n\n                                        riz | mil |fonio ...\n\n                                        \n\n                                    </td>\n\n                                </tr>\n\n                            </table>\n\n                            <span class="more-option"></span>\n\n                        </div>\n\n                    </div>\n\n                </div>\n\n\n\n                <div class="list-item">\n\n                    <div class="list-thumb">\n\n                        <img src="assets/imgs/1.jpg"  width="110"  alt="">\n\n                    </div>\n\n                    <span class="movie-time-left">  keiwa Pro </span>\n\n                    <span class="book-now">\n\n                        \n\n                            <span style="display:block; margin-top:-2px; transform:translateX(-5px); " >\n\n                                    <ion-toggle  checked="false"></ion-toggle>\n\n                                </span>\n\n\n\n                    </span>\n\n                    <div class="movie-detail">\n\n                        <div class="short-detail">\n\n                            <table>\n\n                                <tr>\n\n                                    <td  class="title">Culture céréalière</td>\n\n                                </tr>\n\n                                <tr>\n\n                                    <td class="author"> petite description de l\'activité</td>\n\n                                </tr>\n\n                                \n\n                                <tr>\n\n                                    <td class="genre">\n\n\n\n                                        riz | mil |fonio ...\n\n                                        \n\n                                    </td>\n\n                                </tr>\n\n                            </table>\n\n                            <span class="more-option"></span>\n\n                        </div>\n\n                    </div>\n\n                </div>\n\n\n\n                <div class="list-item">\n\n                    <div class="list-thumb">\n\n                        <img src="assets/imgs/1.jpg"  width="110"  alt="">\n\n                    </div>\n\n                    <span class="movie-time-left">  keiwa Pro </span>\n\n                    <span class="book-now">\n\n                        \n\n                            <span style="display:block; margin-top:-2px; transform:translateX(-5px); " >\n\n                                    <ion-toggle  checked="false"></ion-toggle>\n\n                                </span>\n\n\n\n                    </span>\n\n                    <div class="movie-detail">\n\n                        <div class="short-detail">\n\n                            <table>\n\n                                <tr>\n\n                                    <td  class="title">Culture cerealiere</td>\n\n                                </tr>\n\n                                <tr>\n\n                                    <td class="author"> petite description de l\'activité</td>\n\n                                </tr>\n\n                                \n\n                                <tr>\n\n                                    <td class="genre">\n\n\n\n                                        riz | mil |fonio ...\n\n                                        \n\n                                    </td>\n\n                                </tr>\n\n                            </table>\n\n                            <span class="more-option"></span>\n\n                        </div>\n\n                    </div>\n\n                </div>\n\n\n\n                <div class="list-item">\n\n                    <div class="list-thumb">\n\n                        <img src="assets/imgs/1.jpg"  width="110"  alt="">\n\n                    </div>\n\n                    <span class="movie-time-left">  keiwa Pro </span>\n\n                    <span class="book-now">\n\n                        \n\n                            <span style="display:block; margin-top:-2px; transform:translateX(-5px); " >\n\n                                    <ion-toggle  checked="false"></ion-toggle>\n\n                                </span>\n\n\n\n                    </span>\n\n                    <div class="movie-detail">\n\n                        <div class="short-detail">\n\n                            <table>\n\n                                <tr>\n\n                                    <td  class="title">Culture céréalière</td>\n\n                                </tr>\n\n                                <tr>\n\n                                    <td class="author"> petite description de l\'activité</td>\n\n                                </tr>\n\n                                \n\n                                <tr>\n\n                                    <td class="genre">\n\n\n\n                                        riz | mil |fonio ...\n\n                                        \n\n                                    </td>\n\n                                </tr>\n\n                            </table>\n\n                            <span class="more-option"></span>\n\n                        </div>\n\n                    </div>\n\n                </div>\n\n\n\n                \n\n                \n\n                \n\n            </div>\n\n            \n\n        </div>\n\n        \n\n    </div>\n\n\n\n</ion-content>\n\n\n\n<ion-footer color="blanc" >\n\n    <ion-toolbar color="blanc" style="padding-left:16px; padding-right:16px;" >\n\n            <button (click)="goToConfigurationOtherPage()" style="  height:45px; " ion-button color="primary" block round>  <span style="color:#fff; font-family:\'OpenSans-Light\';  " > continuer </span>  </button>\n\n\n\n    </ion-toolbar>\n\n</ion-footer>'/*ion-inline-end:"E:\cle Usb\keiwa-pro\keiwa-app-pro\src\pages\configuration-charges\configuration-charges.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_native_page_transitions__["a" /* NativePageTransitions */]])
     ], ConfigurationChargesPage);
@@ -64,13 +196,13 @@ var ConfigurationChargesPage = (function () {
 
 /***/ }),
 
-/***/ 105:
+/***/ 106:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ConfigurationOtherPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_native_page_transitions__ = __webpack_require__(30);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__tabs_tabs__ = __webpack_require__(169);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -113,7 +245,7 @@ var ConfigurationOtherPage = (function () {
     };
     ConfigurationOtherPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-configuration-other',template:/*ion-inline-start:"E:\cle Usb\keiwa-pro\keiwa-app-pro\src\pages\configuration-other\configuration-other.html"*/'<!--\n\n  Generated template for the ConfigurationOtherPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n\n\n<ion-content style=" background:rgb(241, 241, 241); ">\n\n\n\n        <div class="headerWelcomePage" padding>\n\n\n\n                <div class="register_page_header">\n\n                        <span  style="    font-size: 16px;  position: relative; top: 2px; color: #fff;"  class="badge_progression_register pull-right-style">3/3</span>\n\n                        <a (click)="goToBack()" >\n\n                            <ion-icon style="color:#fff; font-size:25px; " ios="ios-close" class="fontSizeIcon" md="md-arrow-back"></ion-icon>\n\n                        </a>\n\n                    </div>\n\n    \n\n            <div class="welcome_page_header" style=" text-align:center; ">\n\n                <span style="position: relative; top: 10px; color: #fff;  "> <ion-icon style="font-size:40px;" name="ios-construct"></ion-icon> </span>\n\n            </div>\n\n            <div class="textHeader">\n\n                <h1>Configuration</h1>\n\n            </div>\n\n        </div>\n\n        <div  style="  margin-top:0px; position:relative; " padding>\n\n                \n\n            <div class="headerBodyConfig ">\n\n                <h3 class="animated slideInDown" > Autres configurations </h3>\n\n                <button class="animated infinite pulse" style="position: absolute; top:-30px; left:15px; " ion-fab color="blanc"><ion-icon color="primary" name="md-mic"></ion-icon></button>\n\n    \n\n            </div>\n\n            <div class="CorpsBodyConfig">\n\n                <ul class="animated slideInDown">\n\n                    <li class="">\n\n                        <div class="circle"><img src="assets/imgs/radish_vegetables_16825.png"></div>\n\n                        <h4>Jamie Harden\n\n                            <p class=" desc_filiere "> Lorem ipsum dolor, sit amet . </p>\n\n                        </h4>\n\n                        <input id="check-1" type="checkbox">\n\n                        <label for="check-1"><i class="fa fa-check"></i></label>\n\n                    </li>\n\n    \n\n                </ul>\n\n    \n\n                <ul class="animated slideInDown">\n\n                    <li class="">\n\n                        <div class="circle"><img src="assets/imgs/jacket-2.png"></div>\n\n                        <h4>Jamie Harden\n\n                            <p class=" desc_filiere "> Lorem ipsum dolor, sit amet . </p>\n\n                        </h4>\n\n                        <input id="check-2" type="checkbox">\n\n                        <label for="check-2"><i class="fa fa-check"></i></label>\n\n                    </li>\n\n    \n\n                </ul>\n\n                <ul>\n\n                    <li class="animated slideInDown">\n\n                        <div class="circle"><img src="assets/imgs/icons8-taxi-48.png"></div>\n\n                        <h4>Jamie Harden\n\n                            <p class=" desc_filiere "> Lorem ipsum dolor, sit amet . </p>\n\n                        </h4>\n\n    \n\n                        <input id="check-3" type="checkbox">\n\n                        <label for="check-3"><i class="fa fa-check"></i></label>\n\n                    </li>\n\n    \n\n                </ul>\n\n    \n\n                <ul>\n\n                    <li class="animated slideInDown">\n\n                        <div class="circle"><img src="assets/imgs/icons8-nourriture-50.png"></div>\n\n                        <h4>Jamie Harden\n\n                            <p class=" desc_filiere "> Lorem ipsum dolor, sit amet . </p>\n\n                        </h4>\n\n                        <input id="check-4" type="checkbox">\n\n                        <label for="check-4"><i class="fa fa-check"></i></label>\n\n                    </li>\n\n    \n\n                </ul>\n\n    \n\n                <ul>\n\n                    <li class="animated slideInDown">\n\n                        <div class="circle"><img src="assets/imgs/icons8-entretien-48.png"></div>\n\n                        <h4>Jamie Harden\n\n                            <p class=" desc_filiere "> Lorem ipsum dolor, sit amet . </p>\n\n                        </h4>\n\n                        <input id="check-5" type="checkbox">\n\n                        <label for="check-5"><i class="fa fa-check"></i></label>\n\n                    </li>\n\n    \n\n                </ul>\n\n    \n\n            </div>\n\n    \n\n        </div>\n\n    \n\n    \n\n    \n\n    \n\n    \n\n    \n\n        <div class="footerButton" padding>\n\n            <div style="text-align:center; ">\n\n                <button class="btn-default-keiwa background-default " ion-button  style=" height:45px;background: #1abc9c;color:white; margin-top:-5px; " (click)="goToTabsPage()" block >Terminer</button>\n\n            </div>\n\n    \n\n        </div>\n\n\n\n</ion-content>'/*ion-inline-end:"E:\cle Usb\keiwa-pro\keiwa-app-pro\src\pages\configuration-other\configuration-other.html"*/,
+            selector: 'page-configuration-other',template:/*ion-inline-start:"E:\cle Usb\keiwa-pro\keiwa-app-pro\src\pages\configuration-other\configuration-other.html"*/'<!--\n\n  Generated template for the ConfigurationOtherPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n\n\n<ion-content style=" background:rgb(241, 241, 241); ">\n\n\n\n    <div class="app">\n\n            \n\n        <div class="nav">\n\n            <div class="nav-top">\n\n                <span style="display: inline-block;"  >  <ion-icon (click)="goToBack()" name="md-arrow-back"></ion-icon> </span>\n\n                <span style=" font-family:\'OpenSans-Regular\'; display: inline-block;  font-size:18px; " >  configuration </span>\n\n                <span style="display: inline-block;" >  <ion-icon name="md-mic"></ion-icon> </span>\n\n               \n\n            </div>\n\n            <ul>\n\n                <li class="active">Autres configurations</li>\n\n               \n\n            </ul>\n\n        </div>\n\n        <div class="list-items">\n\n            <div class="list-item">\n\n                <div class="list-thumb">\n\n                    <img src="assets/imgs/1.jpg"  width="110"  alt="">\n\n                </div>\n\n                <span class="movie-time-left">  keiwa Pro </span>\n\n                <span class="book-now">\n\n                    \n\n                        <span style="display:block; margin-top:-2px; transform:translateX(-5px); " >\n\n                                <ion-toggle  checked="false"></ion-toggle>\n\n                            </span>\n\n                </span>\n\n                <div class="movie-detail">\n\n                    <div class="short-detail">\n\n                        <table>\n\n                            <tr>\n\n                                <td  class="title">Culture céréalière</td>\n\n                            </tr>\n\n                            <tr>\n\n                                <td class="author"> petite description de l\'activité </td>\n\n                            </tr>\n\n                           \n\n                            <tr>\n\n                                <td class="genre">\n\n                                    riz | mil |fonio ...\n\n                                    \n\n                                </td>\n\n                            </tr>\n\n                        </table>\n\n                        <span class="more-option"></span>\n\n                    </div>\n\n                </div>\n\n            </div>\n\n            <div class="list-item">\n\n                <div class="list-thumb">\n\n                    <img src="assets/imgs/1.jpg"  width="110"  alt="">\n\n                </div>\n\n                <span class="movie-time-left">  keiwa Pro </span>\n\n                <span class="book-now">\n\n                    <span style="display:block; margin-top:-2px; transform:translateX(-5px); " >\n\n                        <ion-toggle  checked="false"></ion-toggle>\n\n                    </span>\n\n                    \n\n                </span>\n\n                <div class="movie-detail">\n\n                    <div class="short-detail">\n\n                        <table>\n\n                            <tr>\n\n                                <td  class="title">Culture céréalière</td>\n\n                            </tr>\n\n                            <tr>\n\n                                <td class="author"> petite description de l\'activité</td>\n\n                            </tr>\n\n                            \n\n                            <tr>\n\n                                <td class="genre">\n\n                                    riz | mil |fonio ...\n\n                                    \n\n                                </td>\n\n                            </tr>\n\n                        </table>\n\n                        <span class="more-option"></span>\n\n                    </div>\n\n                </div>\n\n            </div>\n\n\n\n            <div class="list-item">\n\n                <div class="list-thumb">\n\n                    <img src="assets/imgs/1.jpg"  width="110"  alt="">\n\n                </div>\n\n                <span class="movie-time-left">  keiwa Pro </span>\n\n                <span class="book-now">\n\n                    \n\n                        <span style="display:block; margin-top:-2px; transform:translateX(-5px); " >\n\n                                <ion-toggle  checked="false"></ion-toggle>\n\n                            </span>\n\n\n\n                </span>\n\n                <div class="movie-detail">\n\n                    <div class="short-detail">\n\n                        <table>\n\n                            <tr>\n\n                                <td  class="title">Culture céréalière</td>\n\n                            </tr>\n\n                            <tr>\n\n                                <td class="author"> petite description de l\'activité</td>\n\n                            </tr>\n\n                            \n\n                            <tr>\n\n                                <td class="genre">\n\n\n\n                                    riz | mil |fonio ...\n\n                                    \n\n                                </td>\n\n                            </tr>\n\n                        </table>\n\n                        <span class="more-option"></span>\n\n                    </div>\n\n                </div>\n\n            </div>\n\n\n\n            <div class="list-item">\n\n                <div class="list-thumb">\n\n                    <img src="assets/imgs/1.jpg"  width="110"  alt="">\n\n                </div>\n\n                <span class="movie-time-left">  keiwa Pro </span>\n\n                <span class="book-now">\n\n                    \n\n                        <span style="display:block; margin-top:-2px; transform:translateX(-5px); " >\n\n                                <ion-toggle  checked="false"></ion-toggle>\n\n                            </span>\n\n\n\n                </span>\n\n                <div class="movie-detail">\n\n                    <div class="short-detail">\n\n                        <table>\n\n                            <tr>\n\n                                <td  class="title">Culture cerealiere</td>\n\n                            </tr>\n\n                            <tr>\n\n                                <td class="author"> petite description de l\'activité</td>\n\n                            </tr>\n\n                            \n\n                            <tr>\n\n                                <td class="genre">\n\n\n\n                                    riz | mil |fonio ...\n\n                                    \n\n                                </td>\n\n                            </tr>\n\n                        </table>\n\n                        <span class="more-option"></span>\n\n                    </div>\n\n                </div>\n\n            </div>\n\n\n\n            <div class="list-item">\n\n                <div class="list-thumb">\n\n                    <img src="assets/imgs/1.jpg"  width="110"  alt="">\n\n                </div>\n\n                <span class="movie-time-left">  keiwa Pro </span>\n\n                <span class="book-now">\n\n                    \n\n                        <span style="display:block; margin-top:-2px; transform:translateX(-5px); " >\n\n                                <ion-toggle  checked="false"></ion-toggle>\n\n                            </span>\n\n\n\n                </span>\n\n                <div class="movie-detail">\n\n                    <div class="short-detail">\n\n                        <table>\n\n                            <tr>\n\n                                <td  class="title">Culture céréalière</td>\n\n                            </tr>\n\n                            <tr>\n\n                                <td class="author"> petite description de l\'activité</td>\n\n                            </tr>\n\n                            \n\n                            <tr>\n\n                                <td class="genre">\n\n\n\n                                    riz | mil |fonio ...\n\n                                    \n\n                                </td>\n\n                            </tr>\n\n                        </table>\n\n                        <span class="more-option"></span>\n\n                    </div>\n\n                </div>\n\n            </div>\n\n\n\n            \n\n            \n\n            \n\n        </div>\n\n        \n\n    </div>\n\n    \n\n\n\n\n\n</ion-content>\n\n\n\n<ion-footer color="blanc" >\n\n    <ion-toolbar color="blanc" style="padding-left:16px; padding-right:16px;" >\n\n            <button (click)="goToTabsPage()" style="  height:45px; " ion-button color="primary" block round>  <span style="color:#fff; font-family:\'OpenSans-Light\';  " > Terminer </span>  </button>\n\n\n\n    </ion-toolbar>\n\n</ion-footer>'/*ion-inline-end:"E:\cle Usb\keiwa-pro\keiwa-app-pro\src\pages\configuration-other\configuration-other.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_native_page_transitions__["a" /* NativePageTransitions */]])
     ], ConfigurationOtherPage);
@@ -124,13 +256,13 @@ var ConfigurationOtherPage = (function () {
 
 /***/ }),
 
-/***/ 106:
+/***/ 107:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RecettePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_saverecette_saverecette__ = __webpack_require__(81);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_forms__ = __webpack_require__(13);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -211,13 +343,13 @@ var RecettePage = (function () {
 
 /***/ }),
 
-/***/ 107:
+/***/ 108:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DepensePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(13);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -271,13 +403,13 @@ var DepensePage = (function () {
 
 /***/ }),
 
-/***/ 108:
+/***/ 109:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CreditPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(9);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -320,13 +452,13 @@ var CreditPage = (function () {
 
 /***/ }),
 
-/***/ 109:
+/***/ 110:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return OpportunitePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(9);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -365,112 +497,13 @@ var OpportunitePage = (function () {
 
 /***/ }),
 
-/***/ 110:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ConfigurationPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_animations__ = __webpack_require__(82);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_native_page_transitions__ = __webpack_require__(30);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__configuration_charges_configuration_charges__ = __webpack_require__(104);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-
-/**
- * Generated class for the ConfigurationPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var ConfigurationPage = (function () {
-    function ConfigurationPage(navCtrl, navParams, nativePageTransitions) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-        this.nativePageTransitions = nativePageTransitions;
-        this.stateProd = "visible-prod";
-        this.stateCharge = "invisible-charge";
-        this.stateModif = "invisible-autre-modifs";
-    }
-    ConfigurationPage.prototype.goToConfigurationChargesPage = function () {
-        var animationsOptions = {
-            animation: 'ios-transition',
-            duration: 300
-        };
-        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_4__configuration_charges_configuration_charges__["a" /* ConfigurationChargesPage */], {}, animationsOptions);
-    };
-    ConfigurationPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad ConfigurationPage');
-    };
-    ConfigurationPage.prototype.toggleVisibility = function () {
-        this.stateProd = (this.stateProd == "visible-prod") ? "invisible-prod" : "visible-prod";
-        this.stateCharge = (this.stateCharge == "visible-charge") ? "invisible-charge" : "visible-charge";
-    };
-    ConfigurationPage.prototype.toggleVisibles = function () {
-        this.stateCharge = (this.stateCharge == "visible-charge") ? "invisible-charge" : "visible-charge";
-        this.stateModif = (this.stateModif == "visible-autre-modifs") ? "invisible-autre-modifs" : "visible-autre-modifs";
-    };
-    ConfigurationPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-configuration',template:/*ion-inline-start:"E:\cle Usb\keiwa-pro\keiwa-app-pro\src\pages\configuration\configuration.html"*/'<!--\n\n  Generated template for the ConfigurationPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n\n\n<ion-content style=" background:rgb(241, 241, 241); ">\n\n\n\n\n\n        <div class="headerWelcomePage" padding>\n\n\n\n                <div class="register_page_header">\n\n                        <span  style="    font-size: 16px;  position: relative; top: 2px; color: #fff;"  class="badge_progression_register pull-right-style">1/3</span>\n\n                        <a style="visibility: hidden;" >\n\n                            <ion-icon style="color:#fff; font-size:25px; " ios="ios-close" class="fontSizeIcon" md="md-arrow-back"></ion-icon>\n\n                        </a>\n\n                    </div>\n\n    \n\n            <div class="welcome_page_header" style=" text-align:center; ">\n\n                <span style="position: relative; top: 10px; color: #fff;  "> <ion-icon style="font-size:40px;" name="ios-construct"></ion-icon> </span>\n\n            </div>\n\n            <div class="textHeader">\n\n                <h1>Configuration</h1>\n\n            </div>\n\n        </div>\n\n        <div  style="  margin-top:0px; position:relative; " padding>\n\n                \n\n            <div class="headerBodyConfig">\n\n                <h3 class="animated slideInDown" > Selectionner vos produits </h3>\n\n                <button class="animated infinite pulse" style="position: absolute; top:-30px; left:15px; " ion-fab color="blanc"><ion-icon color="primary" name="md-mic"></ion-icon></button>\n\n    \n\n            </div>\n\n            <div class="CorpsBodyConfig">\n\n                <ul class="animated slideInDown">\n\n                    <li class="">\n\n                        <div class="circle"><img src="assets/imgs/radish_vegetables_16825.png"></div>\n\n                        <h4>Jamie Harden\n\n                            <p class=" desc_filiere "> Lorem ipsum dolor, sit amet . </p>\n\n                        </h4>\n\n                        <input id="check-1" type="checkbox">\n\n                        <label for="check-1"><i class="fa fa-check"></i></label>\n\n                    </li>\n\n    \n\n                </ul>\n\n    \n\n                <ul class="animated slideInDown">\n\n                    <li class="">\n\n                        <div class="circle"><img src="assets/imgs/jacket-2.png"></div>\n\n                        <h4>Jamie Harden\n\n                            <p class=" desc_filiere "> Lorem ipsum dolor, sit amet . </p>\n\n                        </h4>\n\n                        <input id="check-2" type="checkbox">\n\n                        <label for="check-2"><i class="fa fa-check"></i></label>\n\n                    </li>\n\n    \n\n                </ul>\n\n                <ul>\n\n                    <li class="animated slideInDown">\n\n                        <div class="circle"><img src="assets/imgs/icons8-taxi-48.png"></div>\n\n                        <h4>Jamie Harden\n\n                            <p class=" desc_filiere "> Lorem ipsum dolor, sit amet . </p>\n\n                        </h4>\n\n    \n\n                        <input id="check-3" type="checkbox">\n\n                        <label for="check-3"><i class="fa fa-check"></i></label>\n\n                    </li>\n\n    \n\n                </ul>\n\n    \n\n                <ul>\n\n                    <li class="animated slideInDown">\n\n                        <div class="circle"><img src="assets/imgs/icons8-nourriture-50.png"></div>\n\n                        <h4>Jamie Harden\n\n                            <p class=" desc_filiere "> Lorem ipsum dolor, sit amet . </p>\n\n                        </h4>\n\n                        <input id="check-4" type="checkbox">\n\n                        <label for="check-4"><i class="fa fa-check"></i></label>\n\n                    </li>\n\n    \n\n                </ul>\n\n    \n\n                <ul>\n\n                    <li class="animated slideInDown">\n\n                        <div class="circle"><img src="assets/imgs/icons8-entretien-48.png"></div>\n\n                        <h4>Jamie Harden\n\n                            <p class=" desc_filiere "> Lorem ipsum dolor, sit amet . </p>\n\n                        </h4>\n\n                        <input id="check-5" type="checkbox">\n\n                        <label for="check-5"><i class="fa fa-check"></i></label>\n\n                    </li>\n\n    \n\n                </ul>\n\n    \n\n            </div>\n\n    \n\n        </div>\n\n    \n\n    \n\n    \n\n    \n\n    \n\n    \n\n        <div class="footerButton" padding>\n\n            <div style="text-align:center; ">\n\n                <button class="btn-default-keiwa background-default " ion-button  style=" height:45px;background: #1abc9c;color:white; margin-top:-5px; " (click)="goToConfigurationChargesPage()" block >Continuer</button>\n\n            </div>\n\n    \n\n        </div>\n\n\n\n\n\n    \n\n\n\n</ion-content>'/*ion-inline-end:"E:\cle Usb\keiwa-pro\keiwa-app-pro\src\pages\configuration\configuration.html"*/,
-            animations: [
-                Object(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["j" /* trigger */])("produitservice", [
-                    Object(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["g" /* state */])("visible-prod", Object(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["h" /* style */])({
-                        transform: 'translateY(0%)'
-                    })),
-                    Object(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["g" /* state */])("invisible-prod", Object(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["h" /* style */])({
-                        transform: 'translateY(-200%)'
-                    })),
-                    Object(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["i" /* transition */])('* => *', Object(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["e" /* animate */])('1s ease-in'))
-                ]),
-                Object(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["j" /* trigger */])("charges", [
-                    Object(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["g" /* state */])("visible-charge", Object(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["h" /* style */])({
-                        transform: 'translateY(-100%)'
-                    })),
-                    Object(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["g" /* state */])("invisible-charge", Object(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["h" /* style */])({
-                        transform: 'translateY(-500%)'
-                    })),
-                    Object(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["i" /* transition */])('* => *', Object(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["e" /* animate */])('1s ease-out'))
-                ]),
-                Object(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["j" /* trigger */])("autre-modifs", [
-                    Object(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["g" /* state */])("visible-autre-modifs", Object(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["h" /* style */])({
-                        transform: 'translateY(-200%)'
-                    })),
-                    Object(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["g" /* state */])("invisible-autre-modifs", Object(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["h" /* style */])({
-                        transform: 'translateY(-600%)'
-                    })),
-                    Object(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["i" /* transition */])('* => *', Object(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["e" /* animate */])('1s ease-in'))
-                ])
-            ]
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_native_page_transitions__["a" /* NativePageTransitions */]])
-    ], ConfigurationPage);
-    return ConfigurationPage;
-}());
-
-//# sourceMappingURL=configuration.js.map
-
-/***/ }),
-
 /***/ 111:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_native_page_transitions__ = __webpack_require__(30);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__register_register__ = __webpack_require__(52);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -534,7 +567,7 @@ var LoginPage = (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return WelcomePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_native_page_transitions__ = __webpack_require__(30);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__login_login__ = __webpack_require__(111);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__register_register__ = __webpack_require__(52);
@@ -563,6 +596,7 @@ var WelcomePage = (function () {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
         this.nativePageTransitions = nativePageTransitions;
+        this.language = "";
     }
     WelcomePage.prototype.ionViewDidLoad = function () {
         console.log('ionViewDidLoad WelcomePage');
@@ -583,7 +617,7 @@ var WelcomePage = (function () {
     };
     WelcomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-welcome',template:/*ion-inline-start:"E:\cle Usb\keiwa-pro\keiwa-app-pro\src\pages\welcome\welcome.html"*/'<!--\n\n  Generated template for the WelcomePage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-content>\n\n\n\n    <div class="welcomePage sliderOverflow">\n\n        <div class="headerWelcomePage" padding>\n\n            <div class="welcome_page_header">\n\n                <a class="pull-right-style fontSizeText" (click)="goToLoginPage()">Connexion</a>\n\n                <ion-icon ios="ios-close" class="fontSizeIcon" md="ios-close-outline"></ion-icon>\n\n            </div>\n\n            <div class="textHeader">\n\n                <h1>Bienvenue sur keiwa</h1>\n\n            </div>\n\n        </div>\n\n        <div class="bodyWelcomePage">\n\n            <div class="step" padding>\n\n                <img src="assets/imgs/img-first-page.png" style="width:200px;" />\n\n                <h1>Gérez facilement votre comptabilité</h1>\n\n                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry\'s standard dummy text.</p>\n\n\n\n                <button class="btn-default-keiwa background-default" style="width:220px;height:45px;" (click)="goToRegisterPage()">C\'est parti !</button>\n\n            </div>\n\n            <hr>\n\n        </div>\n\n    </div>\n\n</ion-content>'/*ion-inline-end:"E:\cle Usb\keiwa-pro\keiwa-app-pro\src\pages\welcome\welcome.html"*/,
+            selector: 'page-welcome',template:/*ion-inline-start:"E:\cle Usb\keiwa-pro\keiwa-app-pro\src\pages\welcome\welcome.html"*/'<!--\n\n  Generated template for the WelcomePage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-content>\n\n\n\n    <div class="welcomePage sliderOverflow">\n\n        <div class="headerWelcomePage" padding>\n\n            <div class="welcome_page_header">\n\n                <a class="pull-right-style fontSizeText" (click)="goToLoginPage()">Connexion</a>\n\n                <ion-icon ios="ios-close" class="fontSizeIcon" md="ios-close-outline"></ion-icon>\n\n            </div>\n\n            <div class="textHeader">\n\n                <h1>Bienvenue sur keiwa</h1>\n\n            </div>\n\n        </div>\n\n        <div class="bodyWelcomePage">\n\n            <div class="step" padding>\n\n                <img src="assets/imgs/img-first-page.png" style="width:200px;" />\n\n                <h1>Gérez facilement votre comptabilité</h1>\n\n                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry\'s standard dummy text.</p>\n\n\n\n                <button class="btn-default-keiwa background-default" style="width:220px;height:45px;" (click)="goToRegisterPage()">C\'est parti !</button>\n\n            </div>\n\n            <hr>\n\n        </div>\n\n    </div> \n\n\n\n    \n\n\n\n\n\n</ion-content>'/*ion-inline-end:"E:\cle Usb\keiwa-pro\keiwa-app-pro\src\pages\welcome\welcome.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */],
             __WEBPACK_IMPORTED_MODULE_2__ionic_native_native_page_transitions__["a" /* NativePageTransitions */]])
@@ -616,44 +650,48 @@ webpackEmptyAsyncContext.id = 125;
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
+	"../pages/configuration-category/configuration-category.module": [
+		299,
+		10
+	],
 	"../pages/configuration-charges/configuration-charges.module": [
-		298,
+		300,
 		9
 	],
 	"../pages/configuration-other/configuration-other.module": [
-		302,
+		301,
 		8
 	],
 	"../pages/configuration/configuration.module": [
-		299,
+		302,
 		7
 	],
 	"../pages/credit/credit.module": [
-		300,
+		303,
 		6
 	],
 	"../pages/depense/depense.module": [
-		301,
+		304,
 		5
 	],
 	"../pages/login/login.module": [
-		303,
+		305,
 		4
 	],
 	"../pages/opportunite/opportunite.module": [
-		304,
+		306,
 		3
 	],
 	"../pages/recette/recette.module": [
-		305,
+		307,
 		2
 	],
 	"../pages/register/register.module": [
-		306,
+		308,
 		1
 	],
 	"../pages/welcome/welcome.module": [
-		307,
+		309,
 		0
 	]
 };
@@ -682,7 +720,7 @@ module.exports = webpackAsyncContext;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__about_about__ = __webpack_require__(170);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__contact_contact__ = __webpack_require__(171);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__home_home__ = __webpack_require__(172);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__opportunite_opportunite__ = __webpack_require__(109);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__opportunite_opportunite__ = __webpack_require__(110);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -722,7 +760,7 @@ var TabsPage = (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AboutPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(9);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -761,7 +799,7 @@ var AboutPage = (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ContactPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(9);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -797,10 +835,10 @@ var ContactPage = (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__recette_recette__ = __webpack_require__(106);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__depense_depense__ = __webpack_require__(107);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__credit_credit__ = __webpack_require__(108);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__recette_recette__ = __webpack_require__(107);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__depense_depense__ = __webpack_require__(108);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__credit_credit__ = __webpack_require__(109);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_saverecette_saverecette__ = __webpack_require__(81);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_text_to_speech__ = __webpack_require__(174);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -903,14 +941,14 @@ var HomePage = (function () {
 
 /***/ }),
 
-/***/ 216:
+/***/ 217:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(217);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(238);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_web_animations_js_web_animations_min__ = __webpack_require__(297);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(218);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(239);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_web_animations_js_web_animations_min__ = __webpack_require__(298);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_web_animations_js_web_animations_min___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_web_animations_js_web_animations_min__);
 
 
@@ -920,44 +958,46 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 
 /***/ }),
 
-/***/ 238:
+/***/ 239:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(23);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_forms__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_component__ = __webpack_require__(293);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_component__ = __webpack_require__(294);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_text_to_speech__ = __webpack_require__(174);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_native_page_transitions__ = __webpack_require__(30);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__angular_platform_browser_animations__ = __webpack_require__(294);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__angular_http__ = __webpack_require__(296);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__angular_platform_browser_animations__ = __webpack_require__(295);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__angular_http__ = __webpack_require__(297);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__angular_common_http__ = __webpack_require__(173);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_about_about__ = __webpack_require__(170);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_contact_contact__ = __webpack_require__(171);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_home_home__ = __webpack_require__(172);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_opportunite_opportunite__ = __webpack_require__(109);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_recette_recette__ = __webpack_require__(106);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_depense_depense__ = __webpack_require__(107);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_configuration_configuration__ = __webpack_require__(110);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_credit_credit__ = __webpack_require__(108);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_tabs_tabs__ = __webpack_require__(169);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__pages_welcome_welcome__ = __webpack_require__(112);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__pages_login_login__ = __webpack_require__(111);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__pages_register_register__ = __webpack_require__(52);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__pages_configuration_charges_configuration_charges__ = __webpack_require__(104);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__pages_configuration_other_configuration_other__ = __webpack_require__(105);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__ionic_native_status_bar__ = __webpack_require__(214);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__ionic_native_splash_screen__ = __webpack_require__(215);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__providers_saverecette_saverecette__ = __webpack_require__(81);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_opportunite_opportunite__ = __webpack_require__(110);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_recette_recette__ = __webpack_require__(107);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_depense_depense__ = __webpack_require__(108);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_configuration_configuration__ = __webpack_require__(104);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_configuration_category_configuration_category__ = __webpack_require__(103);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_credit_credit__ = __webpack_require__(109);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__pages_tabs_tabs__ = __webpack_require__(169);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__pages_welcome_welcome__ = __webpack_require__(112);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__pages_login_login__ = __webpack_require__(111);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__pages_register_register__ = __webpack_require__(52);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__pages_configuration_charges_configuration_charges__ = __webpack_require__(105);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__pages_configuration_other_configuration_other__ = __webpack_require__(106);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__ionic_native_status_bar__ = __webpack_require__(214);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__ionic_native_splash_screen__ = __webpack_require__(215);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__providers_saverecette_saverecette__ = __webpack_require__(81);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -993,23 +1033,24 @@ var AppModule = (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             declarations: [
                 __WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* MyApp */],
-                __WEBPACK_IMPORTED_MODULE_19__pages_welcome_welcome__["a" /* WelcomePage */],
-                __WEBPACK_IMPORTED_MODULE_20__pages_login_login__["a" /* LoginPage */],
-                __WEBPACK_IMPORTED_MODULE_21__pages_register_register__["a" /* RegisterPage */],
-                __WEBPACK_IMPORTED_MODULE_22__pages_configuration_charges_configuration_charges__["a" /* ConfigurationChargesPage */],
-                __WEBPACK_IMPORTED_MODULE_23__pages_configuration_other_configuration_other__["a" /* ConfigurationOtherPage */],
+                __WEBPACK_IMPORTED_MODULE_20__pages_welcome_welcome__["a" /* WelcomePage */],
+                __WEBPACK_IMPORTED_MODULE_21__pages_login_login__["a" /* LoginPage */],
+                __WEBPACK_IMPORTED_MODULE_22__pages_register_register__["a" /* RegisterPage */],
+                __WEBPACK_IMPORTED_MODULE_23__pages_configuration_charges_configuration_charges__["a" /* ConfigurationChargesPage */],
+                __WEBPACK_IMPORTED_MODULE_24__pages_configuration_other_configuration_other__["a" /* ConfigurationOtherPage */],
+                __WEBPACK_IMPORTED_MODULE_17__pages_configuration_category_configuration_category__["a" /* ConfigurationCategoryPage */],
                 __WEBPACK_IMPORTED_MODULE_10__pages_about_about__["a" /* AboutPage */],
                 __WEBPACK_IMPORTED_MODULE_11__pages_contact_contact__["a" /* ContactPage */],
                 __WEBPACK_IMPORTED_MODULE_12__pages_home_home__["a" /* HomePage */],
                 __WEBPACK_IMPORTED_MODULE_13__pages_opportunite_opportunite__["a" /* OpportunitePage */],
                 __WEBPACK_IMPORTED_MODULE_14__pages_recette_recette__["a" /* RecettePage */],
                 __WEBPACK_IMPORTED_MODULE_15__pages_depense_depense__["a" /* DepensePage */],
-                __WEBPACK_IMPORTED_MODULE_17__pages_credit_credit__["a" /* CreditPage */],
-                __WEBPACK_IMPORTED_MODULE_19__pages_welcome_welcome__["a" /* WelcomePage */],
+                __WEBPACK_IMPORTED_MODULE_18__pages_credit_credit__["a" /* CreditPage */],
+                __WEBPACK_IMPORTED_MODULE_20__pages_welcome_welcome__["a" /* WelcomePage */],
                 __WEBPACK_IMPORTED_MODULE_16__pages_configuration_configuration__["a" /* ConfigurationPage */],
-                __WEBPACK_IMPORTED_MODULE_20__pages_login_login__["a" /* LoginPage */],
-                __WEBPACK_IMPORTED_MODULE_21__pages_register_register__["a" /* RegisterPage */],
-                __WEBPACK_IMPORTED_MODULE_18__pages_tabs_tabs__["a" /* TabsPage */]
+                __WEBPACK_IMPORTED_MODULE_21__pages_login_login__["a" /* LoginPage */],
+                __WEBPACK_IMPORTED_MODULE_22__pages_register_register__["a" /* RegisterPage */],
+                __WEBPACK_IMPORTED_MODULE_19__pages_tabs_tabs__["a" /* TabsPage */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["a" /* BrowserModule */],
@@ -1018,11 +1059,12 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_9__angular_common_http__["b" /* HttpClientModule */],
                 __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["d" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* MyApp */], {}, {
                     links: [
+                        { loadChildren: '../pages/configuration-category/configuration-category.module#ConfigurationCategoryPageModule', name: 'ConfigurationCategoryPage', segment: 'configuration-category', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/configuration-charges/configuration-charges.module#ConfigurationChargesPageModule', name: 'ConfigurationChargesPage', segment: 'configuration-charges', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/configuration-other/configuration-other.module#ConfigurationOtherPageModule', name: 'ConfigurationOtherPage', segment: 'configuration-other', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/configuration/configuration.module#ConfigurationPageModule', name: 'ConfigurationPage', segment: 'configuration', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/credit/credit.module#CreditPageModule', name: 'CreditPage', segment: 'credit', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/depense/depense.module#DepensePageModule', name: 'DepensePage', segment: 'depense', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/configuration-other/configuration-other.module#ConfigurationOtherPageModule', name: 'ConfigurationOtherPage', segment: 'configuration-other', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/opportunite/opportunite.module#OpportunitePageModule', name: 'OpportunitePage', segment: 'opportunite', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/recette/recette.module#RecettePageModule', name: 'RecettePage', segment: 'recette', priority: 'low', defaultHistory: [] },
@@ -1034,32 +1076,33 @@ var AppModule = (function () {
             bootstrap: [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["b" /* IonicApp */]],
             entryComponents: [
                 __WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* MyApp */],
-                __WEBPACK_IMPORTED_MODULE_19__pages_welcome_welcome__["a" /* WelcomePage */],
-                __WEBPACK_IMPORTED_MODULE_20__pages_login_login__["a" /* LoginPage */],
-                __WEBPACK_IMPORTED_MODULE_21__pages_register_register__["a" /* RegisterPage */],
-                __WEBPACK_IMPORTED_MODULE_22__pages_configuration_charges_configuration_charges__["a" /* ConfigurationChargesPage */],
-                __WEBPACK_IMPORTED_MODULE_23__pages_configuration_other_configuration_other__["a" /* ConfigurationOtherPage */],
+                __WEBPACK_IMPORTED_MODULE_20__pages_welcome_welcome__["a" /* WelcomePage */],
+                __WEBPACK_IMPORTED_MODULE_21__pages_login_login__["a" /* LoginPage */],
+                __WEBPACK_IMPORTED_MODULE_22__pages_register_register__["a" /* RegisterPage */],
+                __WEBPACK_IMPORTED_MODULE_23__pages_configuration_charges_configuration_charges__["a" /* ConfigurationChargesPage */],
+                __WEBPACK_IMPORTED_MODULE_24__pages_configuration_other_configuration_other__["a" /* ConfigurationOtherPage */],
+                __WEBPACK_IMPORTED_MODULE_17__pages_configuration_category_configuration_category__["a" /* ConfigurationCategoryPage */],
                 __WEBPACK_IMPORTED_MODULE_10__pages_about_about__["a" /* AboutPage */],
                 __WEBPACK_IMPORTED_MODULE_11__pages_contact_contact__["a" /* ContactPage */],
                 __WEBPACK_IMPORTED_MODULE_12__pages_home_home__["a" /* HomePage */],
                 __WEBPACK_IMPORTED_MODULE_13__pages_opportunite_opportunite__["a" /* OpportunitePage */],
                 __WEBPACK_IMPORTED_MODULE_14__pages_recette_recette__["a" /* RecettePage */],
                 __WEBPACK_IMPORTED_MODULE_15__pages_depense_depense__["a" /* DepensePage */],
-                __WEBPACK_IMPORTED_MODULE_17__pages_credit_credit__["a" /* CreditPage */],
-                __WEBPACK_IMPORTED_MODULE_19__pages_welcome_welcome__["a" /* WelcomePage */],
+                __WEBPACK_IMPORTED_MODULE_18__pages_credit_credit__["a" /* CreditPage */],
+                __WEBPACK_IMPORTED_MODULE_20__pages_welcome_welcome__["a" /* WelcomePage */],
                 __WEBPACK_IMPORTED_MODULE_16__pages_configuration_configuration__["a" /* ConfigurationPage */],
-                __WEBPACK_IMPORTED_MODULE_20__pages_login_login__["a" /* LoginPage */],
-                __WEBPACK_IMPORTED_MODULE_21__pages_register_register__["a" /* RegisterPage */],
-                __WEBPACK_IMPORTED_MODULE_18__pages_tabs_tabs__["a" /* TabsPage */]
+                __WEBPACK_IMPORTED_MODULE_21__pages_login_login__["a" /* LoginPage */],
+                __WEBPACK_IMPORTED_MODULE_22__pages_register_register__["a" /* RegisterPage */],
+                __WEBPACK_IMPORTED_MODULE_19__pages_tabs_tabs__["a" /* TabsPage */]
             ],
             providers: [
-                __WEBPACK_IMPORTED_MODULE_24__ionic_native_status_bar__["a" /* StatusBar */],
+                __WEBPACK_IMPORTED_MODULE_25__ionic_native_status_bar__["a" /* StatusBar */],
                 __WEBPACK_IMPORTED_MODULE_3__angular_forms__["f" /* ReactiveFormsModule */],
                 __WEBPACK_IMPORTED_MODULE_5__ionic_native_text_to_speech__["a" /* TextToSpeech */],
-                __WEBPACK_IMPORTED_MODULE_25__ionic_native_splash_screen__["a" /* SplashScreen */],
+                __WEBPACK_IMPORTED_MODULE_26__ionic_native_splash_screen__["a" /* SplashScreen */],
                 __WEBPACK_IMPORTED_MODULE_6__ionic_native_native_page_transitions__["a" /* NativePageTransitions */],
                 { provide: __WEBPACK_IMPORTED_MODULE_0__angular_core__["u" /* ErrorHandler */], useClass: __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["c" /* IonicErrorHandler */] },
-                __WEBPACK_IMPORTED_MODULE_26__providers_saverecette_saverecette__["a" /* SaverecetteProvider */]
+                __WEBPACK_IMPORTED_MODULE_27__providers_saverecette_saverecette__["a" /* SaverecetteProvider */]
             ]
         })
     ], AppModule);
@@ -1070,13 +1113,13 @@ var AppModule = (function () {
 
 /***/ }),
 
-/***/ 293:
+/***/ 294:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(214);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(215);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_welcome_welcome__ = __webpack_require__(112);
@@ -1123,9 +1166,9 @@ var MyApp = (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RegisterPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_native_page_transitions__ = __webpack_require__(30);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__configuration_configuration__ = __webpack_require__(110);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__configuration_category_configuration_category__ = __webpack_require__(103);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1150,12 +1193,15 @@ var RegisterPage = (function () {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
         this.nativePageTransitions = nativePageTransitions;
+        this.language = "";
+        this.Monnaie = "";
+        this.activity = "";
     }
     RegisterPage.prototype.ionViewDidLoad = function () {
         console.log('ionViewDidLoad RegisterPage');
     };
     RegisterPage.prototype.goToSlide = function (numberslide) {
-        this.slides.slideTo(numberslide, 100);
+        this.slides.slideTo(numberslide, 300);
     };
     RegisterPage.prototype.goToBack = function () {
         var animationsOptions = {
@@ -1165,7 +1211,7 @@ var RegisterPage = (function () {
         this.navCtrl.pop(animationsOptions);
     };
     RegisterPage.prototype.goPageConfiguration = function () {
-        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__configuration_configuration__["a" /* ConfigurationPage */]);
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__configuration_category_configuration_category__["a" /* ConfigurationCategoryPage */]);
     };
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* Slides */]),
@@ -1173,7 +1219,7 @@ var RegisterPage = (function () {
     ], RegisterPage.prototype, "slides", void 0);
     RegisterPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-register',template:/*ion-inline-start:"E:\cle Usb\keiwa-pro\keiwa-app-pro\src\pages\register\register.html"*/'<!--\n\n  Generated template for the RegisterPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n\n\n\n\n\n\n<ion-content padding>\n\n    <ion-slides pager class="swiper-no-swiping" style="height:auto;">\n\n\n\n        <ion-slide style="padding-bottom:100px">\n\n            <div padding>\n\n                <div class="register_page_header">\n\n                    <span class="badge_progression_register pull-right-style">1/4</span>\n\n                    <a (click)="goToBack()">\n\n                        <ion-icon ios="ios-close" class="fontSizeIcon" md="md-arrow-back"></ion-icon>\n\n                    </a>\n\n                </div>\n\n                <div class="register_page_title">\n\n                    <h1>Configuration de base</h1>\n\n                    <p>Indiquez votre Langue ainsi que votre monnaie. </p>\n\n                </div>\n\n                <div class="register_page_form">\n\n                    <ion-list>\n\n\n\n                        <ion-item>\n\n                            <ion-label stacked>Langue</ion-label>\n\n                            <ion-input type="text"></ion-input>\n\n                        </ion-item>\n\n\n\n                        <ion-item style="margin-top:22px;">\n\n                            <ion-label stacked>Monnaie</ion-label>\n\n                            <ion-input type="text"></ion-input>\n\n                        </ion-item>\n\n\n\n\n\n                    </ion-list>\n\n                </div>\n\n\n\n\n\n                <div class="fixed_bar_login_register">\n\n                    <button class="btn-default-keiwa background-default" (click)="goToSlide(1)" style="width:250px;height:50px;">\n\n                        Continuer\n\n                    </button>\n\n                </div>\n\n            </div>\n\n        </ion-slide>\n\n        <ion-slide style="padding-bottom:100px">\n\n            <div padding>\n\n                <div class="register_page_header">\n\n                    <span class="badge_progression_register pull-right-style">2/4</span>\n\n                    <a (click)="goToSlide(0)">\n\n                        <ion-icon ios="ios-close" class="fontSizeIcon" md="md-arrow-back"></ion-icon>\n\n                    </a>\n\n                </div>\n\n                <div class="register_page_title">\n\n                    <h1>Itentifier vous</h1>\n\n                    <p>indiquez votre nom et prénoms pour que nous vous identifions. </p>\n\n                </div>\n\n                <div class="register_page_form">\n\n                    <ion-list>\n\n\n\n                        <ion-item>\n\n                            <ion-label stacked>Nom</ion-label>\n\n                            <ion-input type="text"></ion-input>\n\n                        </ion-item>\n\n\n\n                        <ion-item style="margin-top:22px;">\n\n                            <ion-label stacked>Prenoms</ion-label>\n\n                            <ion-input type="text"></ion-input>\n\n                        </ion-item>\n\n\n\n\n\n                    </ion-list>\n\n                </div>\n\n\n\n\n\n                <div class="fixed_bar_login_register">\n\n                    <button class="btn-default-keiwa background-default" (click)="goToSlide(2)" style="width:250px;height:50px;">\n\n                        Continuer\n\n                    </button>\n\n                </div>\n\n            </div>\n\n        </ion-slide>\n\n\n\n        <ion-slide style="padding-bottom:100px">\n\n            <div padding>\n\n                <div class="register_page_header">\n\n                    <span class="badge_progression_register pull-right-style">3/4</span>\n\n                    <a (click)="goToSlide(1)">\n\n                        <ion-icon ios="ios-close" class="fontSizeIcon" md="md-arrow-back"></ion-icon>\n\n                    </a>\n\n                </div>\n\n                <div class="register_page_title">\n\n                    <h1>Indiquez votre numéro de portable</h1>\n\n                    <p>Nous allons vous envoyer un code de verification par SMS.</p>\n\n                </div>\n\n                <div class="register_page_form" style="margin-top:50px">\n\n                    <span>Téléphone</span>\n\n                    <div>\n\n                        <div class="align-middle" style="width:80px;">\n\n                            <ion-item>\n\n                                <ion-input type="text" value="+225" disabled="true"></ion-input>\n\n                            </ion-item>\n\n                        </div>\n\n                        <div class="align-middle inputTel">\n\n                            <ion-item>\n\n                                <ion-input type="tel"></ion-input>\n\n                            </ion-item>\n\n                        </div>\n\n                    </div>\n\n                </div>\n\n\n\n\n\n\n\n                <div class="fixed_bar_login_register">\n\n                    <button class="btn-default-keiwa background-default" (click)="goToSlide(3)" style="width:250px;height:50px;">\n\n                        Continuer\n\n                    </button>\n\n                </div>\n\n            </div>\n\n        </ion-slide>\n\n        <ion-slide style="padding-bottom:100px">\n\n            <div padding>\n\n                <div class="register_page_header">\n\n                    <span class="badge_progression_register pull-right-style">4/4</span>\n\n                    <a (click)="goToSlide(2)">\n\n                        <ion-icon ios="ios-close" class="fontSizeIcon" md="md-arrow-back"></ion-icon>\n\n                    </a>\n\n                </div>\n\n                <div class="register_page_title">\n\n                    <h1>Créer un mot de passe</h1>\n\n                    <p>Votre mot de passe doit comporter 8 caractères ou plus. N\'utiliszer pas un mot de passe trop commun ni de répétitions ou de séquences.\n\n                    </p>\n\n                </div>\n\n                <div class="register_page_form">\n\n                    <ion-list>\n\n\n\n                        <ion-item>\n\n                            <ion-label stacked>Mot de passe</ion-label>\n\n                            <ion-input type="text"></ion-input>\n\n                        </ion-item>\n\n                    </ion-list>\n\n                </div>\n\n\n\n\n\n\n\n                <div class="fixed_bar_login_register">\n\n\n\n                    <button (click)="goPageConfiguration()" class="btn-default-keiwa background-default" style="width:250px;height:50px;">\n\n\n\n                \n\n                        Terminer\n\n                    </button>\n\n                </div>\n\n            </div>\n\n        </ion-slide>\n\n    </ion-slides>\n\n</ion-content>'/*ion-inline-end:"E:\cle Usb\keiwa-pro\keiwa-app-pro\src\pages\register\register.html"*/,
+            selector: 'page-register',template:/*ion-inline-start:"E:\cle Usb\keiwa-pro\keiwa-app-pro\src\pages\register\register.html"*/'<!--\n\n  Generated template for the RegisterPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n\n\n\n\n\n\n<ion-content padding>\n\n    <ion-slides pager class="swiper-no-swiping" style="height:auto;">\n\n\n\n        <ion-slide style="padding-bottom:100px">\n\n            <div padding>\n\n                <div class="register_page_header">\n\n                    <span class="badge_progression_register pull-right-style">1/5</span>\n\n                    <a (click)="goToBack()">\n\n                        <ion-icon ios="ios-close" class="fontSizeIcon" md="md-arrow-back"></ion-icon>\n\n                    </a>\n\n                </div>\n\n                <div class="register_page_title">\n\n                    <h1>Configuration de base</h1>\n\n                    <p>Indiquez votre Langue ainsi que votre monnaie. </p>\n\n                </div>\n\n                <div class="register_page_form">\n\n                    <ion-list>\n\n\n\n                            \n\n\n\n                           \n\n                            <ion-item class="select_ele" style=" border-bottom:solid 1px #dedede; margin-top:30px; " >\n\n                                    <ion-label style="  color:#555; "  >Monnaie</ion-label>\n\n                                    <ion-select [(ngModel)]="Monnaie" interface="popover">\n\n                                      <ion-option value="Français">FCFA</ion-option>\n\n                                      <ion-option value="Englais">Euro</ion-option>\n\n                                      <ion-option value="Wolofs">dollar</ion-option>\n\n                                     \n\n                                    </ion-select>\n\n                            </ion-item>\n\n\n\n                    </ion-list>\n\n                </div>\n\n\n\n\n\n                <div class="fixed_bar_login_register">\n\n                    <button class="btn-default-keiwa background-default" (click)="goToSlide(1)" style="width:250px;height:50px;">\n\n                        Continuer\n\n                    </button>\n\n                </div>\n\n            </div>\n\n            \n\n\n\n        </ion-slide>\n\n        <ion-slide style="padding-bottom:100px">\n\n            <div padding>\n\n                <div class="register_page_header">\n\n                    <span class="badge_progression_register pull-right-style">2/5</span>\n\n                    <a (click)="goToSlide(0)">\n\n                        <ion-icon ios="ios-close" class="fontSizeIcon" md="md-arrow-back"></ion-icon>\n\n                    </a>\n\n                </div>\n\n                <div class="register_page_title">\n\n                    <h1>Identifier vous</h1>\n\n                    <p>indiquez votre nom et prénoms pour que nous vous identifions. </p>\n\n                </div>\n\n                <div class="register_page_form">\n\n                    <ion-list>\n\n\n\n                        <ion-item   >\n\n                            <ion-label style="  color:#555; " stacked>Nom</ion-label>\n\n                            <ion-input type="text"></ion-input>\n\n                        </ion-item>\n\n\n\n                        <ion-item >\n\n                            <ion-label  style="  color:#555; "  stacked>Prenoms</ion-label>\n\n                            <ion-input type="text"></ion-input>\n\n                        </ion-item>\n\n\n\n\n\n                    </ion-list>\n\n                </div>\n\n\n\n\n\n                <div class="fixed_bar_login_register">\n\n                    <button class="btn-default-keiwa background-default" (click)="goToSlide(2)" style="width:250px;height:50px;">\n\n                        Continuer\n\n                    </button>\n\n                </div>\n\n            </div>\n\n        </ion-slide>\n\n\n\n        <ion-slide style="padding-bottom:100px">\n\n            <div padding>\n\n                <div class="register_page_header">\n\n                    <span class="badge_progression_register pull-right-style">3/5</span>\n\n                    <a (click)="goToSlide(1)">\n\n                        <ion-icon ios="ios-close" class="fontSizeIcon" md="md-arrow-back"></ion-icon>\n\n                    </a>\n\n                </div>\n\n                <div class="register_page_title">\n\n                    <h1>Indiquez votre numéro de portable</h1>\n\n                    <p>Nous allons vous envoyer un code de verification par SMS.</p>\n\n                </div>\n\n                <div class="register_page_form" style="margin-top:50px">\n\n                    <span>Téléphone</span>\n\n                    <div>\n\n                        <div class="align-middle" style="width:65px;">\n\n                            <ion-item>\n\n                                <ion-input type="text" value="+225" disabled="true"></ion-input>\n\n                            </ion-item>\n\n                        </div>\n\n                        <div class="align-middle inputTel">\n\n                            <ion-item>\n\n                                <ion-input type="tel"></ion-input>\n\n                            </ion-item>\n\n                        </div>\n\n                    </div>\n\n                </div>\n\n\n\n\n\n\n\n                <div class="fixed_bar_login_register">\n\n                    <button class="btn-default-keiwa background-default" (click)="goToSlide(3)" style="width:250px;height:50px;">\n\n                        Continuer\n\n                    </button>\n\n                </div>\n\n            </div>\n\n        </ion-slide>\n\n\n\n\n\n\n\n        <ion-slide style="padding-bottom:100px">\n\n                <div padding>\n\n                    <div class="register_page_header">\n\n                        <span class="badge_progression_register pull-right-style">4/5</span>\n\n                        <a (click)="goToSlide(2)">\n\n                            <ion-icon ios="ios-close" class="fontSizeIcon" md="md-arrow-back"></ion-icon>\n\n                        </a>\n\n                    </div>\n\n                    <div class="register_page_title">\n\n                        <h1>Indiquez votre secteur d\'activité</h1>\n\n                        <p>Choisissez un secteur le d\'activité auxquels vous appartennez dans liste ci déssous.</p>\n\n                    </div>\n\n                    <div class="register_page_form" style="margin-top:50px">\n\n                            <ion-item  class="select_ele" style=" border-bottom:solid 1px #dedede; " >\n\n                                    <ion-label style="  color:#555; " >Activités</ion-label>\n\n                                    <ion-select [(ngModel)]="activity">\n\n                                      <ion-option value="agriculteur">agriculteur</ion-option>\n\n                                      <ion-option value="commerçant">commerçant</ion-option>\n\n                                      <ion-option value="Artisant">Artisant</ion-option>\n\n                                      <ion-option value="éléveur">éléveur</ion-option>\n\n\n\n                                    </ion-select>\n\n                                </ion-item>\n\n                    </div>\n\n    \n\n    \n\n    \n\n                    <div class="fixed_bar_login_register">\n\n                        <button class="btn-default-keiwa background-default" (click)="goToSlide(4)" style="width:250px;height:50px;">\n\n                            Continuer\n\n                        </button>\n\n                    </div>\n\n                </div>\n\n            </ion-slide>  \n\n\n\n\n\n\n\n\n\n\n\n        <ion-slide style="padding-bottom:100px">\n\n            <div padding>\n\n                <div class="register_page_header">\n\n                    <span class="badge_progression_register pull-right-style">5/5</span>\n\n                    <a (click)="goToSlide(3)">\n\n                        <ion-icon ios="ios-close" class="fontSizeIcon" md="md-arrow-back"></ion-icon>\n\n                    </a>\n\n                </div>\n\n                <div class="register_page_title">\n\n                    <h1>Créer un mot de passe</h1>\n\n                    <p>Votre mot de passe doit comporter 8 caractères ou plus. N\'utiliszer pas un mot de passe trop commun ni de répétitions ou de séquences.\n\n                    </p>\n\n                </div>\n\n                <div class="register_page_form">\n\n                    <ion-list>\n\n\n\n                        <ion-item>\n\n                            <ion-label stacked>Mot de passe</ion-label>\n\n                            <ion-input type="text"></ion-input>\n\n                        </ion-item>\n\n                    </ion-list>\n\n                </div>\n\n\n\n\n\n\n\n                <div class="fixed_bar_login_register">\n\n\n\n                    <button (click)="goPageConfiguration()" class="btn-default-keiwa background-default" style="width:250px;height:50px;">\n\n\n\n                \n\n                        Terminer\n\n                    </button>\n\n                </div>\n\n            </div>\n\n        </ion-slide>\n\n    </ion-slides>\n\n</ion-content>'/*ion-inline-end:"E:\cle Usb\keiwa-pro\keiwa-app-pro\src\pages\register\register.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_native_page_transitions__["a" /* NativePageTransitions */]])
     ], RegisterPage);
@@ -1225,5 +1271,5 @@ var SaverecetteProvider = (function () {
 
 /***/ })
 
-},[216]);
+},[217]);
 //# sourceMappingURL=main.js.map

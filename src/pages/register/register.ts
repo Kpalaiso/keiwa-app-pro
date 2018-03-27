@@ -2,7 +2,7 @@ import { Component ,ViewChild} from '@angular/core';
 import { IonicPage, NavController, NavParams,Slides } from 'ionic-angular';
 import { NativePageTransitions, NativeTransitionOptions } from '@ionic-native/native-page-transitions';
 
-import { ConfigurationPage } from "../configuration/configuration";
+import { ConfigurationCategoryPage } from "../configuration-category/configuration-category";
 
 /**
  * Generated class for the RegisterPage page.
@@ -18,6 +18,15 @@ import { ConfigurationPage } from "../configuration/configuration";
   templateUrl: 'register.html',
 })
 export class RegisterPage {
+
+
+  language: string = "";
+  Monnaie: string ="";
+  activity: string="";
+
+
+
+
   @ViewChild(Slides) slides: Slides;
   constructor(public navCtrl: NavController, public navParams: NavParams,private nativePageTransitions: NativePageTransitions) {
   }
@@ -42,7 +51,7 @@ export class RegisterPage {
 
  
   goPageConfiguration(){
-    this.navCtrl.push(ConfigurationPage);
+    this.navCtrl.push(ConfigurationCategoryPage);
   }
 
 
