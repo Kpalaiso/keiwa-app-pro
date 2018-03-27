@@ -1,16 +1,10 @@
 page-configuration {
-
-
-
-
-    div.app{
-       
+    div.app {
         background: #0e9d58;
-
         box-shadow: inset -15px -15px 80px rgba(0, 0, 0, 0.15);
         perspective: 500px;
     }
-    div.app:before{
+    div.app:before {
         position: absolute;
         content: '';
         width: 300%;
@@ -21,73 +15,70 @@ page-configuration {
         transform: rotate(-10deg);
         z-index: -1;
     }
-    div.nav{
+    div.nav {
         position: absolute;
         width: 100%;
     }
-    div.nav div.nav-top{
+    div.nav div.nav-top {
         padding-top: 15px;
         padding-bottom: 28px;
         width: 100%;
     }
-    div.nav div.nav-top span{
+    div.nav div.nav-top span {
         width: 32%;
-        color:#fff;
+        color: #fff;
         font-size: 21px;
         opacity: 0.9;
     }
-    div.nav div.nav-top span:last-child{
+    div.nav div.nav-top span:last-child {
         width: 30%;
         text-align: right;
     }
-    div.nav div.nav-top span:nth-child(2){
+    div.nav div.nav-top span:nth-child(2) {
         position: relative;
         opacity: 0.95;
         text-align: center;
-        top:-1px;
+        top: -1px;
     }
-    div.nav div.nav-top span:first-child{
+    div.nav div.nav-top span:first-child {
         width: 30%;
         margin-left: 15px;
     }
-    div.nav:before{
+    div.nav:before {
         position: absolute;
         content: '';
         width: 100%;
         height: 85%;
         box-shadow: inset 0 65px 55px -25px rgba(0, 0, 0, 0.3);
     }
-    div.nav ul{
+    div.nav ul {
         margin-left: 15px;
     }
-    div.nav ul li{
+    div.nav ul li {
         float: left;
         list-style: none;
-        color:#fff;
+        color: #fff;
         width: 90%;
         text-align: left;
         font-size: 15px;
         margin-top: -15px;
-        
         font-family: "OpenSans-Light";
-        
     }
-    div.nav ul li.active{
+    div.nav ul li.active {
         font-weight: 600;
-        margin-left:-25px;
+        margin-left: -25px;
         opacity: 0.95;
     }
-    div.list-items{
+    div.list-items {
         position: relative;
-        top:100px;
+        top: 100px;
     }
-    div.list-item{
+    div.list-item {
         position: relative;
         margin-bottom: 15px;
         padding: 0 0 0 3%;
     }
-    div.list-thumb
-    {
+    div.list-thumb {
         position: absolute;
         width: 110px;
         height: 110px;
@@ -98,22 +89,22 @@ page-configuration {
         opacity: 1;
         z-index: 1;
     }
-    div.list-item span.movie-time-left{
+    div.list-item span.movie-time-left {
         position: absolute;
         font-size: 11px;
         font-weight: 600;
         bottom: -5px;
-        left:20px;
-        color:rgba(0, 0, 0, 0.5);
+        left: 20px;
+        color: rgba(0, 0, 0, 0.5);
     }
-    div.list-item span.book-now{
+    div.list-item span.book-now {
         position: absolute;
-        top:0;
+        top: 0;
         right: 0;
         z-index: 1;
         font-size: 40px;
         font-weight: 600;
-        color:rgba(255, 255, 255, 0.95);
+        color: rgba(255, 255, 255, 0.95);
         background: #0e9d58;
         width: 50px;
         height: 38px;
@@ -121,22 +112,22 @@ page-configuration {
         line-height: 38px;
         text-align: center;
         transform: translateX(-10px);
-        margin-top:70px;
+        margin-top: 70px;
         box-shadow: 0 18px -10px rgba(14, 157, 88, 0.5), 0 18px -10px rgba(14, 157, 88, 0.05);
         border-bottom: 1px solid rgba(0, 0, 0, 0.1);
         border-top: 1px solid rgba(0, 0, 0, 0.1);
     }
-    div.list-item span.book-now i{
+    div.list-item span.book-now i {
         transform: rotate(45deg);
     }
-    div.movie-detail{
+    div.movie-detail {
         width: 97%;
-        top:0;
+        top: 0;
         z-index: -1;
         height: 120px;
         transform: translateY(25px);
     }
-    div.movie-detail div.short-detail{
+    div.movie-detail div.short-detail {
         position: absolute;
         left: 0;
         width: 73%;
@@ -150,93 +141,81 @@ page-configuration {
         box-shadow: 0 25px 45px -10px rgba(0, 0, 0, 0.3);
         opacity: 1;
     }
-    div.movie-detail div.short-detail td{
+    div.movie-detail div.short-detail td {
         padding: 1px 0;
     }
-    div.movie-detail div.short-detail .title{
+    div.movie-detail div.short-detail .title {
         font-size: 15px;
         font-family: "OpenSans-Regular";
         font-weight: 700;
         letter-spacing: 0.2px;
-        color:rgba(0, 0, 0, 0.8);
+        color: rgba(0, 0, 0, 0.8);
     }
-    div.movie-detail div.short-detail .author{
+    div.movie-detail div.short-detail .author {
         font-size: 12px;
         font-weight: 500;
         letter-spacing: 0.2;
-        color:rgba(0, 0, 0, 0.4);
+        color: rgba(0, 0, 0, 0.4);
     }
-    div.movie-detail div.short-detail .rating{
-        font-size:13px;
-        font-weight: 500;
-        letter-spacing: 0.2px;
-        color:#0e9d58;
-    }
-    div.movie-detail .rating i.na{
-        opacity: 0.5;
-    }
-    div.movie-detail div.short-detail .genre{
+    div.movie-detail div.short-detail .rating {
         font-size: 13px;
         font-weight: 500;
         letter-spacing: 0.2px;
-        color:#000;
-        
+        color: #0e9d58;
     }
-    div.movie-detail div.short-detail span.more-option
-    {
+    div.movie-detail .rating i.na {
+        opacity: 0.5;
+    }
+    div.movie-detail div.short-detail .genre {
+        font-size: 13px;
+        font-weight: 500;
+        letter-spacing: 0.2px;
+        color: #000;
+    }
+    div.movie-detail div.short-detail span.more-option {
         position: absolute;
         width: 4px;
         height: 4px;
         display: inline-block;
         background: rgba(0, 0, 0, 0.2);
         right: 20px;
-        top:20px;
+        top: 20px;
         border-radius: 100%;
         box-shadow: 0 6px 0 rgba(0, 0, 0, 0.2), 0 12px 0 rgba(0, 0, 0, 0.12);
     }
-
-    div.footer-popup{
+    div.footer-popup {
         position: absolute;
         width: 85%;
         background: #0e9d58;
         border-radius: 15px;
-        left:7.5%;
+        left: 7.5%;
         border-bottom: solid 1px rgba(0, 0, 0, 0.2);
         border-top: solid 1px rgba(0, 0, 0, 0.2);
         bottom: 200px;
-        
-        box-shadow: inset -45px 0 105px -25px rgba(0, 0, 0, 0.10),  inset 35px 0 105px -15px rgba(0, 0, 0, 0.05), 0 30px 30px -25px rgba(0, 0, 0, 0.2);
+        box-shadow: inset -45px 0 105px -25px rgba(0, 0, 0, 0.10), inset 35px 0 105px -15px rgba(0, 0, 0, 0.05), 0 30px 30px -25px rgba(0, 0, 0, 0.2);
         overflow: hidden;
         padding: 15px 0;
         opacity: 1;
         z-index: 99;
-
     }
-
-    div.footer-popup ul li{
+    div.footer-popup ul li {
         list-style: none;
         float: left;
         height: 40px;
         text-align: center;
-        color:#fff;
+        color: #fff;
         font-size: 20px;
-
     }
-
-    div.footer-popup ul li:first-child, div.footer-popup ul li:last-child{
+    div.footer-popup ul li:first-child,
+    div.footer-popup ul li:last-child {
         width: 20%;
     }
-
-    div.footer-popup ul li:nth-child(2){
-        width:60%;
+    div.footer-popup ul li:nth-child(2) {
+        width: 60%;
         border-left: solid 1px rgba(255, 255, 255, 0.3);
         border-right: solid 1px rgba(255, 255, 255, 0.3);
         box-sizing: border-box;
     }
-
-
-
-
     span input {
         vertical-align: middle;
         display: none;
@@ -251,9 +230,7 @@ page-configuration {
         position: absolute;
         right: 12px;
         top: 6px;
-        box-shadow:
-                    0px 2px 2px 0px rgba(0, 0, 0, 0.5) inset,
-                    0px 2px 2px 0px rgba(255, 255, 255, 0.5);
+        box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.5) inset, 0px 2px 2px 0px rgba(255, 255, 255, 0.5);
         text-align: center;
         padding-top: 3px;
         color: indigo;
@@ -272,12 +249,4 @@ page-configuration {
     span input:checked+label:after {
         content: "✔";
     }
-
-
-
-
-
-
 }
-
-

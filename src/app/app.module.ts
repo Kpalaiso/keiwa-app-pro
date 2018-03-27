@@ -25,7 +25,7 @@ import { LoginPage } from '../pages/login/login';
 import { RegisterPage } from '../pages/register/register'
 import { ConfigurationChargesPage } from '../pages/configuration-charges/configuration-charges';
 import { ConfigurationOtherPage } from '../pages/configuration-other/configuration-other';
-
+import { LanguePage } from '../pages/langue/langue';
 
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -35,6 +35,7 @@ import { SaverecetteProvider } from '../providers/saverecette/saverecette';
 @NgModule({
   declarations: [
     MyApp,
+    LanguePage,
     WelcomePage,
     LoginPage,
     RegisterPage,
@@ -65,6 +66,7 @@ import { SaverecetteProvider } from '../providers/saverecette/saverecette';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
+    LanguePage,
     WelcomePage,
     LoginPage,
     RegisterPage,

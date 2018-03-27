@@ -24,19 +24,15 @@
                 </div>
                 <div class="register_page_form">
                     <ion-list>
+                        <ion-item class="select_ele" style=" border-bottom:solid 1px #dedede; margin-top:30px; ">
+                            <ion-label style="  color:#555; ">Monnaie</ion-label>
+                            <ion-select [(ngModel)]="Monnaie" interface="popover">
+                                <ion-option value="Français">FCFA</ion-option>
+                                <ion-option value="Englais">Euro</ion-option>
+                                <ion-option value="Wolofs">dollar</ion-option>
 
-                            
-
-                           
-                            <ion-item class="select_ele" style=" border-bottom:solid 1px #dedede; margin-top:30px; " >
-                                    <ion-label style="  color:#555; "  >Monnaie</ion-label>
-                                    <ion-select [(ngModel)]="Monnaie" interface="popover">
-                                      <ion-option value="Français">FCFA</ion-option>
-                                      <ion-option value="Englais">Euro</ion-option>
-                                      <ion-option value="Wolofs">dollar</ion-option>
-                                     
-                                    </ion-select>
-                            </ion-item>
+                            </ion-select>
+                        </ion-item>
 
                     </ion-list>
                 </div>
@@ -48,7 +44,7 @@
                     </button>
                 </div>
             </div>
-            
+
 
         </ion-slide>
         <ion-slide style="padding-bottom:100px">
@@ -66,13 +62,13 @@
                 <div class="register_page_form">
                     <ion-list>
 
-                        <ion-item   >
+                        <ion-item>
                             <ion-label style="  color:#555; " stacked>Nom</ion-label>
                             <ion-input type="text"></ion-input>
                         </ion-item>
 
-                        <ion-item >
-                            <ion-label  style="  color:#555; "  stacked>Prenoms</ion-label>
+                        <ion-item>
+                            <ion-label style="  color:#555; " stacked>Prenoms</ion-label>
                             <ion-input type="text"></ion-input>
                         </ion-item>
 
@@ -130,39 +126,39 @@
 
 
         <ion-slide style="padding-bottom:100px">
-                <div padding>
-                    <div class="register_page_header">
-                        <span class="badge_progression_register pull-right-style">4/5</span>
-                        <a (click)="goToSlide(2)">
-                            <ion-icon ios="ios-close" class="fontSizeIcon" md="md-arrow-back"></ion-icon>
-                        </a>
-                    </div>
-                    <div class="register_page_title">
-                        <h1>Indiquez votre secteur d'activité</h1>
-                        <p>Choisissez un secteur le d'activité auxquels vous appartennez dans liste ci déssous.</p>
-                    </div>
-                    <div class="register_page_form" style="margin-top:50px">
-                            <ion-item  class="select_ele" style=" border-bottom:solid 1px #dedede; " >
-                                    <ion-label style="  color:#555; " >Activités</ion-label>
-                                    <ion-select [(ngModel)]="activity">
-                                      <ion-option value="agriculteur">agriculteur</ion-option>
-                                      <ion-option value="commerçant">commerçant</ion-option>
-                                      <ion-option value="Artisant">Artisant</ion-option>
-                                      <ion-option value="éléveur">éléveur</ion-option>
+            <div padding>
+                <div class="register_page_header">
+                    <span class="badge_progression_register pull-right-style">4/5</span>
+                    <a (click)="goToSlide(2)">
+                        <ion-icon ios="ios-close" class="fontSizeIcon" md="md-arrow-back"></ion-icon>
+                    </a>
+                </div>
+                <div class="register_page_title">
+                    <h1>Indiquez votre secteur d'activité</h1>
+                    <p>Choisissez un secteur le d'activité auxquels vous appartennez dans liste ci déssous.</p>
+                </div>
+                <div class="register_page_form" style="margin-top:50px">
+                    <ion-item class="select_ele" style=" border-bottom:solid 1px #dedede; ">
+                        <ion-label style="  color:#555; ">Activités</ion-label>
+                        <ion-select [(ngModel)]="activity">
+                            <ion-option value="agriculteur">agriculteur</ion-option>
+                            <ion-option value="commerçant">commerçant</ion-option>
+                            <ion-option value="Artisant">Artisant</ion-option>
+                            <ion-option value="éléveur">éléveur</ion-option>
 
-                                    </ion-select>
-                                </ion-item>
-                    </div>
-    
-    
-    
-                    <div class="fixed_bar_login_register">
-                        <button class="btn-default-keiwa background-default" (click)="goToSlide(4)" style="width:250px;height:50px;">
+                        </ion-select>
+                    </ion-item>
+                </div>
+
+
+
+                <div class="fixed_bar_login_register">
+                    <button class="btn-default-keiwa background-default" (click)="goToSlide(4)" style="width:250px;height:50px;">
                             Continuer
                         </button>
-                    </div>
                 </div>
-            </ion-slide>  
+            </div>
+        </ion-slide>
 
 
 

@@ -1,0 +1,21 @@
+page-langue {
+    .titleBonjour h1 {
+        font-size: 35px;
+        color: #1abc9c;
+        font-family: "CircularBold";
+        margin-top: 5rem !important;
+    }
+    .titleBonjour p {
+        font-size: 24px;
+        color: #000;
+        font-family: "open sans regular";
+        margin-top: 2rem !important;
+    }
+    .item-md {
+        padding-left: 0px
+    }
+    .item-md.item-block .item-inner {
+        padding-right: 8px;
+        border-bottom: 2px solid #dedede;
+    }
+}
